@@ -1,0 +1,1340 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\options round
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family sfdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing onehalf
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+New Issues
+\end_layout
+
+\begin_layout Author
+Richard
+\end_layout
+
+\begin_layout Date
+2017 July, Taipei
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+IPO anomaly
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ritter2002areview"
+
+\end_inset
+
+ provide a review of IPO, which have some important things: why firms choose
+ to IPO and review of 3 IPO anomalies.
+\end_layout
+
+\begin_layout Paragraph
+Why firms go IPO?
+\end_layout
+
+\begin_layout Itemize
+Life cycle: firms will stay private until an optimal size for going public
+\end_layout
+
+\begin_layout Itemize
+Timing: when overvalued market
+\end_layout
+
+\begin_layout Paragraph
+IPO anomalies (3): 
+\end_layout
+
+\begin_layout Enumerate
+Underpricing (offering price is lower than after-market price); 
+\end_layout
+
+\begin_layout Enumerate
+Hot issue market (IPO volume clustering); 
+\end_layout
+
+\begin_layout Enumerate
+and Long-run underperformance
+\end_layout
+
+\begin_layout Paragraph
+IPO underpricing
+\end_layout
+
+\begin_layout Standard
+Underpricing is measured by 
+\begin_inset Formula $IPO\, underpricing=\frac{P_{mkt,day0}-P_{offer,day-1}}{P_{offer,day-1}}$
+\end_inset
+
+.
+ For example, the offering price is 10 in day 
+\begin_inset Formula $t=-1$
+\end_inset
+
+ and the close price of first trading day (day 
+\begin_inset Formula $t=0$
+\end_inset
+
+) is 12.5.
+ Then, the IPO underpricing is 
+\begin_inset Formula $(12.5-10)/10=25\%$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+In US, the IPO underpricing is around 18% on average from 1980 to 2015 in
+ Ritter's web.
+\end_layout
+
+\begin_layout Subparagraph
+Why firms leave money on the table?
+\end_layout
+
+\begin_layout Itemize
+Information asymmetry/signaling
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Between investors: Winner's curve, underprice to keep good (but uninformed)
+ investors
+\end_layout
+
+\begin_layout Itemize
+Between issuers and investors: leave good taste
+\end_layout
+
+\begin_layout Itemize
+Between underwriters and investors: Underwriter reputation matters (unreputable
+ underwriters should leave more)
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Information acquisitions: to attract institutional investors during roadshow
+\end_layout
+
+\begin_layout Itemize
+Lawsuit avoidance
+\end_layout
+
+\begin_layout Itemize
+Cascades: investors quote based on other investors' quotes, so lower down
+ price
+\end_layout
+
+\begin_layout Itemize
+Propect theory: loss feeling is more extreme than winning feeling
+\end_layout
+
+\begin_layout Paragraph
+Hot issue market
+\end_layout
+
+\begin_layout Standard
+We often see high volume IPO months follow by high volume IPO months.
+ This is market timing: firms choose good times to IPO because cost of equity
+ is cheap.
+\end_layout
+
+\begin_layout Paragraph
+Long-run underperformance
+\end_layout
+
+\begin_layout Standard
+There are some reason to explain the long-run performance:
+\end_layout
+
+\begin_layout Itemize
+Market timing: firms go public at high price, so future price is lower and
+ stock performance is worse
+\end_layout
+
+\begin_layout Itemize
+Pseudo market timing
+\end_layout
+
+\begin_layout Itemize
+IPO lock up: venture capitalists sells stocks after lock-up period to withdraw
+ their ownerships at firms and get profits.
+ Thus, price drops because high supply.
+\end_layout
+
+\begin_layout Itemize
+Low risk of beta: lower asymmetry after go public
+\end_layout
+
+\begin_layout Itemize
+Model specification error: no 
+\emph on
+true 
+\emph default
+model to measure stock return is high or low
+\end_layout
+
+\begin_layout Paragraph
+IPO underpricing and oligopoly market of underwriters
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand cite
+key "liu2011localunderwriter"
+
+\end_inset
+
+ consider the role of oligopoly market of underwriters and how this oligopoly
+ market affects IPO underpricing
+\end_layout
+
+\begin_layout Subparagraph
+Idea
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+For issuers:
+\emph default
+ In addition to IPO proceeds, IPO firms also care about other non-price
+ dimensions of IPO underwriting such as underwriter quality, industry expertise,
+ and analyst coverage from influential analysts.
+ A limited number of underwriters can provide these services so the IPO
+ underwriting market is oligopoly.
+\end_layout
+
+\begin_layout Standard
+The VC (venture capitalists) prefer the 
+\begin_inset Quotes eld
+\end_inset
+
+all-star
+\begin_inset Quotes erd
+\end_inset
+
+ underwriters so that after IPO, the stock price is stable until the end
+ of 
+\emph on
+lock-up 
+\emph default
+period so that VC can quit and earn profits.
+ This is called 
+\emph on
+analyst lust theory
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+For underwriters:
+\emph default
+ In addition to IPO commission fee of 7%, underwriters can benefit from
+ IPO underpricing in two ways: (i) allocate underpricing shares to investors
+ and (ii) allocate underpricing shares to executives (spinning effect).
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Model
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+For issuer side:
+\end_layout
+
+\begin_layout Standard
+Issuers objective function: 
+\begin_inset Formula $\alpha_{1}NetIPOproceeds+\sum_{i=2}^{n}\alpha_{i}X_{i}$
+\end_inset
+
+ where 
+\begin_inset Formula $\sum\alpha=1$
+\end_inset
+
+.
+ Besides the proceeds, issuers could receive non-price dimensions such as
+ analyst coverage.
+\end_layout
+
+\begin_layout Standard
+Among N underwriters, only 3 have an all-star analysts, which market value
+ of being covered by all-star analysts is given by 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Issuers have different preference parameter 
+\begin_inset Formula $\theta$
+\end_inset
+
+ over all-star analyst service, 
+\begin_inset Formula $\theta\sim Uniform[0;1]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+An issuer's net surplus from going public at underpricing level 
+\begin_inset Formula $U$
+\end_inset
+
+ is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+M-U+\theta A
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $M$
+\end_inset
+
+ is market value of shares sold net the commission fee (spread) 7% to underwrite
+rs, 
+\begin_inset Formula $U$
+\end_inset
+
+ is underpricing money (what left on table), and 
+\begin_inset Formula $\theta A$
+\end_inset
+
+ is effect of all-star analyst coverage on perceived value 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+For underwriter side:
+\end_layout
+
+\begin_layout Standard
+The profit underwriters earn: 
+\begin_inset Formula $\pi_{k}=(\gamma(U-\overline{U})-C)D_{k}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $\overline{U}$
+\end_inset
+
+ is dollar amount of underpricing needed to compensate investors for uncertainty
+ of IPO issue valuation (assumed to be the same across issues); 
+\begin_inset Formula $C$
+\end_inset
+
+ is cost of providing all-star analyst coverage (
+\begin_inset Formula $C=0$
+\end_inset
+
+ for other 
+\begin_inset Formula $N-3$
+\end_inset
+
+ underwriters); and 
+\begin_inset Formula $D_{k}$
+\end_inset
+
+ is demand for underwriter 
+\begin_inset Formula $k$
+\end_inset
+
+ services.
+ A fraction 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ of the incremental money of underpricing flows back to underwriters through
+ indirect channels (from other firms or from executives, when allocate underpric
+ed shares to them).
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+\bar under
+No collusion (noncooperation case)
+\end_layout
+
+\begin_layout Standard
+If N is large, then the N-3 underwriters without an all-star analysts will
+ not be able to charge 
+\begin_inset Formula $U-\overline{U}$
+\end_inset
+
+ because they are in a perfect competitive market (large number of underwriters
+ with homogenous services).
+ They will set 
+\begin_inset Formula $U=\overline{U}$
+\end_inset
+
+ so 
+\begin_inset Formula $\pi_{k}=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+If the three underwriters with all-star analysts do not cooperate, 
+\series bold
+under Bertrand competition
+\series default
+, they will charge: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+U=\overline{U}+(C/\gamma)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Under Cornot competition
+\series default
+:
+\end_layout
+
+\begin_layout Standard
+Aggregate demand: 
+\begin_inset Formula $\ddot{D}=1-\frac{\ddot{U}-\overline{U}}{A}$
+\end_inset
+
+ so 
+\begin_inset Formula $\ddot{U}=A+\overline{U}-A\ddot{D}=A+\overline{U}-A(q_{1}+q_{2})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\pi_{1}=(\gamma(\ddot{U}-\overline{U})-C)q_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\pi_{2}=(\gamma(\ddot{U}-\overline{U})-C)q_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+At equilibrium, 
+\begin_inset Formula $q_{1}=q_{2}=\ddot{q}$
+\end_inset
+
+ so 
+\begin_inset Formula $\ddot{q}=\frac{\gamma A-C}{3\gamma A}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+and 
+\begin_inset Formula $\ddot{U}=A+\overline{U}-2A\ddot{q}=A+\overline{U}-2A\frac{\gamma A-C}{3\gamma A}=A+\overline{U}-\frac{2}{3}A+\frac{2C}{3\gamma}=\frac{A}{3}+\overline{U}+\frac{2C}{3\gamma}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Thus:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\ddot{U}=\frac{A}{3}+\overline{U}+\frac{2C}{3\gamma}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+\bar under
+Under collusion
+\end_layout
+
+\begin_layout Standard
+If three underwriters collude and charge the same underpricing 
+\begin_inset Formula $\mathring{U}$
+\end_inset
+
+.
+ Then, the aggregate demand for their service can be calculated by finding
+ an issuer that is 
+\emph on
+indifferent between choosing an underwriter with or without and all-star
+ anlyst
+\emph default
+.
+ It occurs when:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $M-\mathring{U}+\hat{\theta}A=M-\bar{U}$
+\end_inset
+
+ (right-hand is surplus from allstar analysts; left-hand is from a normal
+ one)
+\end_layout
+
+\begin_layout Standard
+The aggregate demand is: 
+\begin_inset Formula $\mathring{D}=1-\hat{\theta}=1-\frac{\mathring{U}-\overline{U}}{A}$
+\end_inset
+
+ so 
+\begin_inset Formula $\frac{\partial\mathring{D}}{\partial\mathring{U}}=1-1/A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The allstar underwriters choose 
+\begin_inset Formula $\mathring{U}$
+\end_inset
+
+ to maximize their profits:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathring{\pi}=(\gamma(\mathring{U}-\overline{U})-C)\mathring{D}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+FOC: 
+\begin_inset Formula $\frac{\partial\pi}{\partial\mathring{U}}=\gamma\mathring{D}+(\gamma(\mathring{U}-\overline{U})-C)\frac{\partial\mathring{D}}{\partial\mathring{U}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Replace 
+\begin_inset Formula $\frac{\partial\mathring{D}}{\partial\mathring{U}}=1-1/A$
+\end_inset
+
+ to FOC, we solve: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathring{U}=\overline{U}+\frac{\gamma A+C}{2\gamma}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+\bar under
+If 
+\begin_inset Formula $\theta\sim e(1)$
+\end_inset
+
+ with cumulative density function 
+\begin_inset Formula $E(\theta),$
+\end_inset
+
+ what is 
+\begin_inset Formula $D_{k}$
+\end_inset
+
+ now?
+\end_layout
+
+\begin_layout Standard
+Recall, when 
+\begin_inset Formula $\theta\sim Uniform[0;1]$
+\end_inset
+
+ the 
+\begin_inset Formula $cdf$
+\end_inset
+
+ of 
+\begin_inset Formula $\theta$
+\end_inset
+
+ is also equal to 
+\begin_inset Formula $\theta$
+\end_inset
+
+ (not sure).
+\end_layout
+
+\begin_layout Standard
+When 
+\emph on
+\bar under
+
+\begin_inset Formula $\theta\sim e(1)$
+\end_inset
+
+
+\emph default
+\bar default
+, then 
+\begin_inset Formula $D_{k}=1-E(\theta)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subparagraph
+Implications
+\end_layout
+
+\begin_layout Enumerate
+Underpricing: Issuers that choose all-star underwriters are more underpriced:
+ 
+\begin_inset Formula $\mathring{U}>\bar{U}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Differential analyst influence implication: higher A, higher 
+\begin_inset Formula $\mathring{U}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Coverage cost implication: higher cost to supply all-star analyst service,
+ higher 
+\begin_inset Formula $\mathring{U}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Analyst turnover and frequency implications: when all-star analyst turnover
+ is high and frequency of IPO deals is low, the excess underpricing is lower
+\end_layout
+
+\begin_layout Enumerate
+Underwriter concentration implication: underwriter concentration HHI increases
+ as the effect of all-star analyst coverage A increases, so HHI and underpricing
+ should be positively related
+\end_layout
+
+\begin_layout Enumerate
+Analyst lust theory: effect is concentrated among IPOs with VC
+\end_layout
+
+\begin_layout Section
+Why firms issue shares?
+\end_layout
+
+\begin_layout Subsection
+Market timing, lifecycle, and near-term need for cash
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand cite
+key "deangelo2010seasoned"
+
+\end_inset
+
+ compare between market timing and lifecycle when firms choose to SEO.
+\end_layout
+
+\begin_layout Enumerate
+Market timing predicts that firms choose issue stocks when they are overpriced
+ (M/B and prior 3-year abnormal stock returns are high).
+ As a result, stock issue is negatively related to future 3-year abnormal
+ returns.
+\end_layout
+
+\begin_layout Enumerate
+Life-cycle: number of years listed is negatively correlated with stock issue
+ because mature firms do not issue more.
+\end_layout
+
+\begin_layout Enumerate
+Short-term need for cash: 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Without the SEO proceeds, 62.6% of sample issuers would run out of cash the
+ year after the SEO, and 81.1% would have subnormal cash balances.
+ 
+\end_layout
+
+\begin_layout Enumerate
+After adjusting for normal increase in cash due to asset growth, for each
+ dollar raised in the SEO, the median issuer retains 0.6% in the year after
+ SEO (i.e., 99.4% is spent) 
+\end_layout
+
+\begin_layout Enumerate
+About 10% of issuers have stockpiling from SEO proceeds 
+\end_layout
+
+\end_deeper
+\begin_layout Paragraph
+Their empirical results
+\end_layout
+
+\begin_layout Standard
+First, they run this model: 
+\begin_inset Formula $Pr(SEO=1)=M/B+PriorReturn+FutureReturn+YearListed$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The results support both market timing and lifecycle: positive for M/B and
+ Prior Return; negative for Future Return and Year Listed.
+\end_layout
+
+\begin_layout Standard
+Second, they consider the cash balances in the year after SEO.
+ Cash balance increases in the year SEO, but issuers typically quickly utilize
+ the SEO proceeds.
+ They compare the 
+\emph on
+pro forma
+\emph default
+ Cash (which assume that firms did not receive proceeds from SEO) before
+ and after the SEO.
+ Most of the firms will run out of cash if they do not receive money from
+ issue proceeds.
+ In one year after SEO, most issuers would experience an immediate cash
+ shortfall even had they not increased capital expenditures following their
+ SEOs (40.3% of issuers would run out of cash and 59.6% would have subnormal
+ cash balances).
+\end_layout
+
+\begin_layout Standard
+In conclusion, both market timing and lifecycle could not explain totally
+ the motive of share issuance.
+ Insteads, short-term need of cash seems to fit the findings in this paper.
+\end_layout
+
+\begin_layout Subsection
+Competitive effect of IPOs
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand cite
+key "hsu2010thenew"
+
+\end_inset
+
+ consider the 
+\emph on
+horizontal effect
+\emph default
+ of an IPO to its competitors.
+ 
+\emph on
+How an IPO in an industry affect other firms in this industry?
+\emph default
+ 
+\end_layout
+
+\begin_layout Standard
+On average, a completed IPO decreases incumbent firms’ stock prices but
+ a withdrawal increases incumbents’ stock price.
+ After the IPO in their industry, firms experience poorer operating performance
+ (lower sale/income growth, lower CE growth, and lower stock returns).
+ This evidence shows a competitiveness effect.
+\end_layout
+
+\begin_layout Subparagraph
+Four hypotheses: 
+\end_layout
+
+\begin_layout Enumerate
+H1.
+ IPO completed/filing have negative effect on CAR, IPO withdrawal has positive
+ effect 
+\end_layout
+
+\begin_layout Enumerate
+H2.
+ Post-IPO operating performance of incumbents is worse:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Dependent is Sale growth, CAPX growth, Operating income growth, Abnormal
+ stock return
+\end_layout
+
+\begin_layout Enumerate
+Right-hand side is IPO dummy
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+H3.
+ Which factors affect IPO-announcement CAR of incumbents: leverage (-) and
+ credit rating (+), VC backing (+), certification (issued by high-ranked
+ underwriters, +), knowledge (in top quartile of R&D, +)
+\end_layout
+
+\begin_layout Enumerate
+H4.
+ Which factors affect incumbent firms survive after the IPO of its competitors
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Probit model, 
+\begin_inset Formula $Y=1$
+\end_inset
+
+ when incumbents still exist 3 years after the IPO event of its competitors
+\end_layout
+
+\begin_layout Enumerate
+Similar results as operating performance: leverage is negative, other factors
+ above are positive to help incumbents survive
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Past returns
+\end_layout
+
+\begin_layout Standard
+A higher past return performance seems to affect share issue decision.
+\end_layout
+
+\begin_layout Itemize
+First, past returns reflect improved investment opportunities, so firms
+ need to be financed more
+\end_layout
+
+\begin_layout Itemize
+Second, cost of equity is low (i.e., market timing) so firms choose equity
+ rather than debt
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand cite
+key "baker2016undernew"
+
+\end_inset
+
+ explore how the relation between past return and share issuance could be
+ affected by the new managers.
+ The idea is that each managers consider the stock performance that is created
+ by himself rather than from a predecessor.
+ Thus, recent change in Tobin's 
+\begin_inset Formula $Q$
+\end_inset
+
+ has 
+\emph on
+greater impact
+\emph default
+ on share issuance of firms than change in distant 
+\begin_inset Formula $Q$
+\end_inset
+
+ (from the former CEO).
+\end_layout
+
+\begin_layout Standard
+They compare two groups: firms with 
+\emph on
+actual CEO turnover
+\emph default
+ (
+\begin_inset Formula $Turn=1$
+\end_inset
+
+) in past 12 quarters and 
+\emph on
+a non-turnover CEO with a random turnover date
+\emph default
+ (control group, 
+\begin_inset Formula $Turn=0$
+\end_inset
+
+).
+ The model is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+EquityIssuance & = & a+(b_{1}+b_{2}Turn)(Q_{i,t-1}-Q_{i,CEO})\\
+ & + & (c_{1}+c_{2}Turn)(Q_{i,CEO}-Q_{i,t-13})\\
+ & + & (d_{1}+d_{2}Turn)Q_{i,t-13}+eTurn\\
+ & + & fX_{i,t-1}+u_{it}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The difference 
+\begin_inset Formula $b_{2}-c_{2}$
+\end_inset
+
+ captures how the effect of recent changes in Q on equity issuance compared
+ to effect of more distant changes in Q.
+ The results show that 
+\begin_inset Formula $b_{2}-c_{2}$
+\end_inset
+
+ all positive and significant, supporting the idea that recent changes in
+ Q have a significantly stronger impact on issuing activity than changes
+ prior to arrival.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+An alternative explanation
+\series default
+ is a shift in firm strategy that breaks the link between past returns and
+ current share issuance.
+ But when they check the setting above but use the dependent variables are
+ some important firm decisions (including change in cash, change in working
+ capital, change in long-term assets, change in debt, change in retained
+ earning, and change in other liabilities), the coefficient difference 
+\begin_inset Formula $b_{2}-c_{2}$
+\end_inset
+
+ is not significant.
+ It rejects the shift in firm strategy hypothesis.
+\end_layout
+
+\begin_layout Paragraph
+Reference points
+\end_layout
+
+\begin_layout Standard
+If the CEO turnover matter, the new CEO should have a reference-point bias
+ to the 
+\emph on
+stock price at CEO turnover 
+\emph default
+(he remembers the moment he won the position).
+ If he think about this reference point, his issuance decision should be
+ mattered by this price (or the ratio between 
+\begin_inset Formula $offering\, price$
+\end_inset
+
+ and 
+\begin_inset Formula $price\, at\, CEO\, turnover$
+\end_inset
+
+).
+ The discontinuity point of this ratio is one.
+\end_layout
+
+\begin_layout Standard
+As predicted, the stock price at CEO turnover is discontinuous anchor for
+ new CEOs when they issue stocks.
+ There is a jump of 2.9% higher probability of issuing stocks at the ratio
+ of one.
+ There is no such pattern for control group.
+\end_layout
+
+\begin_layout Standard
+The second reference point is the 
+\emph on
+prior offering price
+\emph default
+.
+ A new CEO doesn't care about the prior offering price of the former CEO,
+ but the control group's CEOs do (because they made this decision).
+ Thus, the non-turnover CEOs are reluctant to issue stocks at lower price
+ than 
+\emph on
+prior offering price
+\emph default
+ (only 22%), but the new CEOs will issue more at lower price (45%).
+ 
+\end_layout
+
+\begin_layout Subsection
+Precautionary motives
+\end_layout
+
+\begin_layout Standard
+While literature focuses much attention to market timing, a very interesting
+ paper of 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "davidmclean2011shareissuance"
+
+\end_inset
+
+ propose the precautionary motive of share issuances.
+ When precautionary motive is higher over time, firms tend to issue stocks
+ in good times to save cash.
+ As a result, cash saving from stock issuances increases over time.
+ During 1970s, firms save $0.23/$1 share issuance, but over the most recent
+ decade, the ratio is 0.6/1.
+ However, he propose two contrasting hypotheses in this paper for this trend:
+\end_layout
+
+\begin_layout Enumerate
+Precautionary motive
+\end_layout
+
+\begin_layout Enumerate
+Market timing: firms issue when market is overvalued and share repurchase
+ in undervalued.
+ Thus, this hypothesis predicts that post-issuance stock returns decrease.
+\end_layout
+
+\begin_layout Subparagraph
+Saving cash from issue increases over time
+\end_layout
+
+\begin_layout Standard
+Saving rate from each source of financing (equity, debt, and internal) is
+ estimated coefficient from this model:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Delta Cash=\alpha+\beta_{1}Issue+\beta_{2}Debt+\beta_{3}CF+\beta_{4}Other+\beta_{5}Asset
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The coefficients are cents save per dollar of cash proceeds.
+ Follow Fama-Macbeth, they estimate this model each year the get time series
+ of coefficients to see its variation over time.
+ While the coefficients of other sources seem unchanged, the 
+\begin_inset Formula $\beta_{1}$
+\end_inset
+
+ increases over time, from 0.231 in 1970s to 0.6 in 2000s.
+ It is consistent with more share issue trend over time, about 8 times compared
+ to 1970s.
+ The share issue is pro-cyclical, drop in recessions 1991, 2001, 2008.
+\end_layout
+
+\begin_layout Standard
+Then they regress the cash saving rate on time trend (1970 is 
+\begin_inset Formula $Trend=1$
+\end_inset
+
+, and 2008 is 
+\begin_inset Formula $Trend=38$
+\end_inset
+
+), the coefficient of 
+\begin_inset Formula $Issue$
+\end_inset
+
+ is 0.011 and significant, meaning that portion of share issue is saved as
+ cash increase about 
+\begin_inset Formula $0.011/0.434=2.5\%/year$
+\end_inset
+
+ relative to average 0.434 of coefficients 
+\begin_inset Formula $Issue's\,\beta_{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+When they use 
+\begin_inset Formula $\Delta Cash_{t+1}$
+\end_inset
+
+, 
+\begin_inset Formula $\Delta Cash_{t+2}$
+\end_inset
+
+, and 
+\begin_inset Formula $\Delta Cash_{t+3}$
+\end_inset
+
+ as dependent variable, they find similar results.
+ It means that Issuers add more to their cash balances in subsequent years
+ than do non-issuers.
+ When sort based on amount of Issue, the highest issued firms accumulate
+ much more cash than others.
+\end_layout
+
+\begin_layout Subparagraph
+Precautionary motive
+\end_layout
+
+\begin_layout Standard
+When they regress R&D, CF volatility, Dividend over time trend (
+\begin_inset Formula $Trend$
+\end_inset
+
+), all coefficients of 
+\begin_inset Formula $Trend$
+\end_inset
+
+ support that precautionary motive is increasing: firms have more R&D intensity,
+ higher CF volatility, and pay less dividend.
+ Re-run above model with interactions of 
+\begin_inset Formula $Issue\times RD$
+\end_inset
+
+, 
+\begin_inset Formula $Issue\times CFvol$
+\end_inset
+
+, and 
+\begin_inset Formula $Issue\times Div$
+\end_inset
+
+ show that cash saving effect is more pronounced in firms with high precautionar
+y motive.
+ They also use 
+\begin_inset Formula $PREC$
+\end_inset
+
+ as first order of principal component analysis of three above mesure, the
+ result is consistent.
+\end_layout
+
+\begin_layout Standard
+Share issuance cost should be matter.
+ When issuance cost is low, firms tend to save cash more if they have precaution
+ary motive.
+ Issue cost is measured by Amihud illiquidity (+ cost), Gibb spread (+),
+ Amivest liquidity (- cost), Contraction (declined in GDP, +), Decline in
+ industrial production (+).
+\end_layout
+
+\begin_layout Standard
+Thus, they add interaction 
+\begin_inset Formula $Issue\times PREC\times IssueCost$
+\end_inset
+
+ and find that the lower cost of issuance amplifies the cash saving effect.
+ Consistently, when cost of issuance is low, firms issue more stocks: dependent
+ is Share Issues, and key indenpent variable is 
+\begin_inset Formula $PREC\times IssueCost$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subparagraph
+Market timing
+\end_layout
+
+\begin_layout Standard
+The key prediction of market timing hypothesis is firms time the market
+ when they are overvalued by issuing stocks.
+ As a result, firms tend to underperform in post-issuance periods.
+\end_layout
+
+\begin_layout Standard
+Market timing proxies include: 
+\end_layout
+
+\begin_layout Enumerate
+Share issuance return-predictability: 
+\begin_inset Formula $Issue$
+\end_inset
+
+’s coefficient from regress monthly stock returns on lagged values of Issue,
+ control for size, MB, momentum
+\end_layout
+
+\begin_layout Enumerate
+First-day return for IPO (RIPO) 
+\end_layout
+
+\begin_layout Enumerate
+Number of IPOs (NIPO) 
+\end_layout
+
+\begin_layout Enumerate
+Investor sentiment index 
+\end_layout
+
+\begin_layout Standard
+First, we run the regression of these 4 variables on 
+\begin_inset Formula $Trend$
+\end_inset
+
+.
+ To reconcile with share issue and cash saving trend, we should see the
+ coefficients of Share Issuance return-predictability is negative (more
+ market overvaluation over time), while other three measures should see
+ a positive trend.
+ This prediction ensures that market timing makes firms issue more stocks
+ over time.
+ However, the results show no significant for last three variables, while
+ the Issue return predictability shows positive coefficient, contrasting
+ the prediction.
+\end_layout
+
+\begin_layout Standard
+If the market timing is true, when running regression with monthly stock
+ returns as dependent variable, we should see the interaction of 
+\begin_inset Formula $Issue*Cash$
+\end_inset
+
+ be negative, but the result is not significant.
+ In addition, interaction of 
+\begin_inset Formula $Issue*PREC$
+\end_inset
+
+ is positive and significant, supporting the precautionary motive.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "qualify_exam"
+options "plainnat"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

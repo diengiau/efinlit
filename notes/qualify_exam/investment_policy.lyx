@@ -1,0 +1,2540 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\options round
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family sfdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing onehalf
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Investment Policy
+\end_layout
+
+\begin_layout Author
+Richard
+\end_layout
+
+\begin_layout Date
+2017 June, Taipei
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+M&A
+\end_layout
+
+\begin_layout Standard
+This is the most important decision in investment policy.
+ Thus, we come to this topic at first when we talk about investment policy.
+\end_layout
+
+\begin_layout Paragraph*
+Overview
+\end_layout
+
+\begin_layout Standard
+The first thing we need to know is how many types of M&A and the effect
+ of M&A to bidders and targets.
+ Second, we need to explore why firms decide to undertake acquisition despite
+ a common negative CAR effect at announcement.
+ Third, we walk one by one sub-topic in M&A such as entrenchment CEO, board
+ connection and social ties, CEO ability and experience.
+\end_layout
+
+\begin_layout Paragraph*
+What is M&A?
+\end_layout
+
+\begin_layout Standard
+There are two main modes of merger?
+\end_layout
+
+\begin_layout Itemize
+Merger or friendly deal: tone or attitude is friendly, targets' managers
+ are favorable, target boards voted and approved
+\end_layout
+
+\begin_layout Itemize
+Tender offer/Hostile takeover: tone or attitude is hostile and aggressive,
+ no shareholder meeting and approval
+\end_layout
+
+\begin_layout Standard
+There are two main types of payment method: stock payment or cash payment.
+ Bidders tend to pay by stocks if their stock are overvalued, while they
+ choose to pay by cash if their stocks are undervalued.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand cite
+key "loughran1997dolongterm"
+
+\end_inset
+
+ summarize the mode and the payment of mergers and find that over 5 years
+ following the acquisition:
+\end_layout
+
+\begin_layout Itemize
+Firms with complete stock mergers earn significantly negative excess returns
+ of -25%
+\end_layout
+
+\begin_layout Itemize
+Firms with complete cash tender offers earn significantly positive excess
+ returns of 61.7%
+\end_layout
+
+\begin_layout Paragraph*
+Announcement effect
+\end_layout
+
+\begin_layout Standard
+Literature finds three popular patterns:
+\end_layout
+
+\begin_layout Enumerate
+Targets earn positive abnormal returns
+\end_layout
+
+\begin_layout Enumerate
+Acquirers earn little or no abnormal returns from tender offers
+\end_layout
+
+\begin_layout Enumerate
+Acquirers earn negative abnormal returns from mergers
+\end_layout
+
+\begin_layout Paragraph*
+Why firms choose to M&A despite negative reaction?
+\end_layout
+
+\begin_layout Enumerate
+Agency problem 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "jensen1986agencycost"
+
+\end_inset
+
+: empirical evidence from 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "masulis2007corporate"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "harford2012thesources"
+
+\end_inset
+
+ support this view.
+ A high entrenched CEO tend to be negative associated to bidders' CAR.
+\end_layout
+
+\begin_layout Enumerate
+Market timing: acquirers are more overvalued than targets, as in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "dong2006doesinvestor"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Synergy effects: or Q-hypothesis of 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "dong2006doesinvestor"
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Horizontal: to get market share, market power (monopoly power)
+\end_layout
+
+\begin_layout Enumerate
+Vertical integration:
+\end_layout
+
+\begin_layout Enumerate
+Innovation purchase: as in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "bena2014corporate"
+
+\end_inset
+
+, firms with higher technological overlap (technology proximity) are more
+ likely to merger
+\end_layout
+
+\begin_layout Enumerate
+Other reasons such as diversification, obtain the market segment of the
+ target firms
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Q-hypothesis
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand cite
+key "dong2006doesinvestor"
+
+\end_inset
+
+ support both the misvaluation (market timing) and the Q-hypothesis (synergy)
+ for the acquisition motive.
+ They propose these two hypotheses as follows:
+\end_layout
+
+\begin_layout Enumerate
+Misvaluation hypothesis: Bidders can profit by acquiring undervalued targets
+ (price<fundamental value or 
+\begin_inset Formula $P/V<1$
+\end_inset
+
+) or targets that less overvalued than bidders.
+\end_layout
+
+\begin_layout Enumerate
+Q hypothesis: A high Tobin's Q (market value/replacement cost > 1 or 
+\begin_inset Formula $P/B>1$
+\end_inset
+
+) is an indicator that a firm is well run or has good business opportunity.
+ Thus, takeovers happen because these deals could eliminate wasteful target
+ behaviors and take advantage of better bidder investment opportunities
+ (i.e., synergy effect).
+ In contrast, takeovers can be used by managers of inefficient bidders to
+ expand their domain of controls (i.e., agency problems).
+\end_layout
+
+\begin_layout Standard
+The evidence supports both the misvaluation and Q-hypothesis: on average
+ in all mergers, acquirers tend to have higher 
+\begin_inset Formula $P/B$
+\end_inset
+
+ than targets (support synergy) and they also have higher 
+\begin_inset Formula $P/V$
+\end_inset
+
+ than targets (support misvaluation, bidders are more overvalued than targets).
+ Their finding also supports that bidders will use stock (cash) payment
+ and if targets are overvalued (undervalued).
+ In addition, if bidders are undervalued, they will use cash payment more
+ frequently.
+\end_layout
+
+\begin_layout Subsection
+Agency problem and Governance
+\end_layout
+
+\begin_layout Paragraph*
+Takeover defense
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand cite
+key "masulis2007corporate"
+
+\end_inset
+
+ consider the role of governance at bidders' firms.
+ The idea is an entrenched CEO in bidders tend to undertake acquisitions
+ because of agency problems 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "jensen1986agencycost"
+
+\end_inset
+
+.
+ For example, he want to build his empire or obtain private benefits based
+ on the shareholders' wealth (tunnelling effect).
+ 
+\end_layout
+
+\begin_layout Standard
+Market for corporate control (takeover bad firms) is a good control mechanism,
+ so antitakeover provisions (ATP) are not good for a firm's shareholders,
+ which leads to higher agency problem.
+ Thus, their 
+\series bold
+ATP value destruction hypothesis
+\series default
+: Managers protected by more ATPs are more likely to indulge in value-destroying
+ acquisitions since they are less likely to be disciplined for taking such
+ actions by the market for corporate control.
+\end_layout
+
+\begin_layout Standard
+A high anti-takeover provisions makes it difficult to remove an entrenched
+ CEO out of his position.
+ As a results, the high entrenchment of bidders' CEO or a higher anti-takeover
+ provisions (ATP) in bidders lead to poor acquisition reactions to bidders.
+ Their findings, thus, are consistent with the G-index of 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "gompers2003corporate"
+
+\end_inset
+
+, E-index of 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "bebchuk2009whatmatters"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+They use three indices of governance: G-index of 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "gompers2003corporate"
+
+\end_inset
+
+, E-index of 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "bebchuk2009whatmatters"
+
+\end_inset
+
+, and staggered board (boards with multi-levels so that cannot replace all
+ members in one time).
+ They create Dictatorship index (high G and E index) and Democracy index
+ (low G and E index).
+ They find a negative relation between the G index, E index, staggered board
+ and bidders' CAR.
+ 
+\end_layout
+
+\begin_layout Standard
+They also control for other governance mechanisms such as product market
+ competition (external mechanism) and board characteristics (internal mechanism).
+ 
+\end_layout
+
+\begin_layout Itemize
+Product market competition is measured using Herfindahl-Hirschman index
+ (sum of squared market shares of all COMPUSTAT firms in each Fama-French
+ industry).
+ A lower HH index is a more competitive industry.
+ A more competitive market has positive disciplinary effect on managerial
+ behavior.
+ Incumbents in competitive industries are less likely to divert corporate
+ resources into inefficient use because any small mistake will be exploitted
+ by competitors.
+\end_layout
+
+\begin_layout Itemize
+A second measure of competition is measured by industry's median of selling
+ expenses to sales.
+ This measure is less criticized because it takes into account the foreign
+ competitors while the HH index cannot capture the competition from foreign
+ firms.
+ A higher selling expenses cost means that firms are in more intensely competiti
+ve industry.
+\end_layout
+
+\begin_layout Itemize
+They define two dummies: Competitive Industry and Unique industry (product
+ uniqueness) if HHI and selling expense ratio are in lowest and highest
+ quartiles of all FF 48 industries.
+ As a result, market competition will have positive effect on bidders' CAR.
+\end_layout
+
+\begin_layout Itemize
+CEO incentive measured by CEO ownership (stock and options) and wealth sensitivi
+ty to stock price.
+ But CEO incentive has no relation to bidder returns.
+\end_layout
+
+\begin_layout Itemize
+IO: the percentage stock ownership by a firm’s largest institutional blockholder
+, defined as an institutional investor with at least 5% equity ownership
+ (BLOCK), and the aggregate percentage stock ownership in a firm by 18 public
+ pension funds (PP).
+ Both have insignificant effect on returns.
+\end_layout
+
+\begin_layout Itemize
+Boards characteristics: duality, board size, and board independence (more
+ than 50% directors are independent).
+ They find that duality are negatively affect bidder returns.
+\end_layout
+
+\begin_layout Itemize
+Management quality: using industry-adjusted operating income growth over
+ 3-year prior to the announcement.
+ They find a positive relation between management quality and bidder returns.
+ 
+\end_layout
+
+\begin_layout Itemize
+The result also holds if they use the subsample of firms that listed before
+ 1990s to check the revert causality (to prepare for bad acquisitions, firms
+ adopt the ATPs first).
+ In this subsample, the revert causality is less likely because most of
+ important ATPs are adopted in 1980s while the acquisitions happen in 1990s.
+ 
+\end_layout
+
+\begin_layout Itemize
+The main finding holds in any of above settings.
+\end_layout
+
+\begin_layout Paragraph*
+Managerial Entrenchement
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand cite
+key "harford2012thesources"
+
+\end_inset
+
+ expand the idea of 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "masulis2007corporate"
+
+\end_inset
+
+ by look at the entrenched CEOs' decisions closer.
+ How the entrenched CEOs could destruct the firm valuation during acquisitions:
+\end_layout
+
+\begin_layout Enumerate
+Target selection: Avoid private targets or public firms with blockholders.
+ To preserve their entrenchment, CEOs may 
+\series bold
+avoid private targets
+\series default
+ because their concentrated ownership.
+
+\emph on
+ If merge private firms, they use cash rather than stock payment
+\emph default
+.
+ It is the same if targets are public but have blockholders.
+\end_layout
+
+\begin_layout Enumerate
+Pure overpayment
+\end_layout
+
+\begin_layout Enumerate
+Low synergy
+\end_layout
+
+\begin_layout Standard
+How to measure entrenchment? Easily, G-index and check robust by E-index
+ as in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "masulis2007corporate"
+
+\end_inset
+
+.
+ Their method and result for each hypothesis are as follows:
+\end_layout
+
+\begin_layout Enumerate
+H1, Target selection (see Table 4): they run logit regression with dependent
+ variable is Private Target, Public Target, Private Cash, and Private Stock;
+ main independent variable is Dictator dummy.
+ All models use Heckman selection models to avoid endogeneity.
+ Dictator is a dummy variable taking a value of one if 
+\begin_inset Formula $GIMindex\geq10$
+\end_inset
+
+, and zero otherwise.
+ Coefficients are negative and significant for Private Target and Private
+ Stock.
+ They also find the same negative relation between Dictator dummy and Target
+ with blockholders (>5% or >median of blockholding levels).
+\end_layout
+
+\begin_layout Enumerate
+H2, pure overpayment (see Table 5): The dependent variable is 5-day CAR
+ (market model), main independent variables are Dictator (for entrenchment),
+ Private, All Stock payment, All Cash payment, 
+\series bold
+Proxy Premium (proxy for overpayment)
+\series default
+ and their interactions.
+ They find that Dictator is negative (repeat 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "masulis2007corporate"
+
+\end_inset
+
+), All Stock is negative (repeat 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "loughran1997dolongterm"
+
+\end_inset
+
+), Private*AllStock and Private*Dictator*AllStock*RelativeSize are positive
+ (support H1), Proxy Premium and Proxy Premium*Dictator are negative (support
+ H2).
+\end_layout
+
+\begin_layout Enumerate
+H3, low synergy (see Tables 6 and 7): They look at post-merger performance
+ by using combined firm’s industry-adjusted ROA (IAOP).
+ Dictator bidders have worse performance.
+\end_layout
+
+\begin_layout Paragraph*
+Institutional investors
+\end_layout
+
+\begin_layout Standard
+What happens if targets have institutional investors? Institutional investors
+ tend to favor the deals and improve benefits for the sell-side (the targets)
+ so that they can earn profits.
+ The most important problem is how to measure the institutional ownership?
+ The literature often focus on 5% fraction of firm equity as the cut-point
+ to define the blockholder.
+ But this idea is not true.
+ For example, a small firm with only $10m? A 5% of this firm is only $0.5m,
+ which is too small value.
+ So which investment will matter the institutional investors? When the value
+ of the investment at one firm has a high percentage (high relative importance
+ at one investor) in the investor's portfolio.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "fich2015motivated"
+
+\end_inset
+
+ use the 10% most importance of investments in the institutional investors'
+ portfolio to define the 
+\emph on
+monitoring institutions
+\emph default
+.
+ This new measure of institutional investor outperform the conventional
+ measures.
+ The findings are as expected, higher monitoring institutional investors
+ improve the deal performance for the targets: greater bid completion rates,
+ higher premiums, and lower acquirer returns.
+\end_layout
+
+\begin_layout Paragraph*
+Corporate Social Responsibility
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand cite
+key "deng2013corporate"
+
+\end_inset
+
+ consider the role of CSR of bidders could create value for acquirers' sharehold
+ers.
+ Compare to low CSR acquirers, high CSR acquirers have higher merger 
+\series bold
+\emph on
+announcement CAR
+\series default
+\emph default
+, higher value-weighted portfolio returns of acquirers&targets, higher 
+\series bold
+\emph on
+post-merger long-term
+\series default
+\emph default
+ operating performance, and positive long-term stock returns.
+ High CSR acquirers made the merger in 
+\series bold
+\emph on
+shorter time and less likely to fail
+\series default
+\emph default
+ the merger.
+\end_layout
+
+\begin_layout Standard
+Actually, they propose two opposing hypotheses: maximizing shareholder wealth
+ (positive effect) and shareholder expense (negative effect).
+\end_layout
+
+\begin_layout Subparagraph*
+Some methods and results
+\end_layout
+
+\begin_layout Enumerate
+For CAR of acquirers:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Model: 
+\begin_inset Formula $Acquirer'sCAR=(+)Acquirer'sCSR$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+They use adjusted CSR, which use indicator value divided by number of indicators
+ across seven dimensions of CSR.
+\end_layout
+
+\begin_layout Enumerate
+Add instruments: (i) religion rank (number of religious adherents/population
+ of headquarters’ state); (ii) blue state (Democratic state)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Long-term performance:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Operating cash flows: Use control firms: propensity score matching approach.
+ Then run regression 
+\begin_inset Formula $\Delta post-mergeCF_{merge-control}=a+\Delta pre-mergeCF_{merge-control}$
+\end_inset
+
+ in two subsamples of high CSR and low CSR.
+ The intercept a is negative in the low CSR group, but not significant for
+ high CSR group.
+\end_layout
+
+\begin_layout Enumerate
+Long-term returns: use calendar time approach and control the portfolio
+ return for 4 factor model.
+ The abnormal return 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ is positive and signigicant for full sample and high CSR acquirers but
+ not significant for low CSR acquirers.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Deal completion (probit) and time to complete (survival analysis):
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Probit: 
+\begin_inset Formula $CompletedDeal=(+)AdjustedCSR$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Survival nonparametric Cox model: The dependent variable is the number of
+ days spent to complete the deal (i.e., the length of days from the announcement
+ date to the effective date).
+ 
+\begin_inset Formula $\#Days=(-)AdjustedCSR$
+\end_inset
+
+.
+ In both regressions, the hazard ratio for the adjusted CSR measure is significa
+ntly greater than one, suggesting that mergers by high CSR acquirers take
+ less time to complete than those by low CSR acquirers.
+\end_layout
+
+\begin_layout Enumerate
+Instruments: religion rank and blue state
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+CEO and directors
+\end_layout
+
+\begin_layout Standard
+There are some topics relating to CEO when we are dealing with M&A.
+ They include overconfidence, board connection, social ties, merger experience
+ and ability, and other topics.
+\end_layout
+
+\begin_layout Paragraph*
+Overconfidence
+\end_layout
+
+\begin_layout Subparagraph*
+Dark sides: Overinvestment
+\end_layout
+
+\begin_layout Standard
+Who makes the merger and acquisition? The overconfident CEO 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "malmendier2008whomakes"
+
+\end_inset
+
+.
+ How they define the OC?
+\end_layout
+
+\begin_layout Itemize
+Option-based measure: OC believe in the firm's future performance, so they
+ fail to exercise the in-the-money option until expiration instead of reducing
+ their exposure to firm-specific risk (i.e., diversify his personal portfolio).
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Longholder: fixed effect during his tenure, he holds option until expiration
+ despite 40% in-the-money
+\end_layout
+
+\begin_layout Itemize
+Pre/Post-Longholder: Split Longholder into two separating indicators.
+ Post- for OC after the first time hold option until expiration; Pre for
+ the rest of the CEO years in which 
+\begin_inset Formula $Longholder=1$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+Holder 67: consider the exercise decision in the fifth year prior to expiration
+ (since most options in sample have 10 years of duration), although 67%
+ increase in stock price since grant date.
+ This CEO will retain the OC label for all the remaining years in sample.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Media-based: hand-collect data on CEO coverage in press with words 
+\begin_inset Quotes eld
+\end_inset
+
+confident
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+optimistic
+\begin_inset Quotes erd
+\end_inset
+
+ vs.
+ 
+\begin_inset Quotes eld
+\end_inset
+
+reliable
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+conservative
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+practical
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+steady
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+frugal
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Their main results are:
+\end_layout
+
+\begin_layout Enumerate
+OC tend to undertake M&A more when they test the logit regression with 
+\begin_inset Formula $Y=1$
+\end_inset
+
+ if CEO made a successful merger bid in a firm year, main independent is
+ OC.
+ In all fixed effect and random effect models in Table 3, coefficients of
+ OC measures are positive and larger for cash-rich firms (abundant internal
+ resource).
+ Because they consider their firms are undervalued and external funding
+ is costly, they only overinvest (merger more) just in cases these mergers
+ can be financed internally.
+\end_layout
+
+\begin_layout Enumerate
+Above finding is interesting because this effect is different from the tradition
+al agency theory.
+ Because empire-building CEOs are aware that their overinvestment are harmful
+ so they should minimize their personal investment in the company by exercising
+ their option at the earliest opportunity.
+ In contrast, in this sample, CEOs fail to do so.
+ Thus, the overinvestment in this case is from overconfidence.
+\end_layout
+
+\begin_layout Enumerate
+Next, they examine the financing source.
+ The results in Table 4 show that OC tend to use cash to finance the deals
+ and when the firms are less likely to be overvalued (firms' Q are lower
+ than industry median).
+ Because OC believe that their firms are undervalued, it appears that they
+ use cash to merger.
+\end_layout
+
+\begin_layout Enumerate
+The effect is stronger for diversified mergers (bidders and targets are
+ not in the same FF48 industries) rather than within-industry mergers.
+\end_layout
+
+\begin_layout Enumerate
+When OC engage more in mergers than other CEOs, their deals have lower average
+ quality.
+ Thus, 
+\begin_inset Formula $CAR(-1;1)$
+\end_inset
+
+ are -90 bp for OC firms but are -12 bp for other firms.
+\end_layout
+
+\begin_layout Enumerate
+They also discuss alternative explanations: risk tolerance and inside informatio
+n.
+ First, the risk tolerance cannot reconcile the fact that OC prefer to use
+ cash and undertake more diversifying mergers.
+ Second, the inside information fails to explain the fact that an alternative
+ strategy (against OC strategy) is exercise option early and invest in S&P
+ 500 index earn a similar returns.
+ In addition, most of the effect of OC (higher acquisition rate) come from
+ the CEOs that should unertake options early.
+\end_layout
+
+\begin_layout Subparagraph*
+Bright sides: Innovation
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset CommandInset citation
+LatexCommand cite
+key "hirshleifer2012areoverconfident"
+
+\end_inset
+
+ provide the very first evidence on the bright side of OC, who are more
+ likely to undertake risky projects such as R&D.
+ Thus, they invest more in R&D activities and gain more innovations.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset CommandInset citation
+LatexCommand cite
+key "malmendier2011overconfidence"
+
+\end_inset
+
+ expand the idea in their paper in 2008 that OC seem to believe that their
+ firms are undervalued; thus, being reluctant to issue external finance
+ because they think that external finance is too costly.
+ As a result, they prefer internal finance to external finance (Y = Public
+ Issues, OC's coefficient <0).
+ If they have to raise external fund to cover financing deficit, they will
+ choose debt than equity (Y=Debt, X = Financing Deficit * OC).
+ In addition, if they have to use debt, they use it conservatively relative
+ to available tax benefits.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+A confusing part of this paper is they further expand the paper to Great
+ Depression CEOs and military-background CEOs
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Great Depression CEOs are more conservative and appear to access risky capital
+ markets more conservatively
+\end_layout
+
+\begin_layout Enumerate
+In contrast, military-background CEOs tend to take more risky, using more
+ leverage
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+To proxy for conservativeness of using debt, they use a variable namely
+ 
+\begin_inset Formula $kink$
+\end_inset
+
+ (hypothetical level of interest / actual interest paid).
+ This variable captures the additional debt could be issued before expected
+ marginal tax-shield benefits begin to fall.
+ Thus, a higher 
+\begin_inset Formula $kink$
+\end_inset
+
+ means that firms use debt more conservatively.
+ In model, they use 
+\begin_inset Formula $kink$
+\end_inset
+
+ as Y, coefficients of OC and Great Depression are positive.
+\end_layout
+
+\end_deeper
+\begin_layout Paragraph*
+Board Connection: positive to bidders
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand cite
+key "cai2012boardconnections"
+
+\end_inset
+
+ study two orders of board connection:
+\end_layout
+
+\begin_layout Enumerate
+First order: two firms share the same director before deal announcement
+\end_layout
+
+\begin_layout Enumerate
+Second order: two firms have directors serving in a third firm
+\end_layout
+
+\begin_layout Standard
+The main result is the first order connection helps to reduce takeover price
+ (i.e., better bargaining power in deal negotiation, limit outside competitors
+ with lack of material information about target) and second order connection
+ increase post-merger ROA.
+ Overall, with and without connection, bidder returns increase 2.45% for
+ first order and 1.84% for second order.
+\end_layout
+
+\begin_layout Paragraph*
+Social ties: negative to bidders
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ishii2014acquirertarget"
+
+\end_inset
+
+ look at the social ties (education and work experience) between bidders
+ and targets executives.
+ In contrast to 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "cai2012boardconnections"
+
+\end_inset
+
+, the effect of social tie is negative.
+ Some interesting findings are:
+\end_layout
+
+\begin_layout Enumerate
+Bidders experience negative reactions
+\end_layout
+
+\begin_layout Enumerate
+CEOs and directors of targets are more likely to in their place after the
+ merger
+\end_layout
+
+\begin_layout Enumerate
+CEOs of bidders receive bonus of these negative mergers
+\end_layout
+
+\begin_layout Enumerate
+Acquisitions tend to happen more for firms with high social ties
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand cite
+key "schmidt2015costsand"
+
+\end_inset
+
+ looks at social ties between CEOs and board members at bidders.
+ They identify social ties by nonbusiness affiliation membership: such as
+ club, NFP foundation, background, network club.
+\end_layout
+
+\begin_layout Standard
+These social ties have either cost or benefit: (i) when 
+\emph on
+board advice
+\emph default
+ is more important, social ties bring higher bidder annoucement returns;
+ and (ii) when 
+\emph on
+monitoring
+\emph default
+ is more needed, social ties lower returns.
+ They have two measures of social ties:
+\end_layout
+
+\begin_layout Itemize
+% Friendly board: Actual proportion of connections - Expect proportion (from
+ simulations)
+\end_layout
+
+\begin_layout Itemize
+Social Ties: a dummy of 1 for % Friendly board > 0; and 0 otherwise
+\end_layout
+
+\begin_layout Standard
+For monitoring and advice proxies, they use:
+\end_layout
+
+\begin_layout Itemize
+Monitoring: (1) follow Dittmar and Mahrt-Smith (2007), excess cash (in cases
+ of free cash flow) larger than industry median; (2) CEO equity ownership;
+ (3) E-index for entrenchment; (4) Institutional Ownership; (5) Past performance
+ and Diversifying (i.e., diversification acquisitions follow bidders' past
+ performance lower than industry median); (6) Merger wave, follow Harford
+ (2005).
+\end_layout
+
+\begin_layout Itemize
+Advice: when directors possess information that CEOs do not have, such as:
+ (1) Informed Board (directors work in the target’s industry); (2) External
+ Connections (outside directors); (3) Board Centrality (centrality of director
+ in network, relating to quality of directors’ network); (4) Low R&D intensity
+ (advice will be more valuable); (5) Market Timers (directors earn better
+ returns than industry median for that year in their own trading); (6) Expert
+ Board (financial expertise, work as CFO or top executive in banks).
+\end_layout
+
+\begin_layout Itemize
+Use PCA to combine all monitoring and advice into main factor: use first
+ factor.
+\end_layout
+
+\begin_layout Standard
+Model: 
+\begin_inset Formula $BidderCAR=a+b*SocialTie*Monitoring+c*SocialTie*Advice$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The interaction with Monitoring is negative, while the interaction with
+ Advice is positive.
+\end_layout
+
+\begin_layout Standard
+They also adopt the calendar time method.
+ The portfolio return is positive if the advice is need and the return is
+ negative if the monitoring is need.
+\end_layout
+
+\begin_layout Paragraph*
+Prior merger performance, merge experience and CEO career
+\end_layout
+
+\begin_layout Subparagraph*
+Only experienced directors matter their career's future prospects
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand cite
+key "harford2013doesthe"
+
+\end_inset
+
+ ask an interesting question that whether the labor market examine the acquisiti
+on experience and ability of the CEOs and directors.
+ Acquisition experience is a good indicator but a high experienced CEO does
+ not mean that he did a good performance in M&A in his career.
+ Some CEOs could make good acquisitions and some CEOs could make poor acquisitio
+ns.
+ Thus, if the labor market considers the acquisition ability, the CEO should
+ have fewer board positions if he made poor acquisitions in the past.
+ In contrast, if the labor market does not consider the acquisition ability,
+ a higher acquisition experence helps CEOs/directors have more board positions.
+ They, thus, propose two competing hypotheses: Gain Experience hypothesis
+ and Reveal Ability hypothesis.
+\end_layout
+
+\begin_layout Standard
+While the Gain Experience predicts that both positive and negative acqusition
+ performance is positively related to future board positions, the Reveal
+ Ability predicts that a low takeover premium will lead to fewer subsequent
+ board seats.
+ These different prediction allows them to test.
+\end_layout
+
+\begin_layout Standard
+How to measure experience: Acquisition (Yes and No); number of Acquisition
+ (
+\begin_inset Formula $ln(1+\#\, Acquisitions$
+\end_inset
+
+)); and Dollar measure (
+\begin_inset Formula $ln(1+Sum\, of\, SDC\, transaction\, value$
+\end_inset
+
+).
+ How to measure ability: 
+\begin_inset Formula $SumCAR$
+\end_inset
+
+ for bidders and 
+\begin_inset Formula $ExcessPremium$
+\end_inset
+
+ for targets.
+ To measure 
+\begin_inset Formula $ExcessPremium$
+\end_inset
+
+ we need two steps:
+\end_layout
+
+\begin_layout Itemize
+First, run regression and get the residuals as the Excess Premium: 
+\begin_inset Formula $ExpectedPremium=AdjROA+ExcessPremium_{t-1}+RelativeSize+Unsolicited+\lambda_{i}+\nu_{t}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Second, compare Excess Premium with zero or the mean premium from recent
+ 10 deals in industry to define a Positive Excess Premium and Negative Excess
+ Premium.
+\end_layout
+
+\begin_layout Standard
+On average, the outside board position is popular, with average two positions
+ up to 4+ positions.
+ Acquisition experience is also popular, with 49% diretors have experience
+ in acquisitions.
+\end_layout
+
+\begin_layout Standard
+The results show that only experience matters.
+ A higher experienced CEO has more board positions.
+ For 
+\begin_inset Formula $SumCAR$
+\end_inset
+
+, it is not significant, while both 
+\begin_inset Formula $Acq(+)$
+\end_inset
+
+ and 
+\begin_inset Formula $Acq(-)$
+\end_inset
+
+ have positive relation to board seats.
+ This result is inconsistent with the Reveal Ability hypothesis.
+\end_layout
+
+\begin_layout Standard
+Next, they consider whether CEO is in his own board in year 
+\begin_inset Formula $t+2$
+\end_inset
+
+ with the same setting.
+ The main independent is a dummy that CEO is on his own board two year after
+ stepping down as CEO.
+ Interestingly, now the acquisition performance is more significant and
+ positive, while the acquisition experience is not significant anymore.
+ 
+\end_layout
+
+\begin_layout Standard
+This fact is true for both acquirer CEO and target CEO 
+\begin_inset Formula $(ExcessPremium$
+\end_inset
+
+ is inconsistent).
+ It is also true for directors and CEOs.
+\end_layout
+
+\begin_layout Subparagraph*
+Why experienced directors are get more board positions?
+\end_layout
+
+\begin_layout Standard
+This paper raises an interesting question that why the labor market rewards
+ the experienced CEOs despite their poor acquisition decisions? Why firms
+ need a board with experienced members in acquisitions? Good questions need
+ good people answer.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "field2017theeffect"
+
+\end_inset
+
+ look at the post-acquisition performance of firms with experienced board.
+ This paper finds that the board acquisition experience is positively related
+ to subsequent acquisition 
+\emph on
+short-
+\emph default
+ (CARs) and long-run performance.
+ It means that the labor market does a perfect decision.
+\end_layout
+
+\begin_layout Standard
+They propose two hypotheses: 
+\emph on
+Experience hypothesis
+\emph default
+ (firms with higher levels of board acquisition experience will engage in
+ better-performing acquisitions) and 
+\emph on
+Performance hypothesis
+\emph default
+ (firms in which directors’ prior acquisitions earned higher announcement
+ returns will engage in better-performing acquisitions).
+ How to measure the experience and prior acquisition performance? 
+\end_layout
+
+\begin_layout Itemize
+Experience 1: number of acquisitions that involved directors outside the
+ principal firm during past 10 years
+\end_layout
+
+\begin_layout Itemize
+Experience 2: percentage of independent directors that have had acquisition
+ experience outside the principal firm during the prior ten years
+\end_layout
+
+\begin_layout Itemize
+Performance: sum of announcement returns for all prior acquisitions that
+ directors involved outside the principal firm: 54% have positive CAR, 46%
+ have negative CAR, and total are value-decreasing for shareholders.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Median CAR of prior acquisitions
+\end_layout
+
+\begin_layout Itemize
+Number of prior acquisitions with positve/negative CAR
+\end_layout
+
+\begin_layout Itemize
+Percentage of prior acquisitions with positive/negative CAR
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+They reveal some interesting findings.
+\end_layout
+
+\begin_layout Itemize
+First, the acquisition experience is quite common: 80% of acquirers have
+ at least 1 independent director with acquisition experience; 28.7% of independen
+t directors participated in prior acquisitions as executives/CEOs of other
+ bidders.
+ 
+\end_layout
+
+\begin_layout Itemize
+Second, the result support both the Experience Hypothesis and Performance
+ Hypothesis: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Higher board acquisition experience, higher CAR.
+ They regress CAR(-1;1) on Experience; Experience is positive.
+\end_layout
+
+\begin_layout Itemize
+Past acquisition performance also matter CAR (so dismiss the idea that directors
+ learn equally from good and bad acquisitions): a better past acquisition
+ performance is positively related to CAR.
+ They regress CAR(-1;1) on Experience and Performance.
+ All coefficients are positive.
+\end_layout
+
+\begin_layout Itemize
+Endogeneity check: 2SLS with IV variables are: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+For Experience hypothesis: (i) the number of urban firms (10 largest cities
+ in US) in which independent directors have served as a manager or director
+ in the prior ten years, is motivated by prior literature showing that firms
+ located in larger metropolitan statistical areas engage in greater acquisition
+ activity; (ii) number of serial acquirers in which independent directors
+ have served as a manager or director in the prior ten years.
+\end_layout
+
+\begin_layout Itemize
+For Performance hypothesis: (i) Median firm size of prior bidders (firm
+ size is negatively related to acquirers’ CAR); and (ii) Percent of prior
+ stock deals (acquirers experience negative CAR if they pay by equity)
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+The channels through which these two hypotheses happen: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+(i) avoid large loss acquisitions: only past performance negatively affect
+ Probability of large loss acquisition (logit model)
+\end_layout
+
+\begin_layout Itemize
+(ii) assist firms to select targets with higher synergies (i.e., higher combined
+ firm value-weighted announcement returns; weight is based on ME at 50-day
+ before deal announce): Combined CAR(-1;1) = (+) Experience + (+) Performance
+\end_layout
+
+\begin_layout Itemize
+(iii) assist in target integration: greater improvements in TFP and operating
+ performance (industry-median-adjusted ROA)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Total factor productivity is computed as the residual from a regression
+ of sales on labor, fixed assets, materials, industry and year fixed effects.
+ To some extent, both factors improve post-performance.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+For target CAR, only experience related to target-side (not bidder-side)
+ improves target CAR
+\end_layout
+
+\end_deeper
+\begin_layout Paragraph*
+65-age effect
+\end_layout
+
+\begin_layout Standard
+When your career is promising at your young age, you worried that you lose
+ the job after an acquisition (career risk/cost is high).
+ But when your time is not too long, your retirement age (i.e., usually 65)
+ is coming, you don't care about the career cost anymore.
+ One earlier year and later year is not important anymore.
+ In eastern countries, we often think that 60s age is when we learn how
+ to accept rather than compete for a winning or a losing.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand cite
+key "jenter2015ceopreferences"
+
+\end_inset
+
+ recognize this fact and apply to CEOs at targets when they are around 65
+ age (from 64 to 66 years old).
+ Targets with close-to-65-age CEO increase the successful bids/probability,
+ with an equal or higher takeover premiums and target announcement CAR than
+ deals made by younger CEOs.
+ It means that 65-age CEOs 
+\emph on
+do not sacrify the premium for the merger
+\emph default
+.
+ It means that retiring CEOs do not make a stupid decision.
+ Insteads, they accept the optimal deal when it comes.
+ 
+\end_layout
+
+\begin_layout Standard
+In contrast, a young CEOs have many things to lose when they accept the
+ deals.
+ Most of them are kicked out of the companies after the deals.
+ Young CEOs may be reluctant to sell their firms, and weak boards allow
+ them to reject value-increasing deals, making the overall frequency of
+ takeovers is lower than optimal for target shareholders.
+\end_layout
+
+\begin_layout Standard
+They also find that acquirers’ CAR are not related to target CEO’s age,
+ dismiss the idea that retirement age CEOs have weaker bargaining.
+\end_layout
+
+\begin_layout Standard
+There are two other channels may affect the 65-age effect.
+ 
+\end_layout
+
+\begin_layout Itemize
+Governance: good governance of targets can reduce the 65-age effect.
+ The interaction between 65-age and Governance is negative.
+\end_layout
+
+\begin_layout Itemize
+Merger wave 1990s: an increase in merger benefits make the 65-age effect
+ weaker because benefits of merger much more important than target CEO’s
+ private cost.
+ The interaction between 65-Age and Merge Wave is negative.
+ In fact, during merge wave, the peak of merge frequency is earlier: 59-63
+ years old.
+\end_layout
+
+\begin_layout Standard
+They also try to explain the 65-age effect by other alternatives.
+ For example, 
+\end_layout
+
+\begin_layout Itemize
+Disciplinary: a prior poor performance of retiring CEOs lead to takeover.
+ But retiring CEO's operating performance is quite good.
+\end_layout
+
+\begin_layout Itemize
+Succession problem: targets made the mergers to find a replacement for the
+ retiring CEOs.
+ They add some interaction with Industry Pay and Industry CEO Performance
+ (industry-adjusted stock price).
+ But not significant.
+\end_layout
+
+\begin_layout Itemize
+Illiquiditiy: CEOs sell firms to exercise their stock/option positions to
+ get cash.
+\end_layout
+
+\begin_layout Itemize
+CEO wealth change: do wealth benefits (stock/option ownership + golden parachute
+s - lost future compensation) from the merger matter?
+\end_layout
+
+\begin_layout Subsection
+Innovation purchase motive
+\end_layout
+
+\begin_layout Standard
+The most important paper about this motive is 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "bena2014corporate"
+
+\end_inset
+
+.
+ They propose that firms with high R&D cost but slow growth in patents tend
+ to be targets.
+ In contrast, firms with low R&D but high growth in patents are more likely
+ to be acquirers.
+ In addition, firms with higher technology overlap tend to merger each other.
+ This paper is discussed clearly in R&D section below.
+\end_layout
+
+\begin_layout Subsection
+Source of finance and M&A
+\end_layout
+
+\begin_layout Standard
+A rated firm could access to bond market and have less financial constrained,
+ so they tend to invest in any positive NPV projects.
+ In contrast, a without-rated constrained firm tend to invest in the best
+ project with the largest NPV.
+ For example, there is two projects A and B, both need the investment of
+ 100.
+ Project A has rate of return 10% and project B has rate of return 20%.
+ A firm X, with rated and access to external debt market, could borrow to
+ invest in both two projects to get average rate of return 15%.
+ In contrast, a firm Y, without bond rating and do not have enough money
+ to invest both, tend to choose the highest NPV project B and earn 20%.
+ So, both firms earn but the firms with rated tend to have lower investment
+ returns (but still positive), higher investment (i.e., higher M&A frequency),
+ and accept a higher offer price.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand cite
+key "harford2014bondmarket"
+
+\end_inset
+
+ study how access to public debt market (i.e., bond rating) can affect firms’
+ investment decisions (i.e., acquisition).
+ Having bond rating has both advantage (larger borrowing capacity, lower
+ cost of capital) and disadvantage (less effective monitoring effect from
+ concentrated informed lenders such as banks).
+ Thus, bond rating could have both effects on M&A result: (i) Financial
+ constraint hypothesis: having bond rating is value-increasing and less
+ costly and (ii) Free cash flow hypothesis: value-decreasing.
+\end_layout
+
+\begin_layout Standard
+They find that in general, rated firms undertake more acquisitions (probit
+ and tobit models), pay more target premium (about 5.5% higher), lower acquirer
+ CAR, and lower long-run performance than non-rated firms (but still positive).
+ As we outline above, they explain that:
+\end_layout
+
+\begin_layout Itemize
+One final alternative explanation is that rated acquirers pick targets with
+ similar potential synergies as those picked by nonrated acquirers, but
+ they bid higher and so transfer more of the total synergies to the target
+ shareholders.
+\end_layout
+
+\begin_layout Itemize
+The results are most consistent with the hypothesis that firms without access
+ to public debt markets are financially constrained, forcing them to limit
+ their investment to the highest NPV projects.
+ Because unconstrained firms can take all positive NPV projects, their marginal
+ project will create less value than the marginal project of a constrained
+ firm, reducing the average.
+ This is reflected in the lower, but still positive, average announcement
+ returns for rated firm acquisitions.
+ Thus, the source of financing matters for investment.
+\end_layout
+
+\begin_layout Subsection
+Agency theory vs.
+ Neoclassical theory
+\end_layout
+
+\begin_layout Standard
+When mature firms undertake acquisitions? Why agency theory predicts that
+ firms with low growth opportunities and high free cash flows tend to undertake
+ M&A so that managers could earn private benefits.
+ In contrast, neoclassical theory predicts that mature firms tend to undertake
+ M&A to reallocate underutilized assets.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand cite
+key "arikan2016corporate"
+
+\end_inset
+
+ study how firms undertake M&A during their lifecycle.
+ They find that there is a U-shaped curve between firm age (since IPO year)
+ and mean conditional acquisition rate.
+ It means that firms undertake more acquisitions when they are young (around
+ first 4 years after IPO), then lower probability of M&A in midde-aged years
+ (4-9 years), then increase back when they old.
+\end_layout
+
+\begin_layout Standard
+In contrast to agency theory, they find that mature bidders often have higher
+ Tobin's Q than their targets.
+ It means that they do not have lower growth opportunities than nonacquiring
+ firms over the lifecycle.
+ Insteads, they tend to reallocate corporate assets to more productive uses.
+ High 
+\begin_inset Formula $q$
+\end_inset
+
+ firms tend to have more valuable assets so they undertake acquisitions
+ more.
+\end_layout
+
+\begin_layout Standard
+They also consider the stock reactions when mature and young firms announce
+ the deals.
+ If older firms make poor acquisitions as in agency theory, we should see
+ 
+\emph on
+negative reactions
+\emph default
+, while the neoclassical theory predicts that mature bidders earn 
+\emph on
+positive market reactions
+\emph default
+.
+ The market reactions could be summarized as follows:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="6">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\emph on
+Private targets
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\emph on
+Public targets
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout 
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout 
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout 
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\emph on
+Related
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\emph on
+Unrelated/Diversify
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\emph on
+Stok
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\emph on
+Cash
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Young bidders
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Mature bidders
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+R&D and Innovation
+\end_layout
+
+\begin_layout Subsection
+Source of finance for R&D and innovation: Equity
+\end_layout
+
+\begin_layout Standard
+The equity finance is the most important for R&D activities.
+ R&D intensive firms seem to have more intangible assets, lack of collateral,
+ and need to protect proprietary information.
+ These characteristics make R&D activities are often financed from equity
+ rather than debt.
+ Because:
+\end_layout
+
+\begin_layout Itemize
+R&D are not suited for debt finance:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Adverse selection problem is more severe in high-tech firms/industries:
+ due to the inherent riskiness of investment
+\end_layout
+
+\begin_layout Itemize
+Moral hazard: after obtaining the finance, R&D firms could change their
+ behaviors from low-risk to high-risk projects
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Cost of debt is high because high distress cost of young high-tech firms
+ because their market value depends heavily on future growth opportunities.
+ However, growth opportunities depreciate quickly if they face financial
+ distress (which rises with more additional debt).
+\end_layout
+
+\begin_layout Itemize
+R&D firms do not have much collateral assets (most of their assets are intangibl
+e assets), which restrict their use of debt.
+ But debtholders (e.g., banks) often require collateral.
+\end_layout
+
+\begin_layout Itemize
+In cotrast, equity and internal source are more suitable for R&D because
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Shareholders share in upside return, no collateral requirements, and additional
+ equity does not increase the financial distress
+\end_layout
+
+\begin_layout Itemize
+Internal equity finance does not create adverse selection problems
+\end_layout
+
+\end_deeper
+\begin_layout Paragraph
+Empirical evidence to support this view
+\end_layout
+
+\begin_layout Standard
+There are two papers support this view.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand cite
+key "brown2009financing"
+
+\end_inset
+
+ find the same increasing trend in internal cash flow and share issues as
+ that in R&D activities (that peaks in dot-com period).
+ They use a GMM model with IVs to check the effect of internal CF and equity
+ on R&D expenses with 2 stages:
+\end_layout
+
+\begin_layout Itemize
+In state 1: 
+\begin_inset Formula $RD_{t-1}=RD_{t-3}+RD_{t-4}$
+\end_inset
+
+ and 
+\begin_inset Formula $RD_{t-1}^{2}=RD_{t-3}+RD_{t-4}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Stage 2: 
+\begin_inset Formula $RD_{t}=RD_{t-1}+RD_{t-1}^{2}++GrossCF+StockIssue+\gamma X_{t-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The result shows that 
+\begin_inset Formula $GrossCF$
+\end_inset
+
+ and 
+\begin_inset Formula $StockIssue$
+\end_inset
+
+ are positively related to R&D expense in young firm sample.
+\end_layout
+
+\begin_layout Standard
+The second paper is 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "brown2013lawstock"
+
+\end_inset
+
+ from the international sample of 32 countries.
+ They find that strong shareholder protection and better access to stock
+ market (financial development) lead to higher long-run rates of R&D investment.
+ They propose an important measure of 
+\emph on
+Industry-level dependence on external finance.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Dependence\, on\, external\, finance=\frac{Fixed\, investment-Cash\, from\, operation}{SIC2\, median\, fixed\, investment+R\&D\, in\, US}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To measure financial development: 
+\end_layout
+
+\begin_layout Itemize
+Equity Market development: Country equity issues, Accounting standards,
+ IPO/GDP
+\end_layout
+
+\begin_layout Itemize
+Debt Market development: Country weighted leverage, Credit/GDP
+\end_layout
+
+\begin_layout Standard
+To measure legal shareholder protection: Anti-self dealing index (ASDI)
+ to reduce insider trading, Enforcement (enforce laws), and Legal Origin.
+\end_layout
+
+\begin_layout Standard
+The model will be: 
+\begin_inset Formula $RD=Enforcement*FinancialDevelopment$
+\end_inset
+
+ and this model with IVs are legal variables.
+ All results show that equity market access help to improve R&D activities
+ but not for the capital expenditure.
+ The results are stronger for small and young firms, which are need the
+ funding more.
+\end_layout
+
+\begin_layout Subsection
+Institutional ownership
+\end_layout
+
+\begin_layout Standard
+Aghion, Reenen, and Zingales (2013) ask that whether institutional investors
+ improve firm innovation.
+ This paper contrast two hypothesis: 
+\begin_inset Quotes eld
+\end_inset
+
+lazy managers
+\begin_inset Quotes erd
+\end_inset
+
+ and 
+\begin_inset Quotes eld
+\end_inset
+
+career concern
+\begin_inset Quotes erd
+\end_inset
+
+.
+ The lazy manager hypothesis argue that managers prefer a quiet life so
+ institutional investors force them to innovate.
+ The career concern argue that managers dislike the innovation risk (i.e.,
+ lose their jobs).
+ Institutional investors can improve manager incentive to innovate by insulating
+ managers against reputation consequences of bad income realization.
+\end_layout
+
+\begin_layout Standard
+They also add the market competition into their model.
+ 
+\end_layout
+
+\begin_layout Itemize
+If market competition is high, lazy managers work hard already.
+ Thus, competition reduces effect of institutional investors on innovation.
+\end_layout
+
+\begin_layout Itemize
+In contrast, when competition is high (more copycat problems) then success
+ rate of innovation lowers, leading to higher career risk.
+ Institutional investors play more important role in this case to insulate
+ the managers and motivate him/her to innovate.
+\end_layout
+
+\begin_layout Standard
+The results support the career concern hypothesis.
+ 
+\emph on
+Institutional ownership
+\emph default
+ (i.e., proportion of stocks owned by institutions) improves firm innovation
+ 
+\emph on
+input
+\emph default
+ (R&D) and 
+\emph on
+productivity
+\emph default
+ (cite-weighted patents per R&D dollar).
+ The effect is stronger in case of high competition.
+ Furthermore, the decisions to fire CEO is less affected by a decline in
+ profitability when institutional investment is high.
+ Remember here is institutional investors should not be quasi-indexer institutio
+ns, who are less active monitoring the firms.
+\end_layout
+
+\begin_layout Standard
+Using addition to S&P500 index as exogenous shock, they find that when firms
+ newly added to S&P500, their institutional ownership increases and firm
+ innovation also improve.
+ They run a 2SLS as follows.
+ In first stage, run 
+\begin_inset Formula $IO=(+)SP500membership$
+\end_inset
+
+ then take the fitted value.
+ In second stage, run 
+\begin_inset Formula $Cite=(+)\hat{IO}$
+\end_inset
+
+.
+ The result again supports the main positive relation.
+ Next, they also study event around the addition to S&P500, and see that
+ after added to the index, institutional ownership increases and firm innovation
+ increases too.
+\end_layout
+
+\begin_layout Subsection
+R&D risk and likelihood to be takeovered
+\end_layout
+
+\begin_layout Standard
+Although literature confirms that R&D activities are good for shareholders
+ and debtholders in long-term 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "eberhart2004anexamination,eberhart2008areexamination"
+
+\end_inset
+
+.
+ However, there is another risk for R&D intensive firms, that they are more
+ likely to be targets of M&A, where large firms want to acquire them.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "bena2014corporate"
+
+\end_inset
+
+ link the R&D activities and M&A activities.
+\end_layout
+
+\begin_layout Standard
+One of reasons firms undertake M&A is synergy effect from technology reasons
+ (or Q-hypothesis as in 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "dong2006doesinvestor"
+
+\end_inset
+
+).
+ If this prediction true, we should see that R&D and innovation activities
+ at bidders and targets should have important effects on probability of
+ the M&A deal between them.
+ 
+\end_layout
+
+\begin_layout Enumerate
+First, firms with high R&D but slow growth in patent output (not too successful,
+ maybe due to lacking of financing) should be potential targets.
+ In contrast, firms with low R&D expense but have large patent portfolios
+ should be potential acquirers.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Second, technological overlap between two firms should have positive effect
+ on transaction incidence.
+\end_layout
+
+\begin_layout Enumerate
+Moreover, if bidders and targets have more technological linkage before
+ the deal, they should produce more innovations later due to synergy effect
+ afterward.
+\end_layout
+
+\begin_layout Paragraph
+Two important measures
+\end_layout
+
+\begin_layout Enumerate
+Patent index: three steps
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+First, for each tech class k and patent application year t, we calculate
+ the 
+\series bold
+\emph on
+median value of number of awarded patents
+\series default
+\emph default
+ in tech class k with application year t across all firms that were awarded
+ 
+\emph on
+at least one
+\emph default
+ patents in technology class k with application t.
+ So, median patents in each technology class 
+\emph on
+should be positive
+\emph default
+.
+\end_layout
+
+\begin_layout Enumerate
+Second, 
+\emph on
+scale patents
+\emph default
+ awarded by each firm in year t by corresponding 
+\emph on
+median value
+\emph default
+ from first step.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Third, sum all scaled patents
+\emph on
+ across technology classes
+\emph default
+ for each firm and each year.
+ Then, sum the sum scaled number patents above 
+\emph on
+across applications years
+\emph default
+ from year 
+\begin_inset Formula $t-3$
+\end_inset
+
+ to year 
+\begin_inset Formula $t-1$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Technological overlap: 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Technological proximity (from Jaffe, 1986): closeness of two firms' innovation
+ activities in the technology space using patent counts in different tech
+ class.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+is uncentered correlation coefficients between two firms' patent counts.
+ It follows 
+\begin_inset Formula $proximity=\frac{F_{i}F_{j}^{'}}{\left[\left(F_{i}F_{i}^{'}\right)\left(F_{j}F_{j}^{'}\right)\right]^{1/2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+where 
+\begin_inset Formula $F_{i}$
+\end_inset
+
+ is vector of relative patent in each tech class k for a firm 
+\begin_inset Formula $i.$
+\end_inset
+
+ And 
+\begin_inset Formula $F_{j}$
+\end_inset
+
+ is vector for firm 
+\begin_inset Formula $j$
+\end_inset
+
+.
+ For example, if firm 
+\begin_inset Formula $i$
+\end_inset
+
+ has patents in 6 tech classes as 
+\begin_inset Formula $\left[10,0,2,0,0,0\right]$
+\end_inset
+
+ in year 
+\begin_inset Formula $t$
+\end_inset
+
+, the sum of patents in year t will be 12 and the 
+\begin_inset Formula $F_{i,t}=[\frac{10}{12};0;\frac{2}{12};0;0;0]$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Knowledge Base Overlap: extent to which two firms awarded patents cite the
+ same set of past patents
+\end_layout
+
+\begin_layout Enumerate
+Cross-Cites Ratio: extent to which target firms' patent portfolio is directly
+ cited by acquirers' patent portfolio and vice versa.
+ It captures the immediate importance of a firm's innovation activity to
+ that of another firm.
+\end_layout
+
+\end_deeper
+\begin_layout Paragraph
+Important results
+\end_layout
+
+\begin_layout Enumerate
+They run a conditional logit model: use Patent Index and R&D expense as
+ main independent variables and left-hand side variables are 
+\begin_inset Formula $Acquirer=1$
+\end_inset
+
+ (and zero for a randomly or propensity score matched firm) and 
+\begin_inset Formula $Target=1$
+\end_inset
+
+ (and zero for randomly or propensity score matched firm).
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Who is acquirers? Patent Index's coefficient >0 and R&D's coefficient <0
+\end_layout
+
+\begin_layout Enumerate
+Who is targets? R&D's coefficient >0 and 
+\begin_inset Formula $\Delta PatentIndex$
+\end_inset
+
+'s coefficient<0
+\end_layout
+
+\begin_layout Enumerate
+Thus, firms with large patent portfolio and less R&D expense tend to be
+ acquirers, while firms with high R&D expense but less growth in innovation
+ output tend to be targets.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+How are merger pairs form? Because technological overlap.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Model: 
+\begin_inset Formula $Pr(Acquirer-TargetPair=1)=(+)G(Overlap\, measures)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Results support that technological overlap between two firms increases the
+ probability to merger between them
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Postacquisition performance of the merger with technological overlap: use
+ 
+\begin_inset Formula $DiD$
+\end_inset
+
+ or 
+\begin_inset Formula $DiDiD$
+\end_inset
+
+ methods
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+They follow Seru (2014) to employ control firms as firms with withdrawn
+ bids that failed because reasons exogenous to innovation activities.
+ Treat firms are firms with successful bids.
+\end_layout
+
+\begin_layout Enumerate
+Model: 
+\begin_inset Formula $PatentIndex=(+)After*Treat*AnyTechOverlap$
+\end_inset
+
+ where 
+\begin_inset Formula $PatentIndex$
+\end_inset
+
+ here is sum of patent output of acquirers and targets.
+\end_layout
+
+\begin_layout Enumerate
+For firms with tech overlap, the merger leads to synergy effects so the
+ postacquisition firm tends to be more innovative productivity
+\end_layout
+
+\begin_layout Enumerate
+For firms without any tech overlap, the 
+\begin_inset Formula $After*Treat$
+\end_inset
+
+ is not significant.
+ It means that because the technological overlap before the merger bring
+ the positive synergy effect for the postacquisition firm.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "qualify_exam"
+options "plainnat"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

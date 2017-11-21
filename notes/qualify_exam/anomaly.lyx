@@ -1,0 +1,419 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\options round
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family sfdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing onehalf
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Anomalies: to be or not to be?
+\end_layout
+
+\begin_layout Author
+Dien Giau Bui
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Email: buidiengiau@gmail.com
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Date
+
+\size footnotesize
+First version: August, 2017
+\begin_inset Newline newline
+\end_inset
+
+This version: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+today
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Anomalies
+\end_layout
+
+\begin_layout Standard
+A vast classical literature tends to find out the anomalies: some factors
+ could create abnormal returns that CAPM cannot capture in its beta factor.
+\end_layout
+
+\begin_layout Paragraph
+Value premium
+\end_layout
+
+\begin_layout Standard
+Lakonishok, Shleifer, and Vishny (1994) show that firms with high fundamental
+ relative to price (such as high B/M, high C/P, high E/P, and low SG) tend
+ to outperform the growth or glamour stocks.
+ He proposes two explanations:
+\end_layout
+
+\begin_layout Itemize
+Mispricing: extrapolation the past success too far into the future.
+ It is also consistent with overconfidence of investors who tend to attribute
+ their ability of stock selection skills for the high growth stocks.
+ This view is consistent with behaviorists such as Thaler and Kahneman.
+\end_layout
+
+\begin_layout Itemize
+Risk-return: value stocks have high risks.
+\end_layout
+
+\begin_layout Standard
+However, the past success tend to be reverted in the future, glamour stocks
+ have lower operating performance than value stocks in future.
+ In addition, they find that value stocks are not riskier than glamour stocks.
+\end_layout
+
+\begin_layout Standard
+Other explanations for value premium could be:
+\end_layout
+
+\begin_layout Itemize
+Survivorship bias: studies include only successful firms into their sample,
+ while skip most of the unsuccessful firms (no existing records for these
+ failed firms).
+ Thus, the result will overstate the average returns and tend to support
+ anomaly.
+\end_layout
+
+\begin_layout Itemize
+Data mining: Fama (2001) tend to argue that statistical bias could overstate
+ the anomalies.
+ In McLean and Pontiff (2016), the upper bound of statistical bias could
+ be up to 26% of the average predictors' returns.
+ 
+\end_layout
+
+\begin_layout Paragraph
+Price premium
+\end_layout
+
+\begin_layout Standard
+Jegedeesh and Titman (1993) find a short term momentum as follows:
+\end_layout
+
+\begin_layout Itemize
+Sort/rank stocks based on past returns (3-12 months) into 10 portfolios
+\end_layout
+
+\begin_layout Itemize
+Equal-weighted portfolio returns in each portfolio
+\end_layout
+
+\begin_layout Itemize
+Buy winner decile and sell loser decile
+\end_layout
+
+\begin_layout Itemize
+Hold portfolio for 3-12 months, with or without a break of one week between
+ ranking and holding
+\end_layout
+
+\begin_layout Standard
+The momentum strategy could earn positive returns.
+ However, it is a short-term strategy and the momentum return peaks at the
+ 12 months then begin to decline.
+\end_layout
+
+\begin_layout Standard
+How to explain momentum?
+\end_layout
+
+\begin_layout Itemize
+Behavioral finance:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Conservatism: investors are conservative when react to new information,
+ leading to underreaction
+\end_layout
+
+\begin_layout Itemize
+Representative bias: extrapolate past perform too far into future
+\end_layout
+
+\begin_layout Itemize
+Hong and Stein (1999): news watchers use fundamental and ignore stock price,
+ while trend traders use technical analysis but ignore fundamental.
+ Thus, trend traders push price above fundamental price (overreaction),
+ while news watchers is underreaction.
+\end_layout
+
+\begin_layout Itemize
+Overconfidence/self-attribution bias: they overestimate the information
+ signal and attribute their good performance to stock selection skills so
+ push up the price.
+ In contrast, underreaction leads to delay of response to information.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Risk: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Conrad and Kaul (1998) argue that momentum is due to cross-sectional difference
+ in expected return of stocks, so momemtum persist.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+In the test of Jegadeesh and Titmen (2001), they support the behavioral
+ finance.
+ However, Hou, Xue, Zhang (2015) find that momentum is related to profitability
+ factor in q-factor model.
+ Thus, momentum strategy earns profits because it buy high profitable firms
+ and sell unprofitable firms.
+ A final conclusion is an open question.
+\end_layout
+
+\begin_layout Paragraph
+Earning momentum
+\end_layout
+
+\begin_layout Standard
+Earning momentum is when the 
+\emph on
+post-earning announcement drifts
+\emph default
+.
+ The strategy forming is similar to price momentum.
+ Chan, Jegadeesh, and Lakonishok (CJL-1996) find that 
+\emph on
+earning momentum
+\emph default
+ is persistent than price momentum (more than one year), but a bit smaller
+ magnitude.
+\end_layout
+
+\begin_layout Standard
+There are two hypotheses:
+\end_layout
+
+\begin_layout Itemize
+Overreaction to information by trend-chasers: we should see a reversal in
+ returns
+\end_layout
+
+\begin_layout Itemize
+Underreaction to information: we should see both price and earning momentum
+\end_layout
+
+\begin_layout Standard
+The results support the underreaction.
+\end_layout
+
+\begin_layout Standard
+This earning momentum is quite similar to 
+\series bold
+\emph on
+PEAD
+\series default
+\emph default
+ (post-earning announcement drift) of Bernard and Thomas (1989).
+ They consider the standardized unexpected earnings (SUE): 
+\begin_inset Formula $SUE=EPS-E(EPS)$
+\end_inset
+
+ and then split sample into 10 deciles of SUE for window 
+\begin_inset Formula $[-60;60]$
+\end_inset
+
+.
+ They find a drift in long run for each decile: highest positive SUE go
+ up steadily, while highest negative SUE go down steadily.
+ They call this pattern is drift.
+ The explanation is a 
+\emph on
+delay in response to information
+\emph default
+.
+\end_layout
+
+\begin_layout Paragraph
+Capital expenditure/Revenue
+\end_layout
+
+\begin_layout Standard
+Titman, Wei, Xie (2004) find that increase capital expenditure subsequently
+ leads to negative returns.
+ It is consistent with underreaction to empire building implication.
+ Managers tend to invest free cash flows to earn private benefit rather
+ than shareholders' benefits.
+ They measure abnormal capital expenditure as difference from last year
+ (
+\begin_inset Formula $t-1$
+\end_inset
+
+) and average of previous three years (
+\begin_inset Formula $t-2$
+\end_inset
+
+ to 
+\begin_inset Formula $t-4$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+CI=\frac{CE_{t-1}}{(CE_{t-2}+CE_{t-3}+CE_{t-4})/3}-1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Then they split to 5 quintiles of CI and compare alpha of different models.
+ They always find highest group of CI has negative returns, while the lowest
+ group of CI earn positive returns.
+\end_layout
+
+\begin_layout Subparagraph
+Similar evidence
+\end_layout
+
+\begin_layout Itemize
+Pontiff and Woodgate (2008) confirm same idea for net share issue: 
+\begin_inset Formula $ISSUE=ln(AdjShare_{t})-ln(AdjShare_{t-1})$
+\end_inset
+
+.
+ Firms issue more stocks will earn lower returns.
+\end_layout
+
+\begin_layout Itemize
+Cooper et al.
+ (2008) find similar evidence for asset growth.
+ High AG decile earn lower return than low AG decile.
+\end_layout
+
+\begin_layout Itemize
+Chan, Lakonishok, Sougiannis (CLS-2001): R&D expense scaled by ME.
+ High R&D firms seem to experience high abnormal returns.
+ Possible explanations: underreaction to R&D benefits.
+ Eberhart (2004, 2008) confirm this finding but use R&D expense scaled by
+ sales and total assets.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "qualify_exam"
+options "plainnat"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

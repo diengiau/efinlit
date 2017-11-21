@@ -1,0 +1,676 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\options round
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family sfdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing onehalf
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Diversification
+\end_layout
+
+\begin_layout Author
+Richard
+\end_layout
+
+\begin_layout Date
+2017 July, Taipei
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Diversification discount
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Diversified firms/conglomerate/multi-segmented
+\emph default
+ firms have relative lower value compared to sum of breakup values.
+ This is 
+\emph on
+diversification discount
+\emph default
+.
+ This discount ranges from 5% to 20%.
+ What are the determinants of diversification discount?
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand cite
+key "hoechle2012howmuch"
+
+\end_inset
+
+ argue that poor governance could help to explain about 16%-21% of the discount.
+ This finding contributes to the literature about agency could reduce the
+ diversification value.
+ They use a set of 14 governance variables to test the panel regression:
+ dependent variable is excess value and main independent is 
+\emph on
+diversification dummy
+\emph default
+, control for 14 governance variables.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\emph on
+Governance variables
+\series default
+\emph default
+ include: CEO (e.g., powerful), board, institutional ownership, pay-performance
+ sensitivity of CO, GIM index, and so on.
+\end_layout
+
+\begin_layout Standard
+To measure 
+\series bold
+\emph on
+excess value
+\series default
+\emph default
+, they follow Berger and Ofek (1995) to take log of actual market value
+ divided by its imputed value of all segments.
+ Imputed value of a segment is calculated by 
+\emph on
+multiplying
+\emph default
+ segment's sale/assets 
+\emph on
+by the median industry ratio
+\emph default
+ of market value to sale/assets of single segment firm in the same industry.
+\end_layout
+
+\begin_layout Standard
+The model will be like this:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Excess\, Value=\beta_{1}Diversification+\beta_{2}Governance
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Diversification discount in this paper is around 6%-15.2%.
+ The main finding is the coefficient of diversification decreases in magnitude
+ 
+\emph on
+after we control governance measures
+\emph default
+ compared to baseline model (without governance control), meaning that governanc
+e could help to explain the diversification discount about 16%-21%.
+ Thus, without governance, the estimated coefficient of diversifiation is
+ a bit higher in magnitude due to omitted variable from governance.
+\end_layout
+
+\begin_layout Standard
+Endogeneity concern (between diversification, firm value, and governance)
+ is important in governance papers.
+ This paper attemps to solve this concern through several ways:
+\end_layout
+
+\begin_layout Itemize
+Include firm and year fixed effects.
+ One interesting method here is they allow fixed effects change over time
+ (what so called time-varying fixed effect).
+ It allows fixed effects change before and after 1997 (when accounting standard
+ of reporting changes), positive and negative market return, and boom and
+ recession periods (GDP growth lower than time series median).
+ Although unclearly said in paper, we just need add interactions with fixed
+ effects here.
+\end_layout
+
+\begin_layout Itemize
+Heckman (1979) self-selection model in which diversification is endogeneously
+ determined
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+First step: probit model if firms choose to diversify
+\end_layout
+
+\begin_layout Itemize
+Second step: add inverse Mill ratio to main regression
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+GMM model: a dynamic SEM models
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+First step: Rewrite dynamic models with lagged performance (1 and 2 lags)
+\end_layout
+
+\begin_layout Itemize
+Second step: take first difference of all variables 
+\begin_inset Formula $\triangle X_{t}=X_{t}-X_{t-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Third step: GMM model with lagged independent variables (3 or more lags)
+ as instruments
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Event study: CAR around diversification announcement effect: CAR less negative
+ in governance controlled models
+\end_layout
+
+\begin_layout Section
+Diversification and cash holding
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand cite
+key "duchin2010cashholdings"
+
+\end_inset
+
+ borrows two literature to build his paper:
+\end_layout
+
+\begin_layout Enumerate
+Investment diversification benefit: if investors hold a portfolio of about
+ >40 stocks, all idiosyncratic risks are removed and portfolio risk includes
+ only systematic risk.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Precautionary motive of cash holding: precautionary motive has a first-order
+ impact on decisions why firms hold cash.
+ For example, 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "bates2009whydo"
+
+\end_inset
+
+ find that US firms hold more cash over time because typical firms' cash
+ flows are become riskier.
+ Firms tend to be more R&D intensive and volatile in cash flows.
+\end_layout
+
+\begin_layout Standard
+Similarly, if the conglomerate have a well diversified industries with low
+ correlation in cash flows across divisions and smaller financing deficits,
+ these diversified firms enjoy the coinsurance effect, so they tend to hold
+ less cash because of low precautionary motive (low risk exposure).
+ Multi-segment firms hold approximately half as much cash as other specialized
+ firms do.
+\end_layout
+
+\begin_layout Section
+Allocation within conglomerate
+\end_layout
+
+\begin_layout Standard
+There are two types of allocation within conglomerate:
+\end_layout
+
+\begin_layout Enumerate
+Investment fund (i.e., capital expenditure) among divisions
+\end_layout
+
+\begin_layout Enumerate
+Compensation (i.e., private benefits) among divisional managers
+\end_layout
+
+\begin_layout Subsection
+Internal Capital Market (ICM) and fund allocation
+\end_layout
+
+\begin_layout Standard
+While internal transfer could be good channel through coinsurance effect
+ in 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "duchin2010cashholdings"
+
+\end_inset
+
+, it raises another dark side through social ties between CEOs and divisional
+ managers as in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "duchin2013divisional"
+
+\end_inset
+
+.
+ This table represents their hypotheses:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="3">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Hypothesis
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Capital allocation when connection increases
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Investment efficiency and firm value
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Favoritism
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Increase for high connection
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Decrease
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Bridge building
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Increase for no connection (to get voting)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Decrease
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Information
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Increase for high connection
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Increase
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No relation
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+NA
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In cases weak governance the H1 will work (reduce value) and in cases high
+ asymmetry the H3 will be more important (rise value).
+\end_layout
+
+\begin_layout Subparagraph*
+Their main results:
+\end_layout
+
+\begin_layout Itemize
+Capex increases positively with social connection between CEOs and managers.
+ So supports both H1 and H3.
+\end_layout
+
+\begin_layout Itemize
+By which channels:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Appointment channel: CEOs tend to appoint connected managers to capital-rich
+ divisions (using lagged capex as historical capital allocation).
+\end_layout
+
+\begin_layout Itemize
+Extra investment fund: use an exogenous events (CEO changes) to check 
+\begin_inset Formula $\triangle capex=(+)\triangle SocialConnection$
+\end_inset
+
+ before and after the event (because new CEO so connection change).
+ The evidence supports that CEO changes lead to change in connection, which,
+ in turn, change capital allocation.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Is this effect good or not? Use interaction with governance and asymmetry
+ levels
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Agency: GIM, manager ownership, IO
+\end_layout
+
+\begin_layout Itemize
+Information asymmetry index: Industry relatedness, geo-distance
+\end_layout
+
+\begin_layout Itemize
+Results show that 
+\begin_inset Formula $Agency*Connection$
+\end_inset
+
+ is negative and 
+\begin_inset Formula $InformationAsymmetry*Connection$
+\end_inset
+
+ is positive.
+ So both H1 and H3 are supported.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Fund allocation and Compensation allocation
+\end_layout
+
+\begin_layout Standard
+Some quick QA?
+\end_layout
+
+\begin_layout Enumerate
+Do CEOs use compensation allocation to encourage divisional managers? Yes.
+ 
+\end_layout
+
+\begin_layout Enumerate
+By which channels? Cash surplus (agency problem) and benchmarking effect
+ (i.e., divisional managers use social ties to increase their pay when they
+ see other managers enjoy a higher pay).
+ 
+\end_layout
+
+\begin_layout Enumerate
+How firms choose to balance between these two types of allocation? Based
+ on the condition of governance (compensation provisions voting, compensation
+ committee is strong or not) and market competition condition, CEOs choose
+ the best choice among two.
+\end_layout
+
+\begin_layout Enumerate
+Overall effect of two type of allocation? Not good at all, negative to firm
+ value (profit, Q, excess value).
+\end_layout
+
+\begin_layout Standard
+All 4 questions are from a new paper of 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "duchin2017spillovers"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+They use the exogenous shock 
+\emph on
+increase in industry pay
+\emph default
+ in one division to see how this increase could affect other divisional
+ managers' pay.
+ The answer is when there is an 1% increase in industry pay in one division,
+ the manager in this division enjoy 0.7%-0.8% increase in pay too, while managers
+ in other divisions receive half of this increase (0.3%-0.4%).
+ This is called spillover effect but only within/inside conglomerate.
+ It does not because there is a technological spread across industries because
+ single-segment firms in other industries are not affected by the increase
+ in one industry's pay.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\emph on
+Two mechanisms
+\series default
+\emph default
+ of the spillover effect:
+\end_layout
+
+\begin_layout Enumerate
+Cash surplus: when firms have high excess cash or pay special dividend,
+ firms tend to have higher spillover effect (i.e., the interaction 
+\begin_inset Formula $\triangle Other\, division\, industry\, pay\times Excess\, Cash$
+\end_inset
+
+ positive.
+\end_layout
+
+\begin_layout Enumerate
+Benchmarking: 
+\begin_inset Formula $\triangle Other\, division\, industry\, pay\times Social\, Ties$
+\end_inset
+
+ positive; asymmetric effect, only significant when pay rises rather than
+ pay drops.
+\end_layout
+
+\begin_layout Enumerate
+Not because internal transfer between divisions because 
+\begin_inset Formula $Industry\, relatedness$
+\end_inset
+
+ among divisions and managers' experience do not affect the 
+\begin_inset Formula $\triangle Pay$
+\end_inset
+
+ of divisional managers.
+\end_layout
+
+\begin_layout Enumerate
+When governance is good (low G-index, board independence, block ownership,
+ better compensation adviser), the effect is lower (interaction is negative).
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "qualify_exam"
+options "plainnat"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

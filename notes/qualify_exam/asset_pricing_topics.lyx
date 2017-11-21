@@ -1,0 +1,2106 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\begin_modules
+theorems-ams
+eqs-within-sections
+figs-within-sections
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family sfdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing onehalf
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style round
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1in
+\topmargin 1in
+\rightmargin 1in
+\bottommargin 1in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Some selected asset pricing topics
+\end_layout
+
+\begin_layout Author
+Richard
+\end_layout
+
+\begin_layout Right Address
+June 2017
+\end_layout
+
+\begin_layout Section
+Conditional CAPM
+\end_layout
+
+\begin_layout Standard
+The traditional static CAPM assume that beta is constant over time.
+ This seems unrealistic because firms' risk changes over time.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E[R_{i}]=\gamma_{0}+\gamma_{1}\beta_{i}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\beta_{i}=Cov(R_{i},R_{m})/Var[R_{m}]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand cite
+key "fama1992thecrosssection"
+
+\end_inset
+
+ empirically study this model and find that: (i) the estimated 
+\begin_inset Formula $\gamma_{1}$
+\end_inset
+
+ is close to zero or too 
+\begin_inset Quotes eld
+\end_inset
+
+flat
+\begin_inset Quotes erd
+\end_inset
+
+ and (ii) the strong evidence of size premium againts the CAPM.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "jagannathan1996theconditional"
+
+\end_inset
+
+ relax two assumptions of the static CAPM: (i) allow beta and market premiums
+ depend on the information set at any given point in time and vary over
+ time and (ii) extending the proxy for the market return to include a measure
+ of return on human capital 
+\begin_inset Formula $R^{labor}$
+\end_inset
+
+ (in addition to 
+\begin_inset Formula $R^{vw}$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Paragraph*
+Conditional CAPM
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E[R_{it}|I_{t-1}]=\gamma_{0t-1}+\gamma_{1t-1}\beta_{it-1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\beta_{it-1}=Cov(R_{it},R_{m}|I_{t-1})/Var(R_{m}|I_{t-1})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Take unconditional expectation of both sides of equation, we have:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E[R_{it}]=\gamma_{0}+\gamma_{1}\overline{\beta}_{i}+Cov(\gamma_{1t-1},\beta_{it-1})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Intuitions:
+\end_layout
+
+\begin_layout Itemize
+If the covariance between the conditional beta of asset i and the conditional
+ market premium is zero, then the static CAPM is restored
+\end_layout
+
+\begin_layout Itemize
+However, in general, the conditional market risk premium and conditional
+ beta are correlated
+\end_layout
+
+\begin_layout Standard
+Decompose the conditional beta 
+\begin_inset Formula $\beta_{it-1}$
+\end_inset
+
+ into three parts: 
+\begin_inset Formula $\beta_{it-1}=\overline{\beta}_{i}+\upsilon_{i}(\gamma_{1t-1}-\gamma_{1})+\eta_{it-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+The first part is 
+\begin_inset Formula $\overline{\beta}_{i}$
+\end_inset
+
+, expected beta
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\upsilon_{i}(\gamma_{1t-1}-\gamma_{1})$
+\end_inset
+
+: random variable that perfectly correlated with market risk premium.
+ Here 
+\begin_inset Formula $\upsilon_{i}$
+\end_inset
+
+ is 
+\emph on
+beta-prem sensitivity
+\emph default
+, measured the sensitivity of conditional beta to the market risk premium
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\eta_{it-1}$
+\end_inset
+
+: on average zero and uncorrelated with market risk premium
+\end_layout
+
+\begin_layout Standard
+Replace this decomposition into the unconditional expectation equation:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E[R_{it}]=\gamma_{0}+\gamma_{1}\overline{\beta}_{i}+Var(\gamma_{1t-1})\upsilon_{i}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Implications:
+\end_layout
+
+\begin_layout Itemize
+First, cross-sectionally, the unconditional expected return on any asset
+ 
+\emph on
+i
+\emph default
+ is a linear function of its expected beta and its beta-prem sensitivity
+\end_layout
+
+\begin_layout Itemize
+The beta-prem sensitivity of an asset measures the instability of the asset's
+ beta over the business cycle.
+\end_layout
+
+\begin_layout Itemize
+Stocks with higher expected betas have higher unconditional expected returns.
+ Likewise, stocks with betas that are prone to vary with the market risk
+ premium and hence are less stable over the business cycle also have higher
+ unconditional expected returns.
+\end_layout
+
+\begin_layout Itemize
+Hence, the one-factor conditional CAPM leads to a 
+\series bold
+\emph on
+two-factor model
+\series default
+\emph default
+ for unconditional expected returns.
+\end_layout
+
+\begin_layout Paragraph*
+Two-beta model
+\end_layout
+
+\begin_layout Standard
+Define two betas as follows:
+\end_layout
+
+\begin_layout Enumerate
+Market beta: 
+\begin_inset Formula $\beta_{i}=Cov(R_{it},R_{mt})/Var(R_{mt})$
+\end_inset
+
+, measure average market risk
+\end_layout
+
+\begin_layout Enumerate
+Premium beta: 
+\begin_inset Formula $\beta_{i}^{\gamma}=Cov(R_{it},\gamma_{1t-1})/Var(\gamma_{1t-1})$
+\end_inset
+
+, measure beta-instability risk
+\end_layout
+
+\begin_layout Standard
+Then the two-beta model in Theorem 1:
+\end_layout
+
+\begin_layout Theorem*
+If 
+\begin_inset Formula $\beta_{i}^{\gamma}$
+\end_inset
+
+ is not a linear function of 
+\begin_inset Formula $\beta_{i}$
+\end_inset
+
+ then there are some constants such that 
+\begin_inset Formula $E[R_{it}]=a_{0}+a_{1}\beta_{i}+a_{2}\beta_{i}^{\gamma}$
+\end_inset
+
+ holds for every asset 
+\begin_inset Formula $i$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph*
+Empirical tests: three-beta model
+\end_layout
+
+\begin_layout Enumerate
+Authors use 
+\begin_inset Formula $R_{t-1}^{prem}$
+\end_inset
+
+, the yield spread between BAA and AAA rated bonds, to proxy for 
+\begin_inset Formula $\gamma_{1t-1}$
+\end_inset
+
+.
+ Then prem-beta is: 
+\begin_inset Formula $\beta_{i}^{prem}=Cov(R_{it},R_{t-1}^{prem})/Var(R_{t-1}^{prem})$
+\end_inset
+
+.
+ Accordingly, the model is: 
+\begin_inset Formula $E[R_{it}]=c_{0}+c_{m}\beta_{i}+c_{prem}\beta_{i}^{prem}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Authors use 
+\begin_inset Formula $R_{t}^{labor}$
+\end_inset
+
+, growth rate in per capita labor income, to proxy for human capital returns.
+ The market beta in this case includes two components: vw-beta and labor-beta
+ or we can write 
+\begin_inset Formula $\beta_{i}=b_{vw}\beta_{i}^{vw}+b_{labor}\beta_{i}^{labor}$
+\end_inset
+
+.
+ Accordingly, the 
+\emph on
+Premium-Labor 
+\emph default
+(PL) imodel is: 
+\begin_inset Formula $E[R_{it}]=c_{0}+c_{m}\beta_{i}+c_{prem}\beta_{i}^{prem}=c_{0}+c_{vw}\beta_{i}^{vw}+c_{prem}\beta_{i}^{prem}+c_{labor}\beta_{i}^{labor}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+In econometric tests, they use cross-section regression or GMM:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E[R_{it}]=c_{0}+c_{size}log(ME_{i})+c_{vw}\beta_{i}^{vw}+c_{prem}\beta_{i}^{prem}+c_{labor}\beta_{i}^{labor}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E[R_{it}(\delta_{0}+\delta_{vw}R_{t}^{vw}+\delta_{prem}R_{t-1}^{prem}+\delta_{labor}R_{t}^{labor})]=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Labor mobility
+\end_layout
+
+\begin_layout Standard
+Actually, firms do not own the labors but just rent them.
+ Thus, labors could leave them to other industries.
+ Which factors will affect the labor mobility? It is labor skills.
+ For example, industry-specific skills such as medical doctors and general
+ skills such as salesperson.
+ If the skill is too industry-specific, the labor supply is less mobile
+ (how a supermarket needs a medical doctor?).
+\end_layout
+
+\begin_layout Standard
+An industry with high mobile labor supply suffers more risks when having
+ industry-specific shocks:
+\end_layout
+
+\begin_layout Itemize
+Less elastic wage: difficult to decrease wage too much when there is an
+ industry-specific shock.
+ Why? Employees will move to another industry.
+\end_layout
+
+\begin_layout Itemize
+High elastic employment and high elastic cash flows: as a result, these
+ firms see the drop in employment and profits (CF) when there is a bad thing.
+\end_layout
+
+\begin_layout Standard
+Thus, high labor mobility (LM) stocks have higher expected returns relative
+ to low LM stocks (a long-short portfolio of LM could earn 5%/year).
+ LM also implies higher implied cost of capital and is positively related
+ to market beta.
+\end_layout
+
+\begin_layout Paragraph*
+Model
+\end_layout
+
+\begin_layout Standard
+Production function with normalized capital to unity: 
+\begin_inset Formula $Y_{t}=A_{t}L\alpha_{t}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+L is industry-specific skills and A is total factor productivity (TFP).
+\end_layout
+
+\begin_layout Standard
+Occupation 
+\begin_inset Formula $j$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+l_{j}=\left(\frac{\delta}{j}\right)^{1-\delta}\, where\,0<\delta<1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Parameter 
+\begin_inset Formula $\delta$
+\end_inset
+
+ represents the level of LM: low 
+\begin_inset Formula $\delta$
+\end_inset
+
+ means low LM (segmented industry) and high 
+\begin_inset Formula $\delta$
+\end_inset
+
+ means high LM (integrated industry).
+\end_layout
+
+\begin_layout Standard
+Total operating profits: 
+\begin_inset Formula $\Pi_{t}=Y_{t}-L_{t}W_{t}^{s}=(1-\alpha)A_{t}L_{t}^{\alpha}$
+\end_inset
+
+ where 
+\begin_inset Formula $W^{s}$
+\end_inset
+
+ is industry-specific wage.
+ 
+\end_layout
+
+\begin_layout Standard
+An employee in occupation 
+\emph on
+j
+\emph default
+ is indifferent between stay and leave an industry if: 
+\begin_inset Formula $W_{t}^{S}l_{j}=W_{t}^{G}$
+\end_inset
+
+ where 
+\begin_inset Formula $W^{G}$
+\end_inset
+
+ is general skill wage.
+ This condition means that expected labor income is the same inside and
+ outside the industry (where he use general skill to earn 
+\begin_inset Formula $W_{t}^{G})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+At equilibrium, profits: 
+\begin_inset Formula $\Pi_{t}^{*}=(1-\alpha)A_{t}x_{t}^{\frac{\alpha\delta}{1-\alpha\delta}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subparagraph*
+Main expectations:
+\end_layout
+
+\begin_layout Enumerate
+Labor-induced operating leverage (sensitivity of cash flow growth to shock
+ of TFP growth): If general skills are sufficiently smooth then 
+\begin_inset Formula $\frac{\partial\varTheta(\delta)}{\partial\delta}>0$
+\end_inset
+
+.
+ Implications: firms with high LM suffer more loss in cash flow when there
+ is TFP shocks.
+\end_layout
+
+\begin_layout Enumerate
+The returns: 
+\begin_inset Formula $\frac{\partial E_{t}(R_{t})}{\partial\delta}>0$
+\end_inset
+
+.
+ High LM firms earn more stock returns.
+\end_layout
+
+\begin_layout Enumerate
+Because 
+\begin_inset Formula $\delta$
+\end_inset
+
+ is unobservable so they use inverse of 
+\series bold
+\emph on
+inter-industry occupation concentration
+\series default
+\emph default
+ as proxy for LM.
+ The concentration of industry 
+\emph on
+i
+\emph default
+, occupation 
+\emph on
+j, 
+\emph default
+at time 
+\emph on
+t 
+\emph default
+is: 
+\begin_inset Formula $CONC_{j,t}=\left(\frac{emp_{i,j,t}}{\sum_{i}emp_{i,j,t}}\right)^{2}$
+\end_inset
+
+.
+ Then, aggregate from occupation-level to industry-level to get LM as inverse
+ of this concentration measure.
+\end_layout
+
+\begin_layout Paragraph*
+Empirical results
+\end_layout
+
+\begin_layout Itemize
+When there is a shock in TFP, firms tend to decrease wage, sack employess,
+ and lose profits.
+ However, high LM firms tend to suffer more losts and see more drop in employmen
+t.
+ The reason is they could not decrease wage too much (less bargaining power
+ with their employess) (see Table 4)
+\end_layout
+
+\begin_layout Itemize
+Long high LM and short low LM firms could earn 5%/year by both Value-weighted
+ and Equal-weighted.
+ Panel regression supports this idea (positive between Mobility and Returns).
+\end_layout
+
+\begin_layout Itemize
+Implied cost of capital: also positive relation with Mobility
+\end_layout
+
+\begin_layout Itemize
+CAPM beta: high LM firms have higher beta in unconditional CAPM and conditional
+ CAPM with equal-weighted returns
+\end_layout
+
+\begin_layout Section
+Liquidity risk
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand cite
+key "acharya2005assetpricing"
+
+\end_inset
+
+ propose the effect of 
+\emph on
+liquidity risk
+\emph default
+ and 
+\emph on
+commonality
+\emph default
+ in liquidity and how they affect asset pricing.
+ 
+\emph on
+Commonality
+\emph default
+ here includes the covariances of a stock 
+\begin_inset Formula $i$
+\end_inset
+
+ liquidity and return with the market 
+\begin_inset Formula $M$
+\end_inset
+
+ liquidity and return.
+ 
+\end_layout
+
+\begin_layout Standard
+As a result, they propose a liquidity-adjusted CAPM: if the illiquidity
+ cost is 
+\begin_inset Formula $c^{i}$
+\end_inset
+
+ for stock 
+\begin_inset Formula $i$
+\end_inset
+
+ then: 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $E(r^{i})$
+\end_inset
+
+ increasing with its expected liquidity and 
+\emph on
+net beta
+\emph default
+ (i.e., proportional to 
+\begin_inset Formula $cov(r^{i}-c^{i};r^{M}-c^{M})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+The 
+\emph on
+net beta 
+\emph default
+could be decomposed into standard market beta (
+\begin_inset Formula $cov(r^{i};r^{M})$
+\end_inset
+
+) and three betas representing different form of illiquidity risk:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Commonality in liquidity with market liquidity, 
+\begin_inset Formula $cov(c^{i};c^{M})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Return sensitivity to market liquidity, 
+\begin_inset Formula $cov(r^{i};c^{M})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Liquidity sensitivity to market return, 
+\begin_inset Formula $cov(c^{i};r^{M})$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+They use Amihud (2002) illiquidity measure to proxy for 
+\begin_inset Formula $c^{i}$
+\end_inset
+
+ and find that:
+\end_layout
+
+\begin_layout Itemize
+Their model performs better than standard CAPM in term of 
+\begin_inset Formula $R^{2}$
+\end_inset
+
+ and p-values in specification tests
+\end_layout
+
+\begin_layout Itemize
+The model can fit the portfolios sorted on liquidity, liquidity variation,
+ and size; but fails to explain B/M effect
+\end_layout
+
+\begin_layout Itemize
+Illiquidity stocks (high average 
+\begin_inset Formula $c^{i}$
+\end_inset
+
+) tend to have higher liquidity risk (higher commonality 
+\begin_inset Formula $cov(c^{i};c^{M})$
+\end_inset
+
+, 
+\begin_inset Formula $cov(r^{i};c^{M})$
+\end_inset
+
+, and 
+\begin_inset Formula $cov(c^{i};r^{M})$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Itemize
+Economic significance: 3 types of liquidity risk contribute 1.1% annually
+ to risk premium between high expected illiquidity and low expected illiquidity
+ stocks, which can be decomposed as follows:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Commonality in liquidity with market liquidity, 
+\begin_inset Formula $cov(c^{i};c^{M})$
+\end_inset
+
+, is 0.08%.
+ Investors require a 
+\emph on
+small
+\emph default
+ return premium for a security that is illiquid when the market is illiquid.
+\end_layout
+
+\begin_layout Itemize
+Return sensitivity to market liquidity, 
+\begin_inset Formula $cov(r^{i};c^{M})$
+\end_inset
+
+, is 0.16%.
+ This is model-implied premium for stocks with high returns when the market
+ is illiquid.
+\end_layout
+
+\begin_layout Itemize
+Liquidity sensitivity to market return, 
+\begin_inset Formula $cov(c^{i};r^{M})$
+\end_inset
+
+, is 0.82%.
+ Investors are willing to pay a premium for a security that is liquid when
+ the market return is low.
+ This is
+\emph on
+ the most important source 
+\emph default
+of liquidity risk, but not yet found in litarature.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+The return premium due to level of liquidity is calibrated based on average
+ turnover to be 3.5%.
+ Thus, the combined effect of difference in liquidity risks and difference
+ in level of liquidity is estimated to be 
+\begin_inset Formula $3.5+1.1=4.6\%$
+\end_inset
+
+, which turns out to be relatively important.
+\end_layout
+
+\begin_layout Itemize
+Since the liquidity is persistent, 
+\emph on
+liquidity predicts future returns
+\emph default
+ and 
+\emph on
+liquidity co-moves with contemporaneous returns
+\emph default
+.
+ This is because a positive shock to current illiquidity predicts high future
+ illiquidity, which raises required returns and lowers the contemporaneous
+ prices.
+ 
+\end_layout
+
+\begin_layout Section
+Post-Publication mispricing returns
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand citet
+key "mclean2016doesacademic"
+
+\end_inset
+
+ study how the mispricing anomalies perform after the publication from researche
+rs.
+ They find that out-of-sample returns decline by 26% (which is the upper
+ bound of data mining) and the post-publication returns decline by 58%.
+ Thus, the investors learn about 
+\begin_inset Formula $58\%-26\%=32\%$
+\end_inset
+
+ from the published papers.
+ It is surprising that informed-investors trade on the published strategies
+ to reduce the mispricing returns.
+\end_layout
+
+\begin_layout Standard
+In general, this paper considers 97 different predictors in literature and
+ find that on average, a predictor could produce a 0.582%/month or nearly
+ 7% annual return in-sample period.
+ They study the regression:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R_{it}=\alpha_{i}+\beta_{1}Post\, sample\, Dummy_{it}+\beta_{2}Post\, publication\, Dummy_{it}+e_{it}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The 
+\begin_inset Formula $\beta_{1}$
+\end_inset
+
+ estimates the statistial bias, while the 
+\begin_inset Formula $\beta_{2}$
+\end_inset
+
+ estimates both the statistical bias and impact of publication.
+ The authors propose 3 hypotheses: Statistical bias, Mispricing, and Rational
+ Expectation with different predictions:
+\end_layout
+
+\begin_layout Itemize
+If predictors' returns are entirely the result of in-sample Statistical
+ bias (Data mining): the predictors do not exist at all but just a spurious
+ regression.
+ Thus, the predicted 
+\begin_inset Formula $\beta_{1}=\beta_{2}=-0.582$
+\end_inset
+
+.
+ Overall, there is no relation at all.
+\end_layout
+
+\begin_layout Itemize
+If predictors' returns are entirely the result of mispricing and arbitrage
+ correct all mispricing after the papers are published: then 
+\begin_inset Formula $\beta_{1}=0$
+\end_inset
+
+ and 
+\begin_inset Formula $\beta_{2}=-0.582$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+If entirely rational expectation, no statistical bias and investors do not
+ learn: then 
+\begin_inset Formula $\beta_{1}=\beta_{2}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The results show that 
+\begin_inset Formula $\beta_{1}=-0.15$
+\end_inset
+
+ and 
+\begin_inset Formula $\beta_{2}=-0.33$
+\end_inset
+
+ and both significant.
+ Thus, there are some statistical bias and investors also learn from published
+ predictors and trade to reduce the predictors' returns.
+ When they interact between two variables with the mean of predictors' returns
+ and the t-statistics in the papers, all interactions are negative significant.
+ It means that if the results are stronger in the papers, the predictors
+ tend to have 
+\emph on
+larger degree of statistical bias
+\emph default
+ and investors will 
+\emph on
+reduce these predictors more
+\emph default
+ in post-publication periods.
+\end_layout
+
+\begin_layout Paragraph*
+Type of predictors
+\end_layout
+
+\begin_layout Standard
+They split the predictors into 4 types: market (price, volume, outstanding,
+ returns), event (share issues, analyst recommendation, R&D increase), valuation
+ (B/M), and fundamental (from financial statement such as debts, accruals).
+ 
+\end_layout
+
+\begin_layout Itemize
+Market predictor type has higher returns in pre-public period, while the
+ fundamental type has the lowest pre-public returns.
+ 
+\end_layout
+
+\begin_layout Itemize
+Then they interact the 
+\begin_inset Formula $Post\, Publication$
+\end_inset
+
+ with these type indicators and find that the 
+\emph on
+fundamental predictor
+\emph default
+ types' returns decrease more after the publication.
+ In addition, the sum of 
+\begin_inset Formula $PostPublication\times Market+Market$
+\end_inset
+
+ is not significant, supporting idea that the higher in-sample returns tend
+ to decrease more in post-publication so their returns will not higher than
+ those of other predictors anymore.
+\end_layout
+
+\begin_layout Paragraph*
+Cost of arbitrage and Decline of predictors' returns
+\end_layout
+
+\begin_layout Standard
+They interact the 
+\begin_inset Formula $PostPublication$
+\end_inset
+
+ and measures of costly arbitrage such as: Firm Size, Bid-Ask spread, Trading
+ Volume, Idiosyncratic Risk, Dividend Payers, and Arbitrage Cost index.
+ The idea is that they test the sum of coefficients of Costly Arbitrage
+ (
+\begin_inset Formula $CA$
+\end_inset
+
+) and the interaction (
+\begin_inset Formula $CA*PostPublication$
+\end_inset
+
+) and test whether it is zero.
+ Stocks that are less costly to arbitrage should see a larger decline in
+ predictors' returns in the post-publication.
+\end_layout
+
+\begin_layout Standard
+Furthermore, for stocks in the predictors will observe a higher trading
+ volume; less volatility due to less noise trading; and larger difference
+ between the short side and long side (larger 
+\begin_inset Formula $\Delta SI=SI_{short}-SI_{long})$
+\end_inset
+
+ because investors recognize that predictor portfolio stocks are mispriced,
+ then they should short more in the sort side than in the long side.
+\end_layout
+
+\begin_layout Paragraph*
+Predictor return pre- and post-publication correlation
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\emph on
+Before publication
+\series default
+\emph default
+, the 
+\emph on
+in-sample predictors' returns are highly correlated
+\emph default
+ because of the 
+\emph on
+mispricing forces
+\emph default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\emph on
+After publication
+\series default
+\emph default
+, the predictors' returns are 
+\emph on
+now traded by arbitragers
+\emph default
+ so they are 
+\emph on
+correlated more with other published predictors' returns
+\emph default
+; but 
+\emph on
+less correlated with unpublished predictors
+\emph default
+.
+\end_layout
+
+\begin_layout Section
+Innovative capacity investment and Stock returns
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand cite
+key "kumar2016capital"
+
+\end_inset
+
+ consider the capital investment of R&D intensive firms and how this increase
+ in capital investment affects firms' stock returns, investment, and profitabili
+ty.
+\end_layout
+
+\begin_layout Standard
+In literature, an increase in capital investment could affect stock returns:
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Traditional real options view
+\emph default
+: 
+\series bold
+negative relation
+\series default
+, because firms in technologically mature industries undertake capital investmen
+t to convert growth options into assets-in-place.
+\end_layout
+
+\begin_layout Itemize
+In rich possibilities for innovation industries, firms undertake capital
+ investment to develop innovative capacity and commercialize potential future
+ innovations.
+ So the relation will be 
+\series bold
+positive
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+To measure innovative capacity and capital invesment, they use the R&D expense
+ and asset growth, respectively.
+ Innovative capacity (IC) investment will be the asset growth (AG) of R&D-active
+ firms.
+ In addition, they use large firm size to proxy for firms with nonincreasing
+ revenue return on IC investment.
+\end_layout
+
+\begin_layout Paragraph*
+Empirical results
+\end_layout
+
+\begin_layout Standard
+They run regression of cross-section stock returns on AG annually, but split
+ between large and small + R&D active and non-active firms.
+\end_layout
+
+\begin_layout Standard
+The empirical results show that 
+\emph on
+\bar under
+for large IC firms
+\emph default
+\bar default
+, the effect of AG is insignificant over the first 5 years, but become significa
+ntly positive as the sixth year.
+ They do not find this pattern for small IC firms.
+ In addition, IC firms show significantly higher future investments and
+ positively related to profitability for large IC firms.
+\end_layout
+
+\begin_layout Standard
+The verify the findings, they check two alternative explanations: empire
+ building and risk-shifting in idiosyncrati volatility (IVOL).
+ The 
+\emph on
+empire-building
+\emph default
+ view predicts that investors undereact to empire building behaviors (such
+ as capital investment) so there is negative relation between IC investment
+ and stock returns.
+ The levered firms tend to undertake projects with high IVOL because the
+ loss will be concentraded to debtholders, so the 
+\emph on
+risk-shifting
+\emph default
+ view predicts a negative between IC investment and stock returns too.
+ The results reject these two alternative hypotheses:
+\end_layout
+
+\begin_layout Itemize
+For empire-building: they run 
+\begin_inset Formula $RET=AG+AG\times HRDS\&LDCF+Size+BM+Mom$
+\end_inset
+
+ where 
+\begin_inset Formula $HRDS\&LDCF$
+\end_inset
+
+ is dummy that equals one if firms R&D/Sale is not missing and Debt/CF is
+ lower than sample median.
+ They find that the interaction is positive rather than negative.
+\end_layout
+
+\begin_layout Itemize
+For risk-shifting: They calculate IVOL for each group of IC investment of
+ RD-active and RD-non-active firms and find that IVOL declines over time
+ after increase in asset growth.
+\end_layout
+
+\begin_layout Paragraph*
+Theoretical Model
+\end_layout
+
+\begin_layout Standard
+At time 
+\begin_inset Formula $t$
+\end_inset
+
+, firms are endowed with initial asset-in-place (AIP) and with stochastic
+ initial earning 
+\begin_inset Formula $Y_{t}^{0}$
+\end_inset
+
+.
+ It could decide to make an IC investment 
+\begin_inset Formula $X$
+\end_inset
+
+ with success rate 
+\begin_inset Formula $\lambda$
+\end_inset
+
+.
+ Firms have productive capacity 
+\begin_inset Formula $K=K(X)$
+\end_inset
+
+ which depends on IC investment.
+ Fixed cost is 
+\begin_inset Formula $f_{K}K(X)$
+\end_inset
+
+ and variable cost is normalized to zero.
+\end_layout
+
+\begin_layout Standard
+The 
+\emph on
+incremental 
+\emph default
+earning from new IC investment is: 
+\begin_inset Formula $Y_{t}^{n}=P_{t}(X,\Gamma_{t},K(X))-f_{k}K(X)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $\Gamma_{t}$
+\end_inset
+
+ is random sale productivity; 
+\begin_inset Formula $P_{t}$
+\end_inset
+
+ is revenue function, and can be rewritten as 
+\begin_inset Formula $P_{t}=\Gamma_{t}X^{a}\sqrt{K(X)}$
+\end_inset
+
+, where 
+\begin_inset Formula $0<a<1$
+\end_inset
+
+ is marginal revenue product of IC investment.
+\end_layout
+
+\begin_layout Standard
+The stochastic pricing kernel 
+\begin_inset Formula $m_{t+1}=m_{t}exp(-r-\frac{\sigma_{v}^{2}}{2}-v_{t+1})$
+\end_inset
+
+ where 
+\begin_inset Formula $r$
+\end_inset
+
+ is risk-free rate, and 
+\begin_inset Formula $v$
+\end_inset
+
+ is shocks.
+ The intrinsic systematic risk of new investment 
+\begin_inset Formula $X$
+\end_inset
+
+ is 
+\begin_inset Formula $\theta=cov(\epsilon,v)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Conditional on 
+\begin_inset Formula $X$
+\end_inset
+
+, 
+\series bold
+\emph on
+pre-exercise firm valuation
+\series default
+\emph default
+ is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+V_{t}=V_{t}^{A}-V_{t}^{X}+V_{t}^{N}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $V_{t}^{A}$
+\end_inset
+
+ is value of initial asset-in-place, 
+\begin_inset Formula $V_{t}^{X}$
+\end_inset
+
+ is discounted fixed cost associated with IC investment, and 
+\begin_inset Formula $V_{t}^{N}$
+\end_inset
+
+ is value of potential innovation.
+\end_layout
+
+\begin_layout Standard
+Post-exercise firm valuation is: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+V_{t}=V_{t}^{A}+V_{t}^{P}-V_{t}^{F}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $V_{t}^{A}$
+\end_inset
+
+ is value of initial asset-in-place, 
+\begin_inset Formula $V_{t}^{P}$
+\end_inset
+
+ is discounted value of new revenue part, and 
+\begin_inset Formula $V_{t}^{F}$
+\end_inset
+
+ is fixed operating cost of both 
+\begin_inset Formula $X$
+\end_inset
+
+ and 
+\begin_inset Formula $K$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Then, they can write the expected return as a value-weighted average of
+ component assets' expected returns.
+ Specifically, in pre- and post-arrival/exercise regimes, we have:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E_{t}[R_{t+1}]=\begin{cases}
+\begin{array}{cc}
+\bar{\omega}_{t}^{A}e^{r+\theta}-\bar{\omega}_{t}^{X}e^{r}+\bar{\omega}_{t}^{N}\bar{R}^{N} & if\, t<T\\
+(\hat{\omega}_{t}^{A}+\hat{\omega}_{t}^{P})e^{r+\theta}-\hat{\omega}_{t}^{F}R^{r} & if\, t>T
+\end{array}\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $\omega^{j}=\frac{V^{j}}{V_{t}}$
+\end_inset
+
+ is weight of component asset 
+\begin_inset Formula $j$
+\end_inset
+
+, so 
+\begin_inset Formula $\bar{\omega}^{X}$
+\end_inset
+
+ and 
+\begin_inset Formula $\bar{\omega}^{F}$
+\end_inset
+
+ reflect operating leverage; 
+\begin_inset Formula $e^{r+\theta}$
+\end_inset
+
+ and 
+\begin_inset Formula $e^{r}$
+\end_inset
+
+ are risky asset return and risk-free return; 
+\begin_inset Formula $\bar{R}^{N}=e^{r+\theta}-(e^{\theta}-1)(1-\lambda)$
+\end_inset
+
+ is return on potential innovation, will be converted to revenue with risky
+ asset return (but depend on success rate 
+\begin_inset Formula $\lambda$
+\end_inset
+
+), so 
+\begin_inset Formula $e^{r}<\bar{R}^{N}<e^{r+\theta}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The impact of 
+\begin_inset Formula $X$
+\end_inset
+
+ on future expected returns is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\partial E_{t}[R_{t+1}]}{\partial X}=\begin{cases}
+\begin{array}{cc}
+\frac{\partial\bar{\omega}_{t}^{A}}{\partial X}(e^{r+\theta}-e^{r})+\frac{\partial\bar{\omega}_{t}^{N}}{\partial X}(\bar{R}^{N}-e^{r})+\bar{\omega}_{t}^{N}\lambda'(X)(e^{\theta}-1) & if\, t<T\\
+\frac{\partial\hat{\omega}_{t}^{F}}{\partial X}(e^{r+\theta}-e^{r}) & if\, t>T
+\end{array}\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph*
+Intuitions:
+\end_layout
+
+\begin_layout Itemize
+When t>T (after innovations are generated and exercised): 
+\begin_inset Formula $\frac{\partial\hat{\omega}_{t}^{F}}{\partial X}>0$
+\end_inset
+
+ and 
+\begin_inset Formula $\frac{\partial E_{t}[R_{t+1}]}{\partial X}>0$
+\end_inset
+
+ so IC investment is positively related to returns, as long as nonincreasing
+ revenue returns (or 
+\begin_inset Formula $a<1/2$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Itemize
+When t<T: ambiguous sign, so no predictions
+\end_layout
+
+\begin_layout Itemize
+When there is an IC investment of large firms (i.e., nondecreasing marginal
+ return on X), then profitability increase and investment increase too
+\end_layout
+
+\begin_layout Itemize
+Factor loading:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Factor loading on HML increases as options converted (growth options become
+ asset-in-place or innovations are generated and exercises)
+\end_layout
+
+\begin_layout Itemize
+Loading on SML should decrease because firms are bigger and bigger (AG increase)
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Speculative Beta
+\end_layout
+
+\begin_layout Subsection
+The intuitions of the model
+\end_layout
+
+\begin_layout Standard
+The speculative beta model in this paper stands in three main pillars:
+\end_layout
+
+\begin_layout Enumerate
+Incomplete market
+\end_layout
+
+\begin_layout Enumerate
+Aggregate disagreement in the market
+\end_layout
+
+\begin_layout Enumerate
+Short sale constraint
+\end_layout
+
+\begin_layout Standard
+The main idea of this paper is when there are short sale constraints, the
+ market is left with only optimistic investors because persimistic investors
+ withdraw from the market.
+ As a result, the market price is overpriced because the price is from optimisti
+c investors.
+ This idea is originated from Miller (1977).
+\end_layout
+
+\begin_layout Standard
+Hong and Srael (2016) expands this idea by finding that the high beta stocks
+ are more sensitive to aggregate disagreement.
+ In other words, beta amplifies the disagreement about the macroeconomy.
+ Thus, the 
+\emph on
+high beta stocks tend to be more overpriced
+\emph default
+ when there is a short sale constraint and high aggregate disagreement,
+ relative to the low beta stocks.
+ Arbitragers cound not drive the price to intrinsic value due to restricted
+ shorting.
+ The price in the market is equilibrium overpricing.
+\end_layout
+
+\begin_layout Standard
+I do not present the whole model here due to its complication.
+ A further reading to paper in detail is more appropriate.
+ The following subsection provides brief summary and main findings of two
+ predictions of the papers:
+\end_layout
+
+\begin_layout Enumerate
+High aggregate disagreement leads to concave (inverted-U shaped) SML (SML
+ is relation between stock returns and beta).
+\end_layout
+
+\begin_layout Enumerate
+High aggregate disagreement leads to flatter SML.
+\end_layout
+
+\begin_layout Subsection
+Measurements
+\end_layout
+
+\begin_layout Standard
+Using CRSP data from 1981 to 2014, 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "hong2016speculative"
+
+\end_inset
+
+ propose the idea of speculative beta to explain the beta anomaly: high
+ beta stocks have lower returns.
+ They exlude the penny stocks (price < 5).
+ Value-weighted market returns are from French website.
+ Risk free is US Treasury bill rate.
+\end_layout
+
+\begin_layout Standard
+The proxy for agreement (or investors' beliefs) is I/B/E/S's EPS long-term
+ growth rate.
+\end_layout
+
+\begin_layout Paragraph
+Post-ranking beta
+\end_layout
+
+\begin_layout Standard
+For each month, they use the Dimson (1979) beta by running the regression
+ for each stock 
+\begin_inset Formula $i$
+\end_inset
+
+ using past 12-months of daily returns:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R_{t}^{i}-R_{t}^{f}=\alpha+\beta_{0}(R_{t}^{M}-R_{t}^{f})+\sum_{j=1}^{5}\beta_{j}R_{t-j}^{M}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Then sum all six betas to get preranking beta: 
+\begin_inset Formula $\beta=\sum_{j=0}^{5}\beta_{j}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Using this 
+\emph on
+pre-ranking beta
+\emph default
+ to sort data to 20 NYSE 
+\begin_inset Formula $\beta$
+\end_inset
+
+ portfolios.
+ Then, compute daily portfolio equal- and value-weighted returns.
+\end_layout
+
+\begin_layout Standard
+Post-ranking beta is estimated similarly but using portfolio returns of
+ portfolio 
+\begin_inset Formula $p$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R_{t}^{p}-R_{t}^{f}=\alpha+\beta_{0}(R_{t}^{M}-R_{t}^{f})+\sum_{j=1}^{5}\beta_{j}R_{t-j}^{M}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Then sum six beta again to get the post-ranking beta at portfolio levels.
+\end_layout
+
+\begin_layout Paragraph
+Aggregate disagreement
+\end_layout
+
+\begin_layout Standard
+Stock-level disagreement is dispersion in analyst forecast of EPS LTG.
+ Then, aggregate this stock-level disagreement measure to portfolio-level
+ using the preranking beta (to focus on aggregate factor 
+\begin_inset Formula $z$
+\end_inset
+
+, rather than the idiosyncratic factor 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+Other alternative measures of aggregate disagreement are:
+\end_layout
+
+\begin_layout Itemize
+Analyst forecast dispersion of S&P 500 index annual EPS: fewer analysts
+ forecast this quantity (about 20 analysts) compared to thousands of individual
+ stock forecasts.
+\end_layout
+
+\begin_layout Itemize
+Dispersion of macroforecasts from SPF (Survey of Professional Forecasters):
+ use first principal component of cross-sectional standard deviation of
+ forecasts on GPD, IP, corporate profit, and unemployment.
+\end_layout
+
+\begin_layout Standard
+All time-series of aggregate measures are standardized to have mean zero
+ and variance one.
+\end_layout
+
+\begin_layout Paragraph
+Forward excess returns
+\end_layout
+
+\begin_layout Standard
+They calculate the forward excess returns for different horizons: 3, 6,
+ 12, 18 months.
+ This is the average of excess returns of each in 20 
+\begin_inset Formula $\beta$
+\end_inset
+
+-ranked portfolios for next 3, 6, 12, and 18 months horizons.
+ E.g., forward 12-month is from month 
+\begin_inset Formula $t=0$
+\end_inset
+
+ to month 
+\begin_inset Formula $t+11$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Fama-Macbeth two steps regression
+\end_layout
+
+\begin_layout Paragraph
+Inverted-U shaped SML
+\end_layout
+
+\begin_layout Standard
+The first test is 
+\series bold
+high aggregate disagreement leads to a concave SML
+\series default
+ (i.e., Prediction 1 of this paper).
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\emph on
+In first step
+\series default
+\emph default
+, in each month-by-month from 12/1981 to 12/2014:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+r_{pt}^{(12)}=\kappa_{t}+\pi_{t}\beta_{p}+\phi_{t}(\beta_{p})^{2}+\epsilon_{pt}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+They run this regression for each of 20 beta-sorted portfolios, where 
+\begin_inset Formula $r_{pt}^{(12)}$
+\end_inset
+
+ is 12-month forward excess returns (they also check robustness for other
+ horizons), 
+\begin_inset Formula $\beta_{p}$
+\end_inset
+
+ is postranking beta of portfolio.
+ From these regressions, they have a time-series of coefficient estimates
+ 
+\begin_inset Formula $\kappa_{t}$
+\end_inset
+
+, 
+\begin_inset Formula $\pi_{t}$
+\end_inset
+
+, and 
+\begin_inset Formula $\phi_{t}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\emph on
+In second step
+\series default
+\emph default
+, run time-series regressions for each of 20 portfolios:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\phi_{t} & = & c_{1}+AggDisp_{t-1}+R_{mt}^{(12)}+HML_{mt}^{(12)}+SMB_{mt}^{(12)}+UMD_{mt}^{(12)}+X_{it-1}\\
+\pi_{t} & = & c_{2}+AggDisp_{t-1}+R_{mt}^{(12)}+HML_{mt}^{(12)}+SMB_{mt}^{(12)}+UMD_{mt}^{(12)}+X_{it-1}\\
+\kappa_{t} & = & c_{3}+AggDisp_{t-1}+R_{mt}^{(12)}+HML_{mt}^{(12)}+SMB_{mt}^{(12)}+UMD_{mt}^{(12)}+X_{it-1}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Every variable with superscript (12) means that this is the excess return
+ from month 
+\begin_inset Formula $t$
+\end_inset
+
+ to 
+\begin_inset Formula $t+11$
+\end_inset
+
+ of the factor.
+ All time-series regressions are adjusted using Newey-West standard errors
+ with 11 lags.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Findings and intuitions:
+\end_layout
+
+\begin_layout Itemize
+The coefficients of 
+\begin_inset Formula $AggDisp$
+\end_inset
+
+ is positive for 
+\begin_inset Formula $\pi$
+\end_inset
+
+ mean that at first, higher beta is associated with higher returns
+\end_layout
+
+\begin_layout Itemize
+The coefficients of 
+\begin_inset Formula $AggDisp$
+\end_inset
+
+ is negative for 
+\begin_inset Formula $\phi$
+\end_inset
+
+ mean that the SML curve (or beta-return relation) is inverted-U shaped
+ or a concave SML line
+\end_layout
+
+\begin_layout Paragraph
+Slope of SML
+\end_layout
+
+\begin_layout Standard
+The second test is 
+\series bold
+high aggregate disagreement is negatively associated with slope of SML
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+First step, 
+\begin_inset Formula 
+\[
+r_{pt}^{(12)}=\kappa_{t}+\pi_{t}\beta_{p}+\epsilon_{pt}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+here 
+\begin_inset Formula $\pi$
+\end_inset
+
+ is slope of SML in month 
+\begin_inset Formula $t$
+\end_inset
+
+ (i.e., variable of interest).
+ Then repeat the second step as above.
+ They find that higher aggregate disagreement in month 
+\begin_inset Formula $t-1$
+\end_inset
+
+ actually predicts a significantly flatter SML line in the following month.
+ In other words, the coefficient of 
+\begin_inset Formula $AggDisp$
+\end_inset
+
+ is significantly negative (see Internet Appendix Table II.AVI).
+\end_layout
+
+\begin_layout Subsection
+Heteroskedastic Idiosyncratic Variance
+\end_layout
+
+\begin_layout Standard
+The Prediction 2 of this paper holds that the slope of SML is 
+\emph on
+more sensitive
+\emph default
+ to aggregate disagreement for stock with 
+\emph on
+high 
+\begin_inset Formula $B_{i}/\sigma_{i}^{2}$
+\end_inset
+
+ ratio
+\emph default
+ relative to stocks with low 
+\begin_inset Formula $B_{i}/\sigma_{i}^{2}$
+\end_inset
+
+ ratio.
+ The stocks with high 
+\begin_inset Formula $B_{i}/\sigma_{i}^{2}$
+\end_inset
+
+ ratio than sample median in month 
+\begin_inset Formula $t$
+\end_inset
+
+ are speculative stocks and vice versa.
+\end_layout
+
+\begin_layout Enumerate
+First stage, rank stock each month based on their preranking ratio of 
+\begin_inset Formula $B_{i}/\sigma_{i}^{2}$
+\end_inset
+
+.
+ Stocks with 
+\begin_inset Formula $B_{i}/\sigma_{i}^{2}$
+\end_inset
+
+ ratio higher than median are speculative stocks and vice versa.
+ Now we have two groups of stocks.
+\end_layout
+
+\begin_layout Enumerate
+Second, within each of two groups, 
+\emph on
+rerank stocks based on their estimated beta
+\emph default
+ in ascending order at the end of previous month and assign to 20 beta-sorted
+ portfolios again using NYSE breakpoints.
+ Then, compute full-sample beta of these 40 value-weighted portfolios using
+ the same market model.
+\end_layout
+
+\begin_layout Enumerate
+For each group and each month, estimate the following cross-sectional regression
+ where 
+\begin_inset Formula $p$
+\end_inset
+
+ is one of 20-beta sorted portfolios, 
+\begin_inset Formula $s\in\{speculative;non\, speculative)$
+\end_inset
+
+ and 
+\begin_inset Formula $t$
+\end_inset
+
+ is month:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+r_{p,s,t}^{(12)}=\iota_{s,t}+\chi_{s,t}\beta_{p,s}+\varrho_{s,t}ln(\sigma_{p,s,t-1})+\epsilon_{p,s,t}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $\beta_{p,s}$
+\end_inset
+
+ is 12-month excess return of portfolio, 
+\begin_inset Formula $\sigma_{p,s,t-1}$
+\end_inset
+
+is median idiosyncratic volatility of stocks in portfolio 
+\begin_inset Formula $(p,s)$
+\end_inset
+
+.
+ Because of high skewness, they take log of the idiosyncratic volatility.
+\end_layout
+
+\begin_layout Standard
+Then, they have a time-series of estimates of 
+\begin_inset Formula $\iota_{s,t}$
+\end_inset
+
+, 
+\begin_inset Formula $\chi_{s,t}$
+\end_inset
+
+, and 
+\begin_inset Formula $\varrho_{s,t}$
+\end_inset
+
+.
+ Then they apply a time-series regressions as in above processes.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+\bar under
+The findings in Figure 7 and Table 5
+\end_layout
+
+\begin_layout Standard
+The coefficient of 
+\begin_inset Formula $\chi_{s,t}$
+\end_inset
+
+ is 
+\emph on
+negative and significant in speculative stock
+\emph default
+ group and not significant in non-speculative stock group.
+ Intuitively, a higher aggregate disagreement in month 
+\begin_inset Formula $t-1$
+\end_inset
+
+ is associated with a flatter SML.
+ This finding only holds for speculative stocks (high ratio 
+\begin_inset Formula $\beta/\sigma^{2}$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Enumerate
+For nonspeculative stocks, SML is not related (in a clear way) to the aggregate
+ disagreement.
+\end_layout
+
+\begin_layout Enumerate
+For speculative stocks, when aggregate disagreement is high, the SML exhibits
+ an inverted-U shape, while there is no such pattern in low aggregate disagreeme
+nt.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "qualify_exam"
+options "bibtotoc,plainnat"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,2563 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\options round
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1in
+\topmargin 1in
+\rightmargin 1in
+\bottommargin 1in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Factor models in empirical research
+\end_layout
+
+\begin_layout Author
+Richard
+\end_layout
+
+\begin_layout Date
+July 2017
+\end_layout
+
+\begin_layout Section
+Fama-French
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand cite
+key "fama1992thecrosssection"
+
+\end_inset
+
+ test the CAPM.
+ They find that 
+\begin_inset Formula $beta$
+\end_inset
+
+ seems to relate to size of firms.
+ In particular, small firms have higher returns compared to large firms.
+ Thus, they control for size when create the beta factor in their 1992 paper.
+ After control and re-test the joint roles of market beta, size, E/P, leverage,
+ and B/M, they find that:
+\end_layout
+
+\begin_layout Itemize
+When measured it unrelated to size, 
+\begin_inset Formula $\beta$
+\end_inset
+
+ is not related to stock returns, even when it’s the only explanatory variable.
+\end_layout
+
+\begin_layout Itemize
+Used alone, size, E/P, leverage, and B/M equity have explanatory power
+\end_layout
+
+\begin_layout Itemize
+Used combination, Size and B/M capture the cross-sectional variation of
+ stock returns, and they reflect the multidimensional risks in asset pricing.
+ What factors they proxy for? Distress risk or investment?
+\end_layout
+
+\begin_layout Itemize
+Leverage effect is related to B/M effect
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $E/P$
+\end_inset
+
+ effect weakens after we control 
+\begin_inset Formula $size$
+\end_inset
+
+ and 
+\begin_inset Formula $B/M$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Thus, 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "fama1992thecrosssection"
+
+\end_inset
+
+ find out two common factors: 
+\begin_inset Formula $size$
+\end_inset
+
+ and 
+\begin_inset Formula $B/M$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand cite
+key "fama1993commonrisk"
+
+\end_inset
+
+ identifies 5 common risk factors in pricing stocks and bonds.
+\end_layout
+
+\begin_layout Itemize
+For stocks: market factors, size, B/M
+\end_layout
+
+\begin_layout Itemize
+For bonds: maturity 
+\emph on
+TERM
+\emph default
+ (
+\emph on
+term structure
+\emph default
+ = long-term gov bond - one month T-bill rate) and default risk 
+\emph on
+DEF
+\emph default
+ (default premium = long-term corporate bond - long-term gov bond)
+\end_layout
+
+\begin_layout Standard
+In 1993, they expand their old paper by adding bond assets and other factors
+ to explain bond returns such as 
+\emph on
+term structure
+\emph default
+.
+ In addition, instead of Fama-Macbeth approach, this paper uses Black, Jensen,
+ Scholes (1972) time-series regression approach.
+ Monthly stock and bond returns are regressed on the returns to a market
+ portfolio of stocks and mimicking portfolio for size, B/M, and term structure
+ risk factors in returns.
+ The slopes are 
+\emph on
+factor loading or risk-factor sensitivities
+\emph default
+ for stocks and bonds.
+ This method, later, will be the standard in testing factor models.
+\end_layout
+
+\begin_layout Standard
+In the model, the dependent variable is excess returns (stock and bond returns
+ minus one-month Treasury bill rate).
+ Bonds include 2 government bonds and 5 corporate bond portfolios.
+ Stocks include 25 of 
+\begin_inset Formula $5\times5$
+\end_inset
+
+ size-BM portfolios.
+ The idea is if the intercept from three-factor regressions (excess market
+ return, mimicking size, and mimicking B/M factors) are close to zero, the
+ model seems to do good job to explaining the cross-section of average stock
+ returns.
+\end_layout
+
+\begin_layout Paragraph
+Multifactor explanations of asset pricing anomalies
+\end_layout
+
+\begin_layout Standard
+The main finding of 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "fama1996multifactor"
+
+\end_inset
+
+ is they propose 3-factor model (
+\begin_inset Formula $FF3$
+\end_inset
+
+) to solve most of anomalies 
+\emph on
+except for momentum
+\emph default
+.
+ The existing anomalies are: long-term reversal (DeBondt and Thaler, 1985),
+ short-term momentum (Jegadeesh and Titman, 1993), size, B/M (Lakonishok,
+ Shleifer, and Vishny, 1994), which cannot be explained by CAPM.
+\end_layout
+
+\begin_layout Subparagraph
+Form factors:
+\end_layout
+
+\begin_layout Itemize
+At the end of June in year 
+\begin_inset Formula $t$
+\end_inset
+
+, independently sort median ME of NYSE stocks and 3 groups of BE/ME (30-40-30%)
+ of NYSE stocks.
+ We got 6 portfolios.
+\end_layout
+
+\begin_layout Itemize
+Value-weighted monthly returns on portfolios are calculated from July year
+ 
+\begin_inset Formula $t$
+\end_inset
+
+ to June year 
+\begin_inset Formula $t+1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Two factors: 
+\begin_inset Formula $SMB=\frac{SL+SM+SH}{3}-\frac{BL+BM+BH}{3}$
+\end_inset
+
+; 
+\begin_inset Formula $HML=\frac{SH+BH}{2}-\frac{SL+BL}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subparagraph
+Three-factor models
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R_{i}-R_{f}=a_{i}+b_{i}(R_{m}-R_{f})+s_{i}SMB+h_{i}HML+e
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If the three factors can proxy for all risk exposure to unobservable factors,
+ we should see the intercepts are close to zero.
+\end_layout
+
+\begin_layout Standard
+Fama and French often analyze by using two methods:
+\end_layout
+
+\begin_layout Itemize
+Two-way sort
+\end_layout
+
+\begin_layout Itemize
+Run factor model regression of 10 deciles (sort based on the anomalies)
+ then test GRS that all intercepts are zero.
+ If we accept the null, meaning that FF3 could explain the anomaly because
+ all intercepts are zero.
+ For example, if they test B/M, they first sort sample to 10 deciles of
+ B/M then run factor models for 10 portfolios.
+ Then, they test all 10 intercepts are zero by GRS.
+\end_layout
+
+\begin_layout Paragraph
+A 5-factor model
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand cite
+key "fama2015afivefactor"
+
+\end_inset
+
+ update their model to include two more factors: investment and profitability.
+ They propose a theoretical base that market value equity to book value
+ equity of firms is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{M_{t}}{B_{t}}=\frac{\sum_{\tau=1}^{\infty}E(Y_{t+\tau}-dB_{t+\tau})/(1+r)^{\tau}}{B_{t}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where Y is earning, B is book equity, 
+\begin_inset Formula $dB_{t+\tau}=B_{t+\tau}-B_{t+\tau-1}$
+\end_inset
+
+ is change in book equity, 
+\begin_inset Formula $r$
+\end_inset
+
+ is long-term average expected stock return.
+\end_layout
+
+\begin_layout Subparagraph
+Implications of the model is:
+\end_layout
+
+\begin_layout Itemize
+M decreases and B/M increases: so stock returns 
+\begin_inset Formula $r$
+\end_inset
+
+ increase
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $E(Y_{t+\tau})$
+\end_inset
+
+ increases (i.e., 
+\series bold
+profitability factor
+\series default
+) then stock returns 
+\begin_inset Formula $r$
+\end_inset
+
+ increase
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $dB$
+\end_inset
+
+ increases (i.e., 
+\series bold
+investment factor
+\series default
+) then stock returns 
+\begin_inset Formula $r$
+\end_inset
+
+ decreases
+\end_layout
+
+\begin_layout Standard
+The empirical model is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R_{i}-R_{f}=a_{i}+b_{i}(R_{m}-R_{f})+s_{i}SMB+h_{i}HML+r_{i}RMW+c_{i}CMA+e
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where the new two factors are:
+\end_layout
+
+\begin_layout Itemize
+RMW (robust minus weak profitability, as ROE)
+\end_layout
+
+\begin_layout Itemize
+CMA (conservative minus aggressive investment, as asset growth)
+\end_layout
+
+\begin_layout Section
+What factors that Fama-French model proxy for?
+\end_layout
+
+\begin_layout Subsection
+Innovations of variables relating to 
+\emph on
+investment opportunity
+\end_layout
+
+\begin_layout Standard
+It is known that to some extent, 
+\begin_inset Formula $SMB$
+\end_inset
+
+ and 
+\begin_inset Formula $HML$
+\end_inset
+
+ could explain some variation in cross-section returns.
+ But Fama and French could not explain what are these factors proxy for.
+ Specifically, FF (1993) suggest that HML and SMB might proxy for state
+ variables that describe 
+\emph on
+time variation in the investment opportunity set
+\emph default
+.
+ Fama and French (1996) argue that the SMB and HML factors of the Fama and
+ French (1993) model proxy for financial distress.
+\end_layout
+
+\begin_layout Standard
+Petkova (2006-JF) propose an idea that these factors are correlated with
+ 
+\series bold
+\emph on
+innovations 
+\series default
+(i.e., changes)
+\emph default
+ in variables that describe investment opportunities.
+ In other words, the FF model is consistent with an ICAPM explanation.
+\end_layout
+
+\begin_layout Standard
+In literature, some empirical findings show that FF factors relate to macroecono
+mic variables and business cycle fluctuations (FF factors predict future
+ GDP growth or consumption growth).
+ In this paper, Petkova uses a set of relevant state variables such as 
+\series bold
+\emph on
+short-term T-bill, term spread, aggregate dividend yield, and default spread
+\series default
+\emph default
+.
+ These state variables are chosen to model 
+\emph on
+two aspects
+\emph default
+ of the investment opportunity set, namely, 
+\series bold
+\emph on
+the yield curve
+\series default
+\emph default
+ and the 
+\series bold
+\emph on
+conditional distribution of asset returns
+\series default
+\emph default
+.
+ In this paper, she does not assume that HML and SMB have predictive abilities
+ for the excess market return.
+ Rather, they proxy for innovations (i.e., changes) in variables that possess
+ such ability.
+\end_layout
+
+\begin_layout Standard
+A factor model with excess market return and innovations in the aggregate
+ dividend yield, term spread, default spread, and one-month T-bill yield
+ has a higher explanatory power than the FF three-factor model.
+ FF factors are not significant explanatory variables for the cross-section
+ of average returns in the presence of these innovation factors.
+ Furthermore, this suggestive ICAPM model could be able to account for common
+ timevarying patterns in returns (conditional asset pricing model).
+\end_layout
+
+\begin_layout Paragraph
+
+\series bold
+What is ICAPM framework
+\end_layout
+
+\begin_layout Standard
+According to 
+\series bold
+(Merton, 1973)
+\series default
+, if investment opportunities change over time, then assets’ exposures to
+ these changes are important determinants of average returns in addition
+ to the market beta.
+ So, Petkova looks at the innovations in state variables that capture uncertaint
+y about investment opportunities in the future.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R_{it}=a_{i}+\beta_{iM}R_{Mt}+\sum(\beta_{i,u^{K}})u_{t}^{K}+e_{it}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $R_{i}$
+\end_inset
+
+ is returns on 25 portfolios sorted by 
+\begin_inset Formula $5\times5$
+\end_inset
+
+ size and B/M, 
+\begin_inset Formula $R_{M}$
+\end_inset
+
+ is excess market return, 
+\begin_inset Formula $u^{K}$
+\end_inset
+
+ is the innovation to state variable K.
+ The innovation is the unexpected component of the variable.
+\end_layout
+
+\begin_layout Standard
+For state variables, she adopts a VAR model that demeanded vector 
+\begin_inset Formula $z_{t}$
+\end_inset
+
+ follows a first-order VAR as 
+\begin_inset Formula $z_{t}=Az_{t-1}+u_{t}$
+\end_inset
+
+, where the residual 
+\begin_inset Formula $u_{t}$
+\end_inset
+
+ is the innovation terms and is also the risk factor in the model above.
+\end_layout
+
+\begin_layout Standard
+More details about state variables: choose a set of state variables to model
+ two aspects of the investment opportunity set, these are
+\end_layout
+
+\begin_layout Itemize
+To capture 
+\emph on
+yield curve slope
+\emph default
+: short-term T-bill yield (RF) and the term spread (TERM) 
+\end_layout
+
+\begin_layout Itemize
+To capture 
+\emph on
+conditional distribution of asset returns
+\emph default
+: aggregate dividend yield (DIV), the default spread (DEF), and interest
+ rates
+\end_layout
+
+\begin_layout Itemize
+She also adds SMB and HML of Fama-French as a comparison.
+ Thus, the FF3 model is also adopted as a competing asset pricing model.
+\end_layout
+
+\begin_layout Subsection
+Default risk
+\end_layout
+
+\begin_layout Standard
+Vassalou and Xing (2004) use Merton (1974) option pricing model to calculate
+ default measure of individual firms.
+ They find that size effect is a 
+\emph on
+default effect
+\emph default
+, and this is also largely true for the book-to-market (BM) effect.
+ The size effect 
+\emph on
+exists only
+\emph default
+ within the quintile with the 
+\emph on
+highest default risk
+\emph default
+, which the spread between small and big firms is 45%/year.
+ In the highest default risk quintile, the B/M spread is 30%/year.
+ In low default risk segments, the size effect and B/M effects disappear.
+ Small and value stocks have higher default risk than big and growth stocks
+ and the relation is monotonic.
+\end_layout
+
+\begin_layout Standard
+In addition, they find that high default-risk firms earn higher returns
+ than low default-risk firms, only for small and high BM firms.
+ It is clear that the highest returns are earned by stocks that are either
+ both small in size and high default risk (DLI), or both high DLI and high
+ BM.
+ Finally, they find that default risk is systematic and therefore priced
+ in the cross section of equity returns.
+\end_layout
+
+\begin_layout Standard
+The Fama–French (FF) factors SMB and HML 
+\emph on
+contain some default-related information
+\emph default
+, but this is 
+\emph on
+not the main reason
+\emph default
+ that the FF model can explain the cross section of equity returns.
+ SMB and HML appear to 
+\emph on
+contain important priced information
+\emph default
+, unrelated to default risk.
+\end_layout
+
+\begin_layout Standard
+While in literature, default risk on equities focus on default spread (long-term
+ BAA corporate bonds minus long-term AAA or US Treasury bonds) from bond
+ market, they estimate the 
+\emph on
+default likelihood indicators (DLI) 
+\emph default
+from equity data.
+ In Merton model, equity of a firm is viewed as a call option on firm asset.
+ Because equity holders are residual claimants on the firm’s assets after
+ all other obligations have been met.
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $V_{A}$
+\end_inset
+
+ is assets value, 
+\begin_inset Formula $X$
+\end_inset
+
+ is book value of debt, market value of equity is the call option of 
+\begin_inset Formula $V_{A}$
+\end_inset
+
+ with time to expiration equal to T.
+ Apply the Black and Scholes (193) model:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+V_{E}=V_{A}N(d_{1})-Xe^{-rT}N(d_{2})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where r is risk-free rate, N is cdf of the standard normal distribution.
+\end_layout
+
+\begin_layout Standard
+The default probability is the probability that the firm assets will be
+ less than the book value of firm liabilities.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P_{def}=Pr\left(V_{A}\leq X|V_{A}\right)=Pr(ln(V_{A})\leq ln(X_{t})|V_{A})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+And distance to default: 
+\begin_inset Formula $DD=\frac{ln(V_{A}/X)+\left(\mu-\frac{1}{2}\sigma_{A}^{2}\right)T}{\sigma_{A}\sqrt{T}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Default occurs when the 
+\emph on
+ratio of the value of assets to debt is less than 1
+\emph default
+, or its log is negative.
+ The DD tells us by 
+\emph on
+how many standard deviations
+\emph default
+ the log of this ratio needs to 
+\emph on
+deviate from its mean
+\emph default
+ in order for default to occur.
+ 
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+A history of factor model
+\end_layout
+
+\begin_layout Subsection
+A time-line of important studies
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="25" columns="3">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="left" valignment="top" width="20page%">
+<column alignment="left" valignment="top" width="50page%">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\emph on
+Year
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\emph on
+Authors
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\emph on
+Descriptions
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1972
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Black, Jensen, Scholes
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Support Black-version CAPM
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1973
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Fama and Macbeth
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Support CAPM
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1973
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Merton
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Intertemporal or ICAPM
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1976
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ross
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Arbitrage Pricing Theory or APT
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1986
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Chen, Roll, Ross
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Industrial Production, Default spread, and Term Spread
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+1991
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+Cochrane
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+Use aggregate investment's return and relate it expected stock returns
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1992
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Fama and French
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Reject CAPM, support size and BE/ME
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1993
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Fama and French
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3 factor model for equity and 2 factor for bond (Term and Default)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1993
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Jegadeesh and Titman
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Short term price momentum
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1994
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Lakonishok, Shleifer, Vishny
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Value premium
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1996
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Fama and French
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3 factor model solves size, B/M anomalies, but fail to solve the Momentum
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1996
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Chan, Jegadeesh, Lakonishok
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Earning momentum
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1996
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Jagannathan and Wang
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Conditional CAPM
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1997
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Carhart
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A 4-factor model: 3 factor of FF3 and Momentum
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2004
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Titman, Wei, Xie
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Capex and negative returns
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2004
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Vassalou and Xing
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Default risk as FF3, but not reject FF3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+2005
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+Zhang
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+Value premium
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2006
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Petkova
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ICAPM idea, reject FF3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2008
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cooper et al.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Asset Growth and negative returns
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2010
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Wu, Zhang, Zhang
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Add investment factor to traditional model to explain accruals
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+2011
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+Chen, Novy-Marx, Zhang
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+Alternative 3-factor q-factor model: Market, I/A, and ROE
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+2013
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+Belo et al.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+A supply model to compare between actual Tobin's q and predicted q
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+2015
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+Hou, Xue, Zhang
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+A 4-factor q-factor model: Market, Size, I/A, ROE
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2015
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Fama and French
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5-factor model: add RMW and CMA
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size footnotesize
+\color black
+#Red ink means investment-related models.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Test of CAPM
+\end_layout
+
+\begin_layout Standard
+The CAPM could be written as 
+\begin_inset Formula $R_{i}=\alpha_{i}+\beta_{i}R_{M}+e_{i}$
+\end_inset
+
+ where 
+\begin_inset Formula $R_{i}$
+\end_inset
+
+ is excess return.
+\end_layout
+
+\begin_layout Standard
+In classical papers, first, authors run time-series regression to get 
+\begin_inset Formula $\hat{\beta}_{i}$
+\end_inset
+
+ for each individual stock.
+ Second, they rund cross-sectional regression 
+\begin_inset Formula $R_{i}=\gamma_{0}+\gamma_{1}\hat{\beta}_{i}+v_{i}$
+\end_inset
+
+ and test if 
+\begin_inset Formula $\hat{\gamma}_{0}=0$
+\end_inset
+
+ and 
+\begin_inset Formula $\hat{\gamma}_{1}=\bar{R}_{M}$
+\end_inset
+
+.
+ However, there are several problems with this test:
+\end_layout
+
+\begin_layout Itemize
+Measurement errors
+\end_layout
+
+\begin_layout Itemize
+Error in variables
+\end_layout
+
+\begin_layout Itemize
+Lacking power in tests
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Black, Jensen, and Scholes (1972)
+\series default
+ attempt to solve these problems by: (i) group stocks based on beta, (ii)
+ use instrument variable which is closey related to current beta but can
+ be independently observed (past beta); and (iii) increase number of observation
+ (use monthly return over longer time period).
+\end_layout
+
+\begin_layout Standard
+They propose a time series regression method that:
+\end_layout
+
+\begin_layout Itemize
+First, use past 5 years to run regression and estimate the beta: 
+\begin_inset Formula $R_{i}=\alpha_{i}+\beta_{i}R_{M}+e_{i}$
+\end_inset
+
+.
+ Use this beta to sort stocks to 10 portfolios.
+ Repeat for 35 years.
+\end_layout
+
+\begin_layout Itemize
+Second, run a time series regressions for each of 10 portfolios: 
+\begin_inset Formula $R_{i}=\alpha_{i}+\beta_{i}R_{M}+e_{i}$
+\end_inset
+
+.
+ Then get 10 
+\begin_inset Formula $\hat{\beta}_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Get the beta from time series then estimate the cross section regression
+ for 10 observations: 
+\begin_inset Formula $\bar{R}_{i}=\gamma_{0}+\gamma_{1}\hat{\beta}_{1}$
+\end_inset
+
+ then test 
+\begin_inset Formula $\gamma_{0}=0$
+\end_inset
+
+ and 
+\begin_inset Formula $\gamma_{1}=\bar{R}_{M}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+BJS (1972) support the Black-version of CAPM.
+\end_layout
+
+\begin_layout Standard
+Next, in 
+\series bold
+Fama and Matbeth (1973)
+\series default
+, they also support the CAPM.
+ Their method is a 3-step method:
+\end_layout
+
+\begin_layout Itemize
+First, use 7 years (formation period) to find beta and sort stocks into
+ 20 beta portfolios
+\end_layout
+
+\begin_layout Itemize
+Second, use next 5 years (estimation period) to estimate 
+\begin_inset Formula $\hat{\beta}_{p}$
+\end_inset
+
+ and 
+\begin_inset Formula $\hat{s}_{p}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Run individual time-series regression: 
+\begin_inset Formula $R_{i}=\alpha_{i}+\beta_{i}R_{M}+e_{i}$
+\end_inset
+
+, take 
+\begin_inset Formula $s_{i}$
+\end_inset
+
+ as standard deviation of residuals
+\end_layout
+
+\begin_layout Itemize
+Then take average of 
+\begin_inset Formula $\beta_{i}$
+\end_inset
+
+ and 
+\begin_inset Formula $s_{i}$
+\end_inset
+
+ of each portfolio as 
+\begin_inset Formula $\hat{\beta}_{p}$
+\end_inset
+
+ and 
+\begin_inset Formula $\hat{s}_{p}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Third, for next one year (testing period), run cross-sectional regression
+ for each month
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $R_{pt}=\gamma_{0}+\gamma_{1}\hat{\beta}_{p,t-1}+\gamma_{2}\hat{\beta}_{p,t-1}^{2}+\gamma_{3}\hat{s}_{p,t-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Repeat for next 3 years, adding one more year in estimation period
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Finally, they have a time-series of 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ and they want to test:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $\gamma_{0}=r_{f}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\gamma_{1}>0$
+\end_inset
+
+: beta is priced
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\gamma_{2}=0$
+\end_inset
+
+: not priced in non-linear in beta and returns
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\gamma_{3}=0$
+\end_inset
+
+: non-beta factor is not priced
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+The results support CAPM as their predictions in hypotheses, just using
+ a t-test to test.
+\end_layout
+
+\begin_layout Standard
+Fama and French (1992) apply a Fama-Macbeth process to test the CAPM.
+ They find that the beta appears to be related to size.
+ Thus, they control size when create the beta.
+ Their results show that:
+\end_layout
+
+\begin_layout Itemize
+Even when it is the only explanatory variable, beta fails to explain the
+ cross-section returns.
+ This rejects the CAPM.
+\end_layout
+
+\begin_layout Itemize
+The main factors affect cross-section returns are size and BE/ME.
+\end_layout
+
+\begin_layout Itemize
+Other factors such as leverage and E/P lose their explanatory powers after
+ controlling for size and BE/ME
+\end_layout
+
+\begin_layout Paragraph
+ICAPM and APT: are they the same?
+\end_layout
+
+\begin_layout Standard
+This is quite an interesting question.
+ We refer the Chapter 9 of Cochrane (2005) and Chapter 6 of Campbell et
+ al.
+ (1997) to answer this question.
+\end_layout
+
+\begin_layout Standard
+APT is more general than CAPM because it allows for multiple risk factors.
+ APT assumes that the market is competitive and frictionless so return of
+ asset is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+R_{i} & = & a_{i}+b'_{i}f+e_{i}\\
+E[e_{i}|f] & = & 0\\
+E[e_{i}^{2}] & = & \sigma_{i}^{2}=\Sigma
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The factors 
+\begin_inset Formula $f$
+\end_inset
+
+ account for the common variation in asset returns so that the disturbance
+ term 
+\begin_inset Formula $e$
+\end_inset
+
+ for large well-diversified portfolios vanishes.
+ Thus, there is a SDF 
+\begin_inset Formula $m=a+b'f$
+\end_inset
+
+ which linear in f and prices the returns.
+ Chen, Roll, and Ross (1986) use financial theory to add some factors to
+ model: maturity spread, inflation, industrial production, default spread.
+ The results show that some notable factors affect stock returns include:
+ market return, industrial production growth, unanticipated inflation, change
+ in risk premium, yield curve.
+\end_layout
+
+\begin_layout Standard
+ICAPM model is proposed by Merton (1973) that the conditional distribution
+ of returns delivers a multifactor model.
+ The current wealth (market return) is one factor and state variables serve
+ as additional factors.
+ The state variables are factors arise from investors' demand to hedge uncertain
+ty about future investment opportunities.
+ Petkova (2006) again revisits the ICAPM and propose a set of innovations
+ from state variables.
+ She chooses some state variables to explain two properties of the change
+ in growth opportunities: yield curve slope (risk free and term spread)
+ and conditional distribution of the asset returns (aggregate dividend yield,
+ default spread, and interest rate).
+ Using a VAR model: 
+\begin_inset Formula $z_{t}=Az_{t-1}+u_{t}$
+\end_inset
+
+, then 
+\begin_inset Formula $u_{t}$
+\end_inset
+
+ is the residuals are used as the innovations of the state variables.
+ Then she propose a model:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R_{it}=a_{i}+\beta_{im}R_{mt}+\sum(\beta_{i,u^{k}})u_{t}^{k}+e_{it}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and use this model to compare with FF3.
+ She proves that her model perform better than the conventional FF3 model.
+\end_layout
+
+\begin_layout Standard
+Although they are quite similar, APT and ICAPM have some distinguished propertie
+s:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="3">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="left" valignment="top" width="20page%">
+<column alignment="left" valignment="top" width="30page%">
+<column alignment="left" valignment="top" width="20page%">
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\emph on
+Properties
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\emph on
+APT
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\emph on
+ICAPM
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $R^{2}$
+\end_inset
+
+ of regress 
+\begin_inset Formula $R^{i}$
+\end_inset
+
+ on 
+\begin_inset Formula $f$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+High
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Not need high
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f$
+\end_inset
+
+ as covariance matrix of return
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Yes
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Factors orthogonal or iid
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Yes
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Inspiration of factors
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Analyze the covariance matrix of returns and find portfolios that characterize
+ common factors
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+From the conditional distribution of future asset returns
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The Chen, Roll, Ross (1986) describle itself as an APT but the factors are
+ from financial literature, so it is more likely an ICAPM model.
+ In Fama and French (1993), they propose that SMB and HML proxy for state
+ variables that describe time variation in the investment opportunity set
+ (quite similar to ICAPM).
+ However, Fama and French (1996) construct model from sort returns based
+ on factors, so it is more likely an APT model rather than an ICAPM.
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+A short review of CAPM and factor model
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Classical CAPM
+\end_layout
+
+\begin_layout Standard
+Markowitz (1958) laid a very first groundwork for CAPM.
+ He proposes that investors would optimally hold a mean-variance frontier
+ portfolio: a portfolio gives the highest expected return for a given level
+ of variance.
+ Sharpe (1964) and Lintner (1965) develope this idea that if investors are
+ homogeneous expectations and optimally hold mean-variance frontier portfolios,
+ then the market portfolio will be itself a mean-variance portfolio.
+ The Sharpe-Lintner CAPM model is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+E[R_{i}] & = & R_{f}+\beta_{im}\left(E[R_{m}]-R_{f}\right)\\
+\beta_{im} & = & cov\left(R_{i},R_{m}\right)/var(R_{m})
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where the 
+\begin_inset Formula $R_{m}$
+\end_inset
+
+ is return on market portfolio, 
+\begin_inset Formula $R_{f}$
+\end_inset
+
+ is risk-free rate.
+ The model could be written in excess return too:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E[R_{i}-R_{f}]=\beta_{im}\left(E[R_{m}]-R_{f}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Black (1972) propose a more general Black-version CAPM:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E[R_{i}]=R_{0m}+\beta_{im}\left(E[R_{m}]-E[R_{0m}]\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $R_{0m}$
+\end_inset
+
+ is return on zero-beta portfolio associated with m.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Early empirical evidence
+\end_layout
+
+\begin_layout Standard
+Early evidence such as Black, Jensen, Scholes (1972) and Fama and Macbeth
+ (1973) support the CAPM.
+ Using time-series regression approach for 10 beta-sort portfolios, Black,
+ Jensen, Scholes (1972) support the CAPM.
+ Fama and Macbeth (1973) use a cross-section method to test the CAPM.
+ Their method includes two main steps:
+\end_layout
+
+\begin_layout Enumerate
+For each 
+\begin_inset Formula $t$
+\end_inset
+
+ in 
+\begin_inset Formula $T$
+\end_inset
+
+ periods, assuming beta is known, run a cross-section regression: 
+\begin_inset Formula $E[R_{i}-R_{f}]=\gamma_{0t}+\gamma_{1t}\beta_{im}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Given the time series of estimates 
+\begin_inset Formula $\gamma_{0t}$
+\end_inset
+
+ and 
+\begin_inset Formula $\gamma_{1t}$
+\end_inset
+
+, use an usual t-test that 
+\begin_inset Formula $\gamma_{0}=0$
+\end_inset
+
+ and 
+\begin_inset Formula $\gamma_{1}>0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+t-statistic=\frac{\bar{\hat{\gamma}}_{j}}{s(\hat{\gamma}_{j})}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Again, their evidence supports the CAPM.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Anomalies
+\end_layout
+
+\begin_layout Standard
+However, CAPM fails to explain stock returns of some portfolio formed from
+ specific factors.
+ First, Fama and French (1992) find that beta tends to be related to size,
+ small stocks earn higher returns than large stocks.
+ Thus, they control for size when forming the beta.
+ Then, applying the Fama-Macbeth procedure, they find that beta cound not
+ explain the cross-section returns, even when it is the only explanatory
+ variable.
+ However, size and ratio of book equity to market equity (B/M) have significant
+ power to exlain stock returns.
+ Other factors (such as leverage, earning E/P) fail to explain stock returns,
+ after controlling size and B/M.
+\end_layout
+
+\begin_layout Standard
+Debondt and Thaler (1985) find a long-term reversal in stock returns, while
+ Jegadeesh and Titman (1993) find a short-term momentum.
+ Momentum effect refers to a portfolio formed by buying past winners and
+ selling past losers has a higher average return than the CAPM predicts.
+ Lakonishok, Shleifer, and Vishny (1994) find the value premium that value
+ stocks outperform the growth stocks.
+ Value stocks refer to stock with low price relative to fundamental value
+ such as high B/M, E/P, C/P (cash), and low SG (sale growth).
+ Thus, a contrarian strategy that sells growth stocks and buys value stocks
+ could earn positive returns.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Factor models
+\end_layout
+
+\begin_layout Standard
+Fama and French (1993) show 5 common risk factors to explain equity return
+ and bond return.
+ For stock returns, they propose three factors: market excess return, size,
+ and B/M.
+ For government and corporate bond return, they propose two additional factors
+ for maturity spread (TERM) and default spread (DEF).
+ Using a time-series approach as in Black, Jensen, Scholes (1972), they
+ find that these mimicking factors formed based on these factors can capture
+ stock return and bond return.
+\end_layout
+
+\begin_layout Standard
+Fama and French (1996) again use the 3 factor model (hereafter FF3) includes
+ market excess return, size, and B/M to explain anomalies in literature.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R_{i}-R_{f}=a_{i}+b_{i}(R_{m}-R_{f})+s_{i}SMB+h_{i}HML
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where SMB is small-minus-big mimicking portfolio return, HML is high-minus-low.
+\end_layout
+
+\begin_layout Standard
+The idea is if the FF3 can explain the portfolio return of anomalies, the
+ intercept will be close to zero.
+ The FF3 successfully explain size, B/M, and long-term reversal anomalies,
+ but fail to explain the momentum.
+ Thus, Carhart (1997) add momentum and construct a 4-factor Carhart model:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R_{i}-R_{f}=a_{i}+b_{i}(R_{m}-R_{f})+s_{i}SMB+h_{i}HML+u_{i}UMD
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where UMD is winner-minus-loser.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Conditional CAPM
+\end_layout
+
+\begin_layout Standard
+While traditional CAPM assumes a static beta, Jagannathan and Wang (1996)
+ relax two assumptions: (i) allow beta and market premium depend on a set
+ of information at specific time point and vary over time and (ii) add an
+ additional human capital return together with market return.
+ Their model is as follows:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E[R_{i}]=c_{0}+c_{size}ln(ME)+c_{vw}\beta^{vw}+c_{prem}\beta^{prem}+c_{labor}\beta^{labor}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+where 
+\begin_inset Formula $\beta^{vw}=cov(R_{i},R_{vw})/var(R_{vw})$
+\end_inset
+
+ and 
+\begin_inset Formula $R_{vw}$
+\end_inset
+
+ is value-weighted market return;
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\beta^{prem}=cov(R_{i},R_{prem})/var(R_{prem})$
+\end_inset
+
+ and 
+\begin_inset Formula $R_{prem}$
+\end_inset
+
+ is defaul spread between BAA and AAA rated bonds;
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\beta^{labor}=cov(R_{i},R_{labor})/var(R_{labor})$
+\end_inset
+
+ and 
+\begin_inset Formula $R_{labor}$
+\end_inset
+
+ is growth rate in per capital labor income.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Next question is which factors that FF3 proxies for? This question is quite
+ interesting because in Fama and French (1993), they propose that SMB and
+ HML proxy for state variables that describe time variation in the investment
+ opportunity set (quite similar to ICAPM).
+ Fama and French (1996) argue that SMB and HML might proxy for financial
+ distress.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+APT and ICAPM
+\end_layout
+
+\begin_layout Standard
+Ross (1976) propose the APT model that its factors 
+\begin_inset Formula $f$
+\end_inset
+
+ account for the common variation in asset returns so that the disturbance
+ term 
+\begin_inset Formula $e$
+\end_inset
+
+ for large well-diversified portfolios vanishes.
+ Thus, there is a SDF 
+\begin_inset Formula $m=a+b'f$
+\end_inset
+
+ which linear in f and prices the returns.
+ Chen, Roll, and Ross (1986) use financial theory to add some factors to
+ model: maturity spread, inflation, industrial production, default spread.
+ The results show that some notable factors affect stock returns include:
+ market return, industrial production growth, unanticipated inflation, change
+ in risk premium, yield curve.
+\end_layout
+
+\begin_layout Standard
+Vassalou and Xing (2004) use default risk to check whether FF3's factors
+ proxy for default risk.
+ They find that size effect and B/M effect exist only in subsample of stocks
+ with high default risk.
+ In addition, the stock with high default risk earn higher stock return
+ than those with low default risk only in subsample of small stock or high
+ B/M ratio.
+ They conclude that FF3 contain some default-related information but they
+ don't reject the FF3.
+ They argue that FF3 contain other important priced information that unrelated
+ to default risk.
+\end_layout
+
+\begin_layout Standard
+Merton (1973) proposes the ICAPM model that is a multifactor model that
+ includes current wealth (market return) and other factors explain the future
+ investment opportunities.
+ Petkova (2006) applies this idea to extract the innovations 
+\begin_inset Formula $u^{K}$
+\end_inset
+
+ from state variables that describle the yield curve (risk free and TERM)
+ and conditional distribution of asset returns (interest rate, aggregate
+ dividend yield DIV, and default spread DEF).
+ Then she propose an ICAPM:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R_{it}=a_{i}+\beta_{im}R_{mt}+\sum(\beta_{i,u^{k}})u_{t}^{k}+e_{it}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and use this model to compare with FF3.
+ She proves that her model perform better than the conventional FF3 model.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+A recent 5-factor model
+\end_layout
+
+\begin_layout Standard
+As an attempt to fix their FF3 that fails to explain a bunch of anomalies,
+ Fama and French (2015) finally add two additional factor profitability
+ and investment to their old FF3.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R_{i}-R_{f}=a_{i}+b_{i}(R_{m}-R_{f})+s_{i}SMB+h_{i}HML+r_{i}RMW+c_{i}CMA
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where RMW is robust-minus-weak (profitability) and CMA is conservative-minus-agg
+ressive (investment) factors.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "qualify_exam"
+options "plainnat"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

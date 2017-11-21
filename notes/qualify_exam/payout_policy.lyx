@@ -1,0 +1,1163 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\options round
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family sfdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing onehalf
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Payout policy
+\end_layout
+
+\begin_layout Author
+Richard
+\end_layout
+
+\begin_layout Date
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+today
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Disappearing dividends
+\end_layout
+
+\begin_layout Paragraph*
+Disappearing dividends
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand citet
+key "fama2001disappearing"
+
+\end_inset
+
+ is one of the most influential paper about dividends.
+ Their idea is that the fraction of firms that pay out cash dividends has
+ decreased substantially from 66.5% in 1978 to 20.8% in 1999.
+ Some possible reasons could be structural shift in:
+\end_layout
+
+\begin_layout Itemize
+Shift arises toward small firms with low profitability but strong asset
+ growth (i.e., growth opportunity), characteristics typical for firms that
+ never paid dividends
+\end_layout
+
+\begin_layout Itemize
+New lists from 3,638 in 1978 to 5,670 in 1997, with low profitability and
+ small firms
+\end_layout
+
+\begin_layout Standard
+Splitting sample into: former payers, payers, and never paid firms, they
+ find some interesting stories.
+ Former payers tend to be distressed with low earning and low investments.
+ Never-paid firms tend to be more profitable than former payers and have
+ strong growth opportunities.
+ Dividend payers are, in turn, more profitable than never-paid firms but
+ less investment.
+\end_layout
+
+\begin_layout Standard
+Next, they use logit regression to estimate 
+\emph on
+the propensity to payout
+\emph default
+ 
+\emph on
+cash dividends
+\emph default
+, after controlling for a set of controls: profitability, asset growth,
+ MB, size.
+ They find that, regardless of firm characteristics, the lower propensity
+ to payout (25%) could explain half of declines in the fraction of public
+ dividend payouts (50%).
+\end_layout
+
+\begin_layout Paragraph*
+Substitution hypothesis and dividend concentration
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand cite
+key "grullon2002dividends"
+
+\end_inset
+
+ propose the substitution hypothesis that firms substitute cash dividends
+ with share repurchases as the dominant form of corporate payout.
+ Overall, we do not see a drop in total payout but a 22.7% increase in real
+ dollar amount of dividend payout among industrial firms from 1978 to 2000.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand cite
+key "deangelo2004aredividends"
+
+\end_inset
+
+ further expand this idea by find out the dividend concentration effect.
+ They find that the large reduction in number of public dividend payers
+ happens among firms that pay relatively small dividends, while there is
+ a simultaneous substantially increase in cash dividend among largest dividend
+ payers.
+\end_layout
+
+\begin_layout Standard
+For example, firms in NYSE pay the majority of industrial dividends.
+ This suggests that old and stable firms in NYSE tend to pay regular dividends.
+ In contrast, young and risky firms less likely pay dividends and list their
+ shares in AMEX and Nasdaq.
+ Dividend concentration appears along with the concentration of corporate
+ income supply.
+ The top 25 dividend payers distribute more than 55% of aggregate cash dividends.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "deangelo2004aredividends"
+
+\end_inset
+
+, thus, explain partly the disappearing puzzle raised by 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "fama2001disappearing"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Dividend announcement
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ikenberry1995marketunderreaction"
+
+\end_inset
+
+ find that repurchasers tend to get positive abnormal returns around the
+ announcements and later have positive long-term perfornance.
+ The 4-year post-announcement buy-hold-returns is 12%, and up to 45.3% for
+ value stocks but insignificant for glamour stocks (low BM).
+ This paper seems to support the 
+\emph on
+signaling hypothesis
+\emph default
+ that firms repurchase stock when price is undervalued.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand cite
+key "grullon2004theinformation"
+
+\end_inset
+
+ again study the information content of share repurchases.
+ They find surprising results that repurchase announcement does not suggest
+ an improvement in operating performance.
+ However, share repurchasers experience a drop in systematic risk and cost
+ of capital compared to non-repurchasers.
+ The story of 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "grullon2004theinformation"
+
+\end_inset
+
+ is not supportive to signaling hypothesis but supportive for 
+\emph on
+cash flow hypothesis
+\emph default
+ of 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "jensen1986agencycost"
+
+\end_inset
+
+.
+ They find that the positive market reaction concentrates more in firms
+ that have high propensity to overinvest (i.e., so share repurchase will reduce
+ overinvestment problem).
+\end_layout
+
+\begin_layout Section
+Dividends motives
+\end_layout
+
+\begin_layout Subsection
+Market timing
+\end_layout
+
+\begin_layout Standard
+Firms will repurchase when the market price is low.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "dittmar2015canmanagers"
+
+\end_inset
+
+ ask that whether managers can time the market? They propose a measure of
+ market timing:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Relative\, repurchase\, price(RRP)=\frac{(REP)Average\, Paid\, Repurchase\, Price}{(CP)CRSP\, ClosePrice_{\, in\,\pm t\, months}}-1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+If they repurchase at low price (i.e., time market successfully), we should
+ see the RRP should be negative.
+ They find that in general, average (median) RRP is negative, meaning that
+ managers tend to time the market.
+ Around 2007-2008 (crisis), firms pay at positive RRP or repurchase at significa
+nt premium (up to 8.4%).
+ In years they repurchase more, the RRP is more negative (time market more).
+\end_layout
+
+\begin_layout Itemize
+In addition, 
+\emph on
+frequent repurchasers
+\emph default
+ pay higher prices than infrequent repurchasers.
+ Frequent repurchasers are firms repurchase 
+\emph on
+9 or more months
+\emph default
+ in a given year, while infrequent repurchasers undertake 
+\emph on
+4 or fewer months
+\emph default
+ in a given years.
+ Why? Infrequent repurchasers time the market, while frequent repurchasers
+ have alternative motives to repurchase other than misvaluation.
+\end_layout
+
+\begin_layout Itemize
+Because if they can time the market, they do so on their own account.
+ RRP will be more negative in quartile with highest 
+\begin_inset Formula $Net\, Insider\, Buying=(InsiderBuy-Sell)/Outstanding$
+\end_inset
+
+ (insiders also net buy, meaning that stocks are underpriced).
+ 
+\end_layout
+
+\begin_layout Itemize
+Holding the repurchase portfolio (at underpriced value) could earn abnormal
+ returns in long-term.
+\end_layout
+
+\begin_layout Subsection
+Local clienteles
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand cite
+key "becker2011localdividend"
+
+\end_inset
+
+ propose that retail investors tend to buy local stocks and senior investors
+ prefer the dividends.
+ So firms in areas of a large fraction of seniors are more likely to pay
+ dividends, initiate dividends, and have higher dividend yields.
+ There are two competing hypotheses: Demand (from local clientele) and Supply
+ (firms in this area have higher performance in terms of Investment and
+ Net Income, so pay more dividends).
+ The regression results support the Demand hypothesis, Local Seniors tend
+ to positively relate to Dividend Payer, Dividend Initiation, and Dividend
+ Yield.
+ The effect holds for county fixed effects.
+\end_layout
+
+\begin_layout Standard
+The results do not support the supply side because the 
+\begin_inset Formula $LocalSenior$
+\end_inset
+
+ does not significant affect the 
+\begin_inset Formula $Investment$
+\end_inset
+
+ and 
+\begin_inset Formula $NetIncome$
+\end_inset
+
+ of firms (negative coeffcients).
+ In addition, there is no relation between 
+\begin_inset Formula $LocalSenior$
+\end_inset
+
+ and the 
+\begin_inset Formula $RepurchaseYield$
+\end_inset
+
+ too.
+\end_layout
+
+\begin_layout Standard
+Next, they consider the effect for subsamples:
+\end_layout
+
+\begin_layout Itemize
+Interact with 
+\begin_inset Formula $SmallFirm$
+\end_inset
+
+ is positive: stronger effect
+\end_layout
+
+\begin_layout Itemize
+Interact with 
+\begin_inset Formula $HighLocalBiasCounty$
+\end_inset
+
+: positive 
+\end_layout
+
+\begin_layout Itemize
+Interact with 
+\begin_inset Formula $Bank$
+\end_inset
+
+: positive
+\end_layout
+
+\begin_layout Itemize
+Interact with 
+\begin_inset Formula $InverseNumberOfFirms$
+\end_inset
+
+ (
+\begin_inset Quotes eld
+\end_inset
+
+only-game-in-town
+\begin_inset Quotes erd
+\end_inset
+
+ effect of Hong, Kubik, and Stein (2008)): positive
+\end_layout
+
+\begin_layout Standard
+Next, they use an exogenous shock: corporate headquarter moves, then compare
+ between dividend post-move minus pre-move.
+ The model is 
+\begin_inset Formula $\Delta Dividend=(+)\Delta LocalSenior$
+\end_inset
+
+, confirming the effect.
+\end_layout
+
+\begin_layout Standard
+The potential benefits of satisfying the local investors are:
+\end_layout
+
+\begin_layout Itemize
+Lower stock turnover: because local seniors tend to buy dividend-paying
+ stocks in 2 weeks leading up to the ex-dividend day, and are more likely
+ to buy stocks after they start to pay dividends.
+ Then they hold stocks twice longer period than other investors.
+\end_layout
+
+\begin_layout Itemize
+Ex-dividend day price reaction: the drop in ex-dividend day is related to
+ the dividend amount, should be large when the dividend demand is high.
+ The price drop reflects the relative value of dividends and capital gains
+ to marginal stockholders, so 
+\emph on
+larger drop is a good thing
+\emph default
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Dependent is 
+\emph on
+relative price drop
+\emph default
+; the main independent is 
+\begin_inset Formula $Div/Price$
+\end_inset
+
+, 
+\begin_inset Formula $LocalSenior$
+\end_inset
+
+, and their interaction.
+ Relative price drop is negative of Open Price of ex-dividend day minus
+ Close Price of last cum-dividend day, divided by Close Price of last cum-divide
+nd day.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $RelativePriceDrop=(+)Div/P+(-)(Div/P)\times SmallFirm+(+)Div/P\times Senior\times SmallFirms$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+So, higher demand for dividends is associated with larger price drops in
+ ex-dividend days, but only for small firms.
+ In regions where people's income and tax rate is high, the price drop is
+ smaller.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Public firms vs.
+ Private firms
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand cite
+key "michaely2012corporate"
+
+\end_inset
+
+ use UK data to analyze how private firms are different from public firms
+ in terms of paying dividends.
+ There are three types of firms: 
+\end_layout
+
+\begin_layout Itemize
+Wholly owned: corresponds to privately held firms with few shareholders,
+ often only one, that are intimately involved in the operations and management
+ of the firm through positions on the board of directors, financing arrangements
+, and managerial positions
+\end_layout
+
+\begin_layout Itemize
+Private Dispersed: consists of privately held firms with a dispersed shareholder
+ base, often through employee ownership plans and extensive external financing
+ arrangements
+\end_layout
+
+\begin_layout Itemize
+Public: publicly held firms
+\end_layout
+
+\begin_layout Standard
+Public firms tend to pay higher dividend (27% of profits) and smooth dividends
+ (reluctant to cut/omit dividends) more significantly than private firms
+ (wholly owned firms pay 13% profits as dividends).
+ They also less likely to initiate dividends as well.
+ Similarly, public frms’ dividend policies should be 
+\emph on
+less sensitive to transitory earnings shocks
+\emph default
+ relative to private frms (in terms of speed of adjustment 
+\begin_inset Formula $\lambda$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+For wholly owned firms, it should look like the irrelevance proposition
+ in MM (1961) where the payout decision is the residual decision after the
+ investment and financing decisions.
+ This suggests that wholly owned frms are 
+\emph on
+more likely to alter their dividend
+\emph default
+ stream and 
+\emph on
+less likely to smooth
+\emph default
+ dividends than private dispersed frms.
+ They also tend to be more sensitive to changes in investment opportunities
+ than other firms.
+ 
+\end_layout
+
+\begin_layout Standard
+Ultimately, 
+\emph on
+ownership structure
+\emph default
+ and 
+\emph on
+incentives
+\emph default
+ play key roles in shaping dividend policies.
+ 
+\end_layout
+
+\begin_layout Subparagraph
+
+\emph on
+Methods
+\end_layout
+
+\begin_layout Itemize
+Propensity score matching
+\end_layout
+
+\begin_layout Itemize
+A sample of firms that transition from private firms to public status
+\end_layout
+
+\begin_layout Itemize
+Lintner dividend model: speed of adjustment 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ is in the range of 0.83, 0.63, and 0.41 for wholly owned private firms, private
+ dispersed firms, and public firms.
+ In term of time duration, a shocks in transitory earning, private wholly
+ owned firms need aroud 2-3 years, private dispersed need 4 years, while
+ public firms need 6-7 years so that the earning shock is effectively gone.
+\end_layout
+
+\begin_layout Standard
+A seminal paper of Lintner (1956) propose that managers target a long-term
+ payout ratio.
+ They apply a Lintner dividend model:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Delta Dividend_{it}=\alpha_{i}+\lambda_{i}(\beta_{i}Profit_{it}-Dividend_{it-1})+\epsilon_{it}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Intuitively, Lintner’s model implies that frms have a target payout ratio
+ 
+\begin_inset Formula $\beta_{i}$
+\end_inset
+
+ measured as a fraction of their profits.
+ Any difference between last period’s dividends and the target level is
+ reduced by a fraction 
+\begin_inset Formula $\lambda_{i}$
+\end_inset
+
+ each period.
+ We can understand 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ as the speed of adjustment or the response of firms to transitory earning
+ shocks.
+ Small values for 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ suggest a smooth dividend policy, while a large 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ implies a more sensitivity of dividends by a large changes driven by transitory
+ shocks.
+\end_layout
+
+\begin_layout Itemize
+Why public firms smooth their dividends more:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Market frictions such as agency conflicts and information asymmetry: In
+ wholly owned firms with less agency, the adjustment is almost immediate.
+\end_layout
+
+\begin_layout Itemize
+Scrutiny from the public capital markets force public firms to smooth dividends.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\emph on
+Differential response of dividends
+\emph default
+ to negative and positive earnings shocks
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Shocks is the residuals from frm-by-frm regressions of earnings on a constant
+ and a time trend.
+ A negative (positive) earning shocks is when residuals in the lower (upper)
+ third of distribution.
+\end_layout
+
+\begin_layout Itemize
+Next, they compare the 
+\emph on
+dividend response
+\emph default
+, measured by the growth in dividends, to negative and positive earnings
+ shocks.
+ 
+\end_layout
+
+\begin_layout Itemize
+Wholly owned and private dispersed firms' dividends tend to 
+\emph on
+be more sensitive to earnings changes
+\emph default
+, whether positive or negative, relative to public frms.
+ For example, wholly owned firms increase dividends by 42% and public frms
+ increase by 17%.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Dividend ratio (over profit and over total assets):
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Public frms distribute 27% of their operating profts in dividends (and 2%
+ dividends-to-assets ratio), and private dispersed frms distribute 17.8%
+ of operating profts (0.9% of assets).
+ Wholly owned frms pay the lowest relative dividend: 13.4% of operating profts
+ and 0.7% of assets.
+\end_layout
+
+\begin_layout Itemize
+Regress 
+\begin_inset Formula $DividendRatio=\alpha+\beta SaleGrowth$
+\end_inset
+
+, where Sale Growth is empirical proxy for investment opportunities.
+ Coefficient of 
+\begin_inset Formula $SaleGrowth$
+\end_inset
+
+ is largest in amgnitude for wholly owned firms, followed by public and
+ private dispersed firms.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Institutional ownership
+\end_layout
+
+\begin_layout Standard
+Method of 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "crane2016theeffect"
+
+\end_inset
+
+: After Russell 2000 re-index around May 31st each year, more IO for firms
+ newly index in Russell 2000 and less IO in Russel 1000.
+ So they use 2SLS to check: 
+\end_layout
+
+\begin_layout Itemize
+Stage 1: 
+\begin_inset Formula $IO=R2000+(Rank^{*}-1000)+R2000(Rank^{*}-1000)+FloatAdjust$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+Stage 2: 
+\begin_inset Formula $Payout=(+)\widehat{IO}+R2000+(Rank^{*}-1000)+R2000(Rank^{*}-1000)+FloatAdjust$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The first stage is sharp RDD, which different from fuzzy RDD in Fich et
+ al.
+ (2015).
+ Crane et al.
+ prove that the sharp RDD is more appropriate.
+ 
+\begin_inset Formula $Payout$
+\end_inset
+
+ have 5 variables: Ln(dividend), DivYiel, Pr(Dividend), Ln(TotalPayout),
+ and Ln(Repurchase).
+ 
+\begin_inset Formula $Rank^{*}$
+\end_inset
+
+ is firm size rank on May 31, 
+\begin_inset Formula $FloatAdjust$
+\end_inset
+
+ is actual rank by Russell in June minus size rank in May 31st.
+\end_layout
+
+\begin_layout Itemize
+Result: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Positive relation between IO and Payout.
+ So IO requires/leads to more dividend.
+ 
+\end_layout
+
+\begin_layout Itemize
+Reasons: Insititutional investors actively monitor firms to reduce agency
+ problems so lead to higher dividends.
+ 
+\end_layout
+
+\begin_layout Itemize
+Evidence on voting: Russell 2000 firms have more shareholder-related and
+ governance-related provisions/proposals.
+ IO also affects the voting outcomes on management proposals.
+ Russell 2000 firms vote againts more for management proposals and these
+ proposals are less likely to pass.
+ Together, IO are more active to monitor firms.
+ 
+\end_layout
+
+\begin_layout Itemize
+Six proxies for agency costs: CEO-chairman, CEO ownership, Board size, GIM-index
+, ROA, high CF/low MTB (Jensen 1986 idea).
+ The interaction with IO show a higher dividends for high agency firms:
+ Y is Ln(Dividend), main independent is IO*AgencyProxy.
+ This supports that in firms with serious agency problems, the IO effect
+ will be more positive for firms’ payout policy.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Financial Crisis
+\end_layout
+
+\begin_layout Paragraph
+Payout reduction as substitute form of corporate finance
+\end_layout
+
+\begin_layout Standard
+We have two papers relating to financial crisis: 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "bliss2015corporate"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "floyd2015payoutpolicy"
+
+\end_inset
+
+.
+ During 2008-2009 crisis, when there is a shock to supply side, 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "bliss2015corporate"
+
+\end_inset
+
+ report a significant reductions in both dividend payout and share buyback.
+ But repurchase reductions prevail to a larger extent than dividend cuts.
+ Payout reductions are more likely in firms with higher leverage, more valuable
+ growth options, and lower cash balances.
+ These types of firms seem to be suffer more negative consequences from
+ the external financing shock.
+\end_layout
+
+\begin_layout Standard
+Firms seem to use payout reduction and cash retention as a substitute form
+ of corporate finance.
+ Cash retention benefits will be higher during the financial crisis and
+ firms could use proceeds from payout redution for financing future investment
+ opportunities.
+\end_layout
+
+\begin_layout Standard
+Their specific findings are:
+\end_layout
+
+\begin_layout Itemize
+During crisis, percentage of firms reduce or eliminate dividends increase
+ from 6% in 2006 to 25% in 2009
+\end_layout
+
+\begin_layout Itemize
+In addition, percentage of firms reduce or eliminate repurchase increase
+ from 52% in 2006 to 89% in 2009.
+ Share repurchase, thus, seems to be more flexible.
+\end_layout
+
+\begin_layout Paragraph
+Industrial firms and banks
+\end_layout
+
+\begin_layout Standard
+The second paper touches this feature is 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "floyd2015payoutpolicy"
+
+\end_inset
+
+.
+ They go further to compare payout policies between US banks and US industrial
+ firms over past 30 years.
+\end_layout
+
+\begin_layout Standard
+For industrial firms:
+\end_layout
+
+\begin_layout Itemize
+The fraction of industrials that pay dividends declined from 57% in 1980
+ to 15% in 2002, consistent with Fama and French (2001).
+ After 2002, they find a reverse in the propensity to pay dividends among
+ industrial firms (in terms of fraction of dividend payer and aggregate
+ real dividends) when dividends grow strongly.
+ For these firms, 
+\series bold
+\emph on
+repurchases now exceed dividends
+\series default
+\emph default
+ in most years, but dividends also increase.
+ Before the crisis, increases in repurchases push payouts to historic levels,
+ with total payouts peaking at $673 billion in 2007, well over twice the
+ maximum for the 1990s (in real terms).
+ 
+\end_layout
+
+\begin_layout Itemize
+The financial crisis of 2007–2008 has a 
+\emph on
+modest effect
+\emph default
+ on industrial dividends.
+ The fraction of industrials that pay dividends declined to a low of 15%
+ in 2002 but then rebounded, increasing to 28% by 2012, and was not greatly
+ affected by the crisis.
+ During crisis, their dividends declined by a total of 5% during 2008 and
+ 2009, and then rebounded to levels above the 2007 peak.
+\end_layout
+
+\begin_layout Itemize
+Repurchase in industrials is more volatile because it is less of a commitment.
+ Firms begin to pay repurchase since 1983.
+ The growth of repurchases over 2001 to 2007 is even more impressive.
+ By 2007, repurchases were more than twice as large as dividends.
+ In 2008 and 2009, 
+\emph on
+industrials cut repurchases sharply
+\emph default
+ but then increased repurchases to levels that again exceeded dividends.
+ In recent years, industrials paid out historically high fractions of their
+ earnings, with total payouts reaching 90% of aggregate earnings.
+ It is likely that repurchase is procyclical.
+\end_layout
+
+\begin_layout Standard
+In contrast, banks seem to have a
+\series bold
+\emph on
+ higher and more stable
+\series default
+\emph default
+ propensity to pay dividends and resist cutting dividends as the 2007–2008
+ financial crisis begins.
+ 
+\end_layout
+
+\begin_layout Itemize
+Interestingly,
+\emph on
+ banks rely on dividends more than industrials
+\emph default
+.
+ They do not find a declining propensity to pay dividends in banks (as in
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "fama2001disappearing"
+
+\end_inset
+
+).
+ At least 80% of banks consistently paid dividends over the past 30 years,
+ compared to a fraction of only 26.7% of industrials.
+\end_layout
+
+\begin_layout Itemize
+Before crisis, for banks, payouts grew from $34 billion in 1998 to $71 billion
+ in 2007 but were tilted 
+\series bold
+\emph on
+more heavily toward dividends
+\series default
+\emph default
+.
+ So banks increased dividends, both in 
+\emph on
+aggregate and per share
+\emph default
+, more consistently than industrials.
+\end_layout
+
+\begin_layout Itemize
+Banks also repurchase, but repurchases rarely represent more than one-third
+ of bank payouts and never exceed dividends.
+\end_layout
+
+\begin_layout Itemize
+During the crisis, most large banks reduced dividends 
+\emph on
+but many did so relatively slowly
+\emph default
+, suggesting a reluctance to cut.
+ Some banks maintained dividends while reporting losses (more than 20% payers
+ reporting loss in crisis years, 10 times higher than normal ratio).
+ Similar to industrials, they also 
+\emph on
+cut more repurchases quickly than dividends
+\emph default
+ because lacking of commitment.
+\end_layout
+
+\begin_layout Paragraph
+Comparisons
+\end_layout
+
+\begin_layout Standard
+Thus, banks are different from industrials in several ways:
+\end_layout
+
+\begin_layout Itemize
+Rely on dividends than repurchase.
+ In contrast, firms rely more on repurchase.
+\end_layout
+
+\begin_layout Itemize
+Before crisis, they increase in dividends more and stable (in aggregate
+ and DPS) over time, while industrials mainly increase their repurchase.
+\end_layout
+
+\begin_layout Itemize
+In crisis, they reduce payout more while the crisis does not affect industrials'
+ payout too much.
+ The reason banks reduce payout because their financial positions and requiremen
+ts of two programs CPP and SCAP from US Treasury.
+\end_layout
+
+\begin_layout Standard
+They then try to solve the underlying reasons to explain these difference
+ in payout policy between industrial firms and banks.
+ There are two possible reasons: (i) commitment to pay out cash help to
+ reduce agency costs of free cash flows and (ii) dividends signals firm
+ profitability and financial strength.
+ 
+\end_layout
+
+\begin_layout Standard
+Banks create liquidity by taking deposits, highly levered, and hold short-term
+ deposits and assets but lend in long-term.
+ As a result, banks are more opaque.
+ Thus, banks pay dividends to signal their financial strength.
+ In contrast, repurchase does not signal anything and is hard to assess
+ and track (need two-three years to finish repurchase program).
+ 
+\end_layout
+
+\begin_layout Standard
+They suggest that banks use dividends as signaling of financial strength
+ while dividends in firms are related to agency problem.
+\end_layout
+
+\begin_layout Standard
+This paper also considers three regulation programs in US and how it could
+ affect payout policy:
+\end_layout
+
+\begin_layout Itemize
+Oct 2008, Capital Purchase Program (
+\series bold
+\emph on
+CPP
+\series default
+\emph default
+) as part of TARP to bail out a total of 646 banks.
+ Banks received funds under CPP 
+\emph on
+could not increase dividends
+\emph default
+ but did not have to reduce existing dividends.
+\end_layout
+
+\begin_layout Itemize
+Feb 2009, Capital Assistance Plan (CAP) which includes 
+\series bold
+\emph on
+SCAP
+\series default
+\emph default
+ mandate stress tests for 19 banks with assets larger than $100m: 10 banks
+ need issue new equity capital to meet inadequate capital.
+ 
+\end_layout
+
+\begin_layout Itemize
+In 2003, a tax program 
+\begin_inset Quotes eld
+\end_inset
+
+Jobs and Growth Tax Relief Reconciliation Act of 2003 (
+\series bold
+\emph on
+JGTRRA
+\series default
+\emph default
+)
+\begin_inset Quotes erd
+\end_inset
+
+ lowers tax rate on dividends to 15%, reducing the long-standing tax disadvantag
+e of dividends vis-à-vis repurchases.
+ They do not find evidence that there is a substitution from repurchases
+ to dividends, but both types of payout increase.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "qualify_exam"
+options "plainnat"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

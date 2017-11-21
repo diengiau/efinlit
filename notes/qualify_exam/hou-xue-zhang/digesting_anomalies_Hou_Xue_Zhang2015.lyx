@@ -1,0 +1,2205 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass beamer
+\begin_preamble
+%1: get rid of all the junk
+\usetheme{default}
+\beamertemplatenavigationsymbolsempty
+
+%2: Make Pretty Colours
+\definecolor{fore}{RGB}{0,0,0}
+\definecolor{back}{RGB}{255,255,255}
+\definecolor{title}{RGB}{255,0,90}
+
+\setbeamercolor{titlelike}{fg=title}
+\setbeamercolor{normal text}{fg=fore,bg=back}
+
+% page number
+\setbeamertemplate{footline}{%
+    \raisebox{5pt}{\makebox[\paperwidth]{\hfill\makebox[20pt]{\color{gray}
+          \scriptsize\insertframenumber}}}\hspace*{5pt}}
+
+%code for R
+%\usepackage{listings,bera}
+%\lstloadlanguages{R}
+%\definecolor{keywords}{RGB}{255,0,90}
+%\definecolor{comments}{RGB}{60,179,113}
+%\lstset{language=R,
+%keywordstyle=color{keywords},
+%commentstyle=color{comments}emph,
+%tabsize=4}
+
+%Another way
+
+%utf8 encode
+%\usepackage{ucs}
+%\usepackage[utf8x]{inputenc}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding utf8
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Digesting Anomalies: An Investment Approach
+\end_layout
+
+\begin_layout Subtitle
+Hou, Xue, Zhang (2015-RFS)
+\end_layout
+
+\begin_layout Author
+Dien Giau Bui
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Institute
+National Taiwan University
+\end_layout
+
+\begin_layout Date
+July, 2017
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Outline
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Introduction and model
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Main results
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Fama and French (1996) model fails to account for many anomalies: R&D, momentum,
+ accruals, asset growth.
+\end_layout
+
+\begin_layout Itemize
+Construct a new 
+\emph on
+q
+\emph default
+-factor model that summarize cross section stock returns based on q-theory
+\end_layout
+
+\begin_layout Itemize
+A horse race of Fama-French 3-factor model, Carhart 4-factor model, and
+ their 4-factor model to test 80 anomalies:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+A half of anomanies (from NYSE breakpoints and value-weighted returns) are
+ insignificant: a wide-spread p-hacking in anomaly literature (Hou, Xue,
+ and Zhang, 2017)
+\end_layout
+
+\begin_layout Itemize
+Among 35 significant anomalies, their model performs better than the other
+ two
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="4">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $q$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Carhart model
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+FF3 model
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Average 
+\begin_inset Formula $\hat{\alpha}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.20%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.33%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.55%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Number of significant 
+\begin_inset Formula $\hat{\alpha}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+19
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+27
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Number of GRS test reject
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+20
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+24
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+28
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Economic Model - Production Side
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+A two period stochastic general equilibrium model
+\end_layout
+
+\begin_layout Itemize
+Firm 
+\begin_inset Formula $i$
+\end_inset
+
+ at time 0 has assets 
+\begin_inset Formula $A_{i0}$
+\end_inset
+
+, profitability 
+\begin_inset Formula $\Pi_{i0}$
+\end_inset
+
+, cash flow 
+\begin_inset Formula $A_{i0}\Pi_{i0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Investment for date 0 is 
+\begin_inset Formula $I_{i0}=A_{i1}$
+\end_inset
+
+ because assets 
+\begin_inset Formula $A_{i0}$
+\end_inset
+
+ depreciate at rate 100%
+\end_layout
+
+\begin_layout Itemize
+Adjustment cost is in quadratic form: 
+\begin_inset Formula $(a/2)(I_{i0}/A_{i0})^{2}A_{i0}$
+\end_inset
+
+, with 
+\begin_inset Formula $a>0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+If 
+\begin_inset Formula $D_{i0}=A_{i0}\Pi_{i0}-I_{i0}-(a/2)(I_{i0}/A_{i0})^{2}A_{i0}>0$
+\end_inset
+
+ then firms distribute dividends back to household
+\end_layout
+
+\begin_layout Itemize
+At time 1, cash flow 
+\begin_inset Formula $A_{i1}\Pi_{i1}$
+\end_inset
+
+, pay all as dividends because firm 
+\begin_inset Formula $i$
+\end_inset
+
+ does not invest at time 1 and ex-dividend price 
+\begin_inset Formula $P_{i1}=0$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Household side
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+A representative household maximizes its expected utilities: 
+\begin_inset Formula $U(C_{0})+\rho E_{0}\left[U(C_{1})\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $P_{i0}=E_{0}\left[M_{1}(P_{i1}+D_{i1})\right]$
+\end_inset
+
+ or 
+\begin_inset Formula $E_{0}\left[M_{1}r_{i1}^{S}\right]=1$
+\end_inset
+
+ where 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $r_{i1}^{S}=\left(P_{i1}+D_{i1}\right)/P_{i0}$
+\end_inset
+
+ is stock return
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $M_{1}=\rho U'(C_{1})/U'(C_{0})$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Problem and Equilibrium
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Firm 
+\begin_inset Formula $i$
+\end_inset
+
+ chooses 
+\begin_inset Formula $I_{i0}$
+\end_inset
+
+ to maximize cum-dividend equity value at time 0:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $P_{i0}+D_{i0}=\underset{\{I_{i0}\}}{max}A_{i0}\Pi_{i0}-I_{i0}-(a/2)(I_{i0}/A_{i0})^{2}A_{i0}+E_{0}\left[M_{1}A_{i1}\Pi_{i1}\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+FOC: 
+\begin_inset Formula $1+a\frac{I_{i0}}{A_{i0}}=E_{0}\left[M_{1}\Pi_{i1}\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Marginal cost includes paying the purchasing price of unity and marginal
+ adjustment cost
+\end_layout
+
+\begin_layout Itemize
+Marginal benefit is marginal profitability at time 1, discounted to time
+ 0 using 
+\begin_inset Formula $M_{1}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Stock return: 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $r_{i1}^{S}=(P_{i1}+D_{i1})/P_{i0}=A_{i1}\Pi_{i1}/E_{0}\left[M_{1}A_{i1}\Pi_{i1}\right]=\Pi_{i1}/E_{0}\left[M_{1}\Pi_{i1}\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Replace the FOC condition: 
+\begin_inset Formula $r_{i1}^{S}=\Pi_{i1}/\left(1+a\frac{I_{i0}}{A_{i0}}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Implications
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Take expectation: 
+\begin_inset Formula $E_{0}\left[r_{i1}^{S}\right]=E_{0}\left[\Pi_{i1}\right]/\left(1+a\frac{I_{i0}}{A_{i0}}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Investment channel: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Firms invest more when marginal 
+\begin_inset Formula $q$
+\end_inset
+
+ is high and low discount rate (i.e., low cost of capital)
+\end_layout
+
+\begin_layout Itemize
+E.g., for a project 
+\begin_inset Formula $NPV=\sum\frac{CF_{t}}{(1+r)^{t}}$
+\end_inset
+
+ then low 
+\begin_inset Formula $r$
+\end_inset
+
+ implies higher NPV and firms invest more
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Profitability channel:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+High expected profitability relative to low investment must mean high discount
+ rates
+\end_layout
+
+\begin_layout Itemize
+If discount rate is low, firms should invest more rather than less
+\end_layout
+
+\begin_layout Itemize
+Similarly, low expected profitability relative to high investment must mean
+ low discount rate
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Investment channel
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figs/f1-investment-channel.png
+	lyxscale 60
+	scale 35
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Investment channel
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Explain puzzles
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Through investment channel:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+New equity issue: issuers have more sources of funds so they invest more
+ and earn lower returns.
+\end_layout
+
+\begin_layout Itemize
+Value premium: M/B and marginal 
+\emph on
+
+\begin_inset Formula $q$
+\end_inset
+
+ 
+\emph default
+are highly correlated so value firms (high B/M or low M/B) have low marginal
+ 
+\begin_inset Formula $q$
+\end_inset
+
+ and invest less.
+ Thus, value firms have higher returns.
+\end_layout
+
+\begin_layout Itemize
+Long-term reversal: high valuation ratios (e.g., long-term prior returns)
+ often results from a stream of positive shocks on fundamentals.
+ They should invest more and earn lower returns.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Through profitability channel:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Momentum: momentum winners have higher expected profitability so they earn
+ higher expected returns.
+\end_layout
+
+\begin_layout Itemize
+Financial distress: less financial distressed firms are more profitable
+ should earn higher expected returns.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Section
+Data and Empirical Factors
+\end_layout
+
+\begin_layout Subsection
+Data
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Data
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+CRSP data on monthly return, dividends, and price
+\end_layout
+
+\begin_layout Itemize
+Accounting data from Compustat
+\end_layout
+
+\begin_layout Itemize
+Sample from Jan 1972 to Dec 2012
+\end_layout
+
+\begin_layout Itemize
+Financial firms and negative book equity firms are excluded
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Subsection
+Factor construction
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Empirical model: 4 factors
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The model
+\begin_inset Formula $E[r^{i}]-R^{f}=\alpha^{i}+\beta_{MKT}^{i}E[MKT]+\beta_{ME}^{i}E[r_{ME}]+\beta_{I/A}^{i}E[r_{I/A}]+\beta_{ROE}^{i}E[r_{ROE}]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Investment-to-Asset: annual change in total assets divided by 1-year-lagged
+ total assets
+\end_layout
+
+\begin_layout Itemize
+ROE: income before extraordinary items divided by 1-quarter-lagged book
+ equity
+\end_layout
+
+\begin_layout Itemize
+Construct the q-factors from 
+\begin_inset Formula $2\times3\times3$
+\end_inset
+
+ from independently sort on size, I/A, ROE
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Size: use median
+\end_layout
+
+\begin_layout Itemize
+I/A and ROE: use 30%-40%-30%
+\end_layout
+
+\begin_layout Itemize
+Use NYSE breakpoints and value-weighted returns
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Totally, we have 18 portfolios and their monthly stock returns
+\end_layout
+
+\begin_layout Itemize
+Size factor 
+\begin_inset Formula $r_{ME}=\overline{9\, small}-\overline{9\, big}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Investment factor: 
+\begin_inset Formula $r_{I/A}=\overline{6\, low\, I/A}-\overline{6\, high\, I/A}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Profitability factor: 
+\begin_inset Formula $r_{ROE}=\overline{6\, high\, ROE}-\overline{6\, low\, ROE}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Descriptive statistics
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+FF3 and Carhart models fail to capture average returns of 
+\emph on
+q
+\emph default
+-factors
+\end_layout
+
+\begin_layout Itemize
+In contrast, 
+\emph on
+q
+\emph default
+-factor model could explain the HML and UMD
+\end_layout
+
+\begin_layout Itemize
+Harvey, Liu, Zhu (2013) suggest a newly discovered factor should have 
+\begin_inset Formula $t>3$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figs/t1-a.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Descriptive statistics
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Correlation matrix
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $r_{ME}$
+\end_inset
+
+ and 
+\begin_inset Formula $SMB$
+\end_inset
+
+ correlation is 95%: well resemble size effect
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $r_{I/A}$
+\end_inset
+
+ and 
+\begin_inset Formula $HML$
+\end_inset
+
+ correlation is 69%, so 
+\emph on
+investmen
+\emph default
+t plays the role of 
+\emph on
+B/M
+\emph default
+ in this model
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $r_{ROE}$
+\end_inset
+
+ and 
+\begin_inset Formula $UMD$
+\end_inset
+
+ correlation is 50%, so 
+\emph on
+profitability
+\emph default
+ plays the role of 
+\emph on
+momentum
+\emph default
+ in this model
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figs/t1-b.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Correlation matrix
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Anomalies
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Table 2 presents 80 anomalies that will be tested
+\end_layout
+
+\begin_layout Itemize
+6 categories: 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Momentum: earning momentum and price momentum
+\end_layout
+
+\begin_layout Enumerate
+Value-versus-growth: B/M, E/P, D/P, SG, Reversal, ...
+\end_layout
+
+\begin_layout Enumerate
+Investment: I/A, Investment growth, Accruals, Stock Issues, ...
+\end_layout
+
+\begin_layout Enumerate
+Profitability: ROE, ROA, profit margin, revenue surprise
+\end_layout
+
+\begin_layout Enumerate
+Intangibles: G index, Industries, RD/Market, RD/Sale...
+\end_layout
+
+\begin_layout Enumerate
+Trading frictions: market equity, total volatility, idiosyncratic volatility,
+ systematic volatility, dispersion earning forecast, Dimson's beta, turnover,
+ trading volume...
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Section
+Empirical Results
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Insignificant anomalies
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+38 anomalies are insignificant in broad cross section
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+12 out of 13 anomalies in 
+\emph on
+trading frictions 
+\emph default
+are insignificant at 5%
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Harvey, Liu, and Zhu (2013): anomalies literature are likely exaggerated
+\end_layout
+
+\begin_layout Itemize
+In addition, we could refer to explanations in McLean and Pontiff (2016)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figs/t3.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Insignificant anomalies
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Significant anomalies
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+35 significant anomalies in the broad cross section
+\end_layout
+
+\begin_layout Itemize
+They compare between 
+\emph on
+q
+\emph default
+-factor and FF3 and Carhart models
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Average high-minus-low 
+\begin_inset Formula $|\bar{\alpha_{q}}|=0.2\%/month$
+\end_inset
+
+, 0.33% for Carhart, and 0.55% for FF3
+\end_layout
+
+\begin_layout Itemize
+Only 5/35 q-alphas are significant at 5%; 19 for Carhart and 27 for FF3
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figs/t4-a.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Significant anomalies
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Exclude size in q-factor
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+An alternative 3-factor q-factor model without size, repeat an old version
+ of Chen, Novy-Marx, Zhang (2011)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Chen, Novy-Marx, Zhang (2011) is not published yet
+\end_layout
+
+\begin_layout Itemize
+In acknowledgment of this paper, 
+\emph on
+
+\begin_inset Quotes eld
+\end_inset
+
+a timing error in the empirical analysis of the previous work
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figs/t5.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Alternative q-factor without size factor
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+3-factor vs.
+ 4-factor q-factor
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+In 4-factor q-factor model, across 35 anomalies: high-minus-low 
+\begin_inset Formula $|\bar{\alpha_{q}}|=0.2\%/month$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+In 3-factor q-factor model, high-minus-low 
+\begin_inset Formula $|\bar{\alpha_{q}}|=0.23\%/month$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Still beats 0.33% in Carhart and 0.55% in FF3
+\end_layout
+
+\begin_layout Itemize
+Across all deciles, the 
+\begin_inset Formula $|\bar{\alpha_{q}}|=0.11\%/month$
+\end_inset
+
+ in 4-factor, 0.12% in 3-factor, compared to 0.12% in Carhart, and 0.16% in
+ FF3
+\end_layout
+
+\begin_layout Itemize
+Conclusion: size factor plays only a limited role in the q-factor model's
+ success
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\emph on
+Q
+\emph default
+-factor loading (1)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Look at the beta of the q-factor: 
+\begin_inset Formula $I/A$
+\end_inset
+
+ and 
+\begin_inset Formula $ROE$
+\end_inset
+
+ and their significance
+\end_layout
+
+\begin_layout Itemize
+Momentum anomalies: come from 
+\emph on
+high loading on profitability
+\end_layout
+
+\begin_layout Itemize
+Value premium: come from 
+\emph on
+high loading on investment
+\end_layout
+
+\begin_layout Itemize
+ROE, ROA: from profitability
+\end_layout
+
+\begin_layout Itemize
+Others: either profitability or investment
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\emph on
+Q
+\emph default
+-factor loading (2)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figs/t6.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\emph on
+Q
+\emph default
+-factor loading
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Selected anomalies
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Momentum: earning (SUE-1) and price momentum (R6-6)
+\end_layout
+
+\begin_layout Itemize
+Operating Accruals (OA) and Percent Operating Accruals (POA)
+\end_layout
+
+\begin_layout Itemize
+25 size-B/M sorted portfolios: as in Fama and French (1993, 1996)
+\end_layout
+
+\begin_layout Itemize
+Sharpe ratios
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Earning Momentum
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+q-factor captures momentum via ROE factor
+\end_layout
+
+\begin_layout Itemize
+High (low) B/M firms have higher (lower) ROE, so they have higher (lower)
+ expected returns
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figs/t7-a.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Earning momentum
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Price Momentum
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figs/t7-b.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Price momentum
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Accruals
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+q-factor fails to capture the accruals.
+ Why?
+\end_layout
+
+\begin_layout Itemize
+Intuitively, because 
+\emph on
+earnings equal operating cash flows plus accruals
+\emph default
+, 
+\emph on
+\color red
+high OA firms
+\emph default
+\color inherit
+ tend to be 
+\emph on
+\color red
+more profitable
+\emph default
+\color inherit
+ and load more heavily on the ROE factor than low OA firms.
+ This pattern in ROE factor loadings goes in the wrong direction in capturing
+ the OA anomaly.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figs/t9.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Opearating Accruals
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+25 size-B/M portfolios
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The q-factor model performs similarly FF3 and Carhart models
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $|\bar{\alpha_{q}}|=0.11\%/month$
+\end_inset
+
+, similar to 0.10% of FF3 and 0.11% of Carhart
+\end_layout
+
+\begin_layout Itemize
+In q-factor, 4 out of 25 have significant alpha, compared to 5 in FF3 and
+ 5 in Carhart
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Sharpe ratios
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+In the mean-variance framework, a factor model can account for all the anomalies
+ if and only if the efficient portfolio from combining all the anomaly portfolio
+s lies in the span of the factors.
+\end_layout
+
+\begin_layout Itemize
+As such, the efficient combination of the factors should have a Sharpe ratio
+ that is 
+\color red
+greater than or equal to the maximum Sharpe ratio from combining all the
+ anomaly portfolios
+\color inherit
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+In other words, a good model should have higher Sharpe ratio
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Each factor Sharpe ratio: I/A and ROE are highest
+\end_layout
+
+\begin_layout Itemize
+Maximum Sharpe ratio of model: q-factor Sharpe ratio = 0.43
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figs/t11-a.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sharpe ratio of models
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Anomalies' maximum Sharpe ratios
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+q-factor model is more effective than Carhart and FF3
+\end_layout
+
+\begin_layout Itemize
+But q-factor model is 
+\color red
+by no means perfect
+\color inherit
+ in capturing all anomalies
+\end_layout
+
+\begin_layout Itemize
+A pooled 28 out of 35 high-minus-low anomalies produces a maximum Sharpe
+ ratio of 0.48 > 0.43
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Section
+Conclusion
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Conclusion
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+About one-half of 80 anomalies earn insignificant average returns for high-minus
+-low deciles formed with NYSE breakpoints and value-weighted returns
+\end_layout
+
+\begin_layout Itemize
+An q-factor model (size, market, investment, and profitability) outperform
+ FF3 and Carhart in capturing many (but not all) of significant anomalies
+\end_layout
+
+\begin_layout Itemize
+Can solve many puzzles: value premium, momentum, new issues.
+\end_layout
+
+\begin_layout Itemize
+But what the model leaves: accruals
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+A parallel model
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+A very similar model: 5-factor Fama-French model
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Include 5 factor: market, SMB, HML, RMW, and CMA
+\end_layout
+
+\begin_layout Itemize
+But, they argue that HML may be a redundant factor
+\end_layout
+
+\begin_layout Itemize
+So what does it leaves:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Market
+\end_layout
+
+\begin_layout Itemize
+SMB or 
+\begin_inset Formula $r_{ME}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+CMA or 
+\begin_inset Formula $r_{I/A}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+RMW or 
+\begin_inset Formula $r_{ROE}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+The only difference between them is how they sort the portfolio:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+q-factor: 
+\begin_inset Formula $2\times3\times3$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+FF5: 
+\begin_inset Formula $\mbox{2\times2\times2\times2}$
+\end_inset
+
+ for four sort and 
+\begin_inset Formula $2\times3$
+\end_inset
+
+ or 
+\begin_inset Formula $2\times2$
+\end_inset
+
+ for two sort (with size)
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Fama and French's critics
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Why not include the B/M factor?
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+May be because 
+\begin_inset Formula $\rho(I/A,HML)=0.69$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+But HML is redundant as they discuss, why we need it?
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Restricted because not show different way to form the factors (i.e., different
+ sorts)
+\end_layout
+
+\begin_layout Itemize
+Focus on univariate sort on each anomaly and value-weighted returns.
+ This leads to portfolio return is dominated by big stocks but the anomalies
+ are more pronounced in small stocks.
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Thank you
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Thank you for your listening and welcome for your comments and questions.
+\begin_inset Newline newline
+\end_inset
+
+Contact: buidiengiau@gmail.com / d0723007@ntu.edu.tw
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\end_body
+\end_document

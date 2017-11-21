@@ -1,0 +1,1949 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass book
+\options round
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family sfdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 3cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Asset pricing chapters of Cochrane (2005)
+\end_layout
+
+\begin_layout Author
+Richard
+\end_layout
+
+\begin_layout Date
+2017 June, NTU
+\end_layout
+
+\begin_layout Standard
+This paper reviews 5 chapters in Asset Pricing book of Cochrane (2005).
+ For brevity, we skip all complicated proofs and provide the underlying
+ theories only.
+ All proofs are assumed to be solved by readers or we could provide it in
+ appendix later.
+\end_layout
+
+\begin_layout Standard
+The first chapter provides a very brief overview of the consumption-based
+ model: basic model, discount factor, and some classical issues in finance
+ (risk free, risk correction, equity premium).
+\end_layout
+
+\begin_layout Standard
+The second chapter goes to details of the stochastic discount factor.
+ Two theorems in this chapter is Law of one price and No arbitrage.
+ Both are important for SDF existence.
+\end_layout
+
+\begin_layout Standard
+The third chapter goes to details of mean-variance frontier, which is the
+ big foundation of the CAPM and factor models.
+\end_layout
+
+\begin_layout Chapter
+Comsumption-based model overview
+\end_layout
+
+\begin_layout Section
+
+\emph on
+Basic pricing equation
+\end_layout
+
+\begin_layout Standard
+The basic comsumption-based model is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+p_{t}=E_{t}\left[\beta\frac{u'(c_{t+1})}{u'(c_{t})}x_{t+1}\right]\label{eq:pricing-equation}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph*
+Explain the model:
+\end_layout
+
+\begin_layout Standard
+In this equation, 
+\begin_inset Formula $x_{t+1}$
+\end_inset
+
+is the 
+\emph on
+payoffs
+\emph default
+ in next period, which is 
+\begin_inset Formula $x_{t+1}=p_{t+1}+d_{t+1}$
+\end_inset
+
+.
+ Investor has an 
+\emph on
+utility
+\emph default
+ function, which captures what investor wants.
+ Utility function often has the power utility form:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+u(c_{t})=\frac{1}{1-\gamma}c_{t}^{1-\gamma}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+From this, we have its first derivative 
+\begin_inset Formula $u'(c_{t})=c_{t}^{-\gamma}>0$
+\end_inset
+
+ so increasing utility function (i.e., more consumption is more desirable);
+ and second derivative 
+\begin_inset Formula $u''(c_{t})=-\gamma c_{t}^{-\gamma-1}<0$
+\end_inset
+
+ so the utility function is concave (i.e., investor is risk averse and declining
+ marginal value of additional consumption).
+ The curvature of the utility function generates the risk aversion and intertemp
+oral substitution: the investor prefers a stable/steady consumption stream
+ over time and across states of nature.
+\end_layout
+
+\begin_layout Standard
+In addition, 
+\begin_inset Formula $\beta$
+\end_inset
+
+ is 
+\emph on
+subjective disount factor
+\emph default
+.
+ 
+\end_layout
+
+\begin_layout Paragraph*
+Problem of investor
+\end_layout
+
+\begin_layout Standard
+Denote 
+\begin_inset Formula $e_{t}$
+\end_inset
+
+ as original consumption level (or original wealth) and 
+\begin_inset Formula $\xi$
+\end_inset
+
+ is amount of the asset he choose to buy at price 
+\begin_inset Formula $p_{t}$
+\end_inset
+
+.
+ His problem is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\underset{\{\xi\}}{max}\, u(c_{t})+E_{t}[\beta u(c_{t+1})]\,\,\,\, s.t.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+c_{t}=e_{t}-p_{t}\xi,
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+c_{t+1}=e_{t+1}+x_{t+1}\xi.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Solve the first-order condition, we could get 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+p_{t}u'(c_{t})=E_{t}[\beta u'(c_{t+1})x_{t+1}]\label{eq:optimum-condition}
+\end{equation}
+
+\end_inset
+
+ then the Equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:pricing-equation"
+
+\end_inset
+
+ above.
+ Investors buy or sell until they could get the standard marginal condition
+ in Equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:optimum-condition"
+
+\end_inset
+
+, where the left side is the loss in utility if investors buy one more unit
+ of asset now and the right side is the 
+\emph on
+discounted
+\emph default
+ utility he optains from an extra payoff (from asset) at 
+\begin_inset Formula $t+1$
+\end_inset
+
+.
+ So, the optimum is when marginal loss equals marginal gain.
+\end_layout
+
+\begin_layout Section
+Stochastic discount factor
+\end_layout
+
+\begin_layout Standard
+Rewrite basic pricing equation:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p_{t}=E(m_{t+1}x_{t+1})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+m_{t+1}=\beta\frac{u'(c_{t+1})}{u'(c_{t})}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $m_{t+1}$
+\end_inset
+
+ is 
+\emph on
+stochastic discount factor
+\emph default
+ (SDF).
+ Sometimes, it is also called 
+\emph on
+marginal rate of substitution
+\emph default
+, meaning that rate at which the investor is willing to substitute consumption
+ at time 
+\begin_inset Formula $t+1$
+\end_inset
+
+ for consumption at time 
+\begin_inset Formula $t$
+\end_inset
+
+.
+ Further, it is also called 
+\emph on
+pricing kernel
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+If no uncertainty, we can write: 
+\begin_inset Formula $p_{t}=\frac{1}{R^{f}}x_{t+1}$
+\end_inset
+
+ where 
+\begin_inset Formula $R^{f}$
+\end_inset
+
+ is gross risk-free rate.
+ For a risky asset 
+\emph on
+i
+\emph default
+, it should be discounted using an asset-specific risk-adjusted discount
+ factor 
+\begin_inset Formula $1/R^{i}$
+\end_inset
+
+ so 
+\begin_inset Formula $p_{t}^{i}=\frac{1}{R^{i}}E(x_{t+1}^{i})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Further notation
+\end_layout
+
+\begin_layout Standard
+The 
+\emph on
+gross return
+\emph default
+: 
+\begin_inset Formula $R_{t+1}=\frac{x_{t+1}}{p_{t}}$
+\end_inset
+
+ so
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+1=E[m_{t+1}R_{t+1}]\label{eq:return-pricing}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Returns are used much more often in empirical work, rather than price, because
+ it is typically 
+\emph on
+stationary
+\emph default
+ over time.
+\end_layout
+
+\begin_layout Standard
+Other types of returns such as
+\emph on
+:
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+net return 
+\begin_inset Formula $r_{t+1}=R_{t+1}-1$
+\end_inset
+
+ 
+\emph default
+such that if gross return is 1.05 then net return is 5%.
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+excess return
+\emph default
+ 
+\begin_inset Formula $R^{e}$
+\end_inset
+
+ such as 
+\begin_inset Formula $R^{e}=R-R^{f}$
+\end_inset
+
+, which in case 
+\emph on
+zero-cost portfolio
+\emph default
+ or long-short assets.
+\end_layout
+
+\begin_layout Section
+Classical issues in Finance
+\end_layout
+
+\begin_layout Standard
+This section use basic pricing equation to introduce some important classical
+ topics/issues in Finance such as interest rate, risk adjustement, systematic
+ versus idiosyncratic risk, return-beta, mean-variance frontier, time-varying
+ expected return, present value relations.
+\end_layout
+
+\begin_layout Paragraph*
+Risk-free rate
+\end_layout
+
+\begin_layout Standard
+The risk free rate and SDF relation:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+R^{f}=1/E(m)\label{eq:risk-free-rate}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+with lognormal consumption growth:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+r_{t}^{f}=\delta+\gamma E_{t}(\triangle ln\, c_{t+1})-\frac{\gamma^{2}}{2}\sigma_{t}^{2}(\triangle ln\, c_{t+1})\label{eq:risk-free-rate-lognormal}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+How to prove Equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:risk-free-rate"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Because we have 
+\begin_inset Formula $p=E(mx)$
+\end_inset
+
+ so for risk-free asset (such as Treasury) we assume price is 
+\begin_inset Formula $p=1$
+\end_inset
+
+ and the payoff is 
+\begin_inset Formula $R^{f}$
+\end_inset
+
+.
+ Thus, 
+\begin_inset Formula $1=E(mR^{f})=E(m)R^{f}$
+\end_inset
+
+ because 
+\begin_inset Formula $R^{f}$
+\end_inset
+
+ is constant.
+\end_layout
+
+\begin_layout Standard
+Apply to the case with utility function is 
+\begin_inset Formula $u'(c)=c^{-\gamma}$
+\end_inset
+
+ so we have 
+\begin_inset Formula $R^{f}=\frac{1}{\beta}\left(\frac{c_{t+1}}{c_{t}}\right)^{\gamma}$
+\end_inset
+
+.
+ This result has some intuitions:
+\end_layout
+
+\begin_layout Enumerate
+Real interest rate is high when people are impatient (they want to consume
+ now) or when 
+\begin_inset Formula $\beta$
+\end_inset
+
+ is small.
+ So they need higher interest rates to convince them to save.
+\end_layout
+
+\begin_layout Enumerate
+The real interest rate is high when consumption growth is high.
+ Because the interest rate is high, people save more and consume less now.
+ As a result, they will get more payoff and consume more in the future,
+ or consumption growht will be high.
+\end_layout
+
+\begin_layout Enumerate
+The real interest rate is more sensitive to consumption growth when power
+ parameter 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ is large.
+ If the utility is highly curved, investors care more about maintaining
+ a smooth consumption over time and less willing to rearrange consumption
+ over time in response to interest rate incentives.
+ Thus, he requires a larger change in interest rate to induce him to given
+ consumption growth.
+\end_layout
+
+\begin_layout Standard
+Cochrane proposes a case that if log risk-free is 
+\begin_inset Formula $r_{t}^{f}$
+\end_inset
+
+; subjective discount rate 
+\begin_inset Formula $\delta$
+\end_inset
+
+ is by 
+\begin_inset Formula $\beta=e^{-\delta}$
+\end_inset
+
+; and consumption growth is lognormally distributed 
+\begin_inset Formula $\triangle ln\, c_{t+1}=ln\, c_{t+1}-ln\, c_{t}$
+\end_inset
+
+.
+ For normal 
+\begin_inset Formula $z$
+\end_inset
+
+ variable, we can derive: 
+\begin_inset Formula $E(e^{z})=e^{E(z)+1/2\sigma^{2}(z)}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+From the function: 
+\begin_inset Formula $R^{f}=1/E_{t}\left[\beta\left(\frac{c_{t+1}}{c_{t}}\right)^{-\gamma}\right]$
+\end_inset
+
+ of utility function 
+\begin_inset Formula $u'(c)=c^{-\gamma}$
+\end_inset
+
+, he derives Equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:risk-free-rate-lognormal"
+
+\end_inset
+
+.
+ We need an appendix to derive this result.
+\end_layout
+
+\begin_layout Standard
+Intuitions of Equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:risk-free-rate-lognormal"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Enumerate
+Real interest rate is high when impatience 
+\begin_inset Formula $\delta$
+\end_inset
+
+ is high, when consumption growth is high, higher 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ makes interest rate is more sensitive to consumption growth.
+\end_layout
+
+\begin_layout Enumerate
+New item 
+\begin_inset Formula $\sigma^{2}$
+\end_inset
+
+ captures 
+\emph on
+precautionary savings
+\emph default
+: when consumption is more volatile, people want to save more because they
+ are worried about low consumption states.
+ Thus, interest rate decreases.
+\end_layout
+
+\begin_layout Enumerate
+For power utility function, curvature parameter 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ controls: (i) 
+\emph on
+intertemporal substitution 
+\emph default
+(aversion to consumption varies over time), (ii) 
+\emph on
+risk aversion 
+\emph default
+(aversion to consumption varies across states of natures), and (iii) 
+\emph on
+precautionary savings 
+\emph default
+(which depend on third derivative of utility function ???).
+\end_layout
+
+\begin_layout Paragraph*
+Risk corrections
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Idea:
+\bar default
+ Payoffs that are positively correlated with consumption growth have lower
+ prices (or high returns) to compensate investors for risk:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+p=\frac{E(x)}{R^{f}}+cov(m,x)=\frac{E(x)}{R^{f}}+\frac{cov\left[\beta u'(c_{t+1}),x_{t+1}\right]}{u'(c_{t})}\label{eq:risk-correct-price}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+E(R^{i})-R^{f}=-R^{f}cov(m,R^{i})=-\frac{cov\left[u'(c_{t+1}),R_{t+1}^{i}\right]}{E\left[u'(c_{t+1})\right]}\label{eq:risk-correct-ret}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Marginal utility 
+\begin_inset Formula $u'(c)$
+\end_inset
+
+ declines as 
+\begin_inset Formula $c$
+\end_inset
+
+ rises.
+ Asset price is lowered if its payoff covaries positively with consumption
+ (or negatively with marginal utility 
+\begin_inset Formula $u'(c)$
+\end_inset
+
+).
+ In contrast, asset price is higher if it covaries negatively with consumption.
+\end_layout
+
+\begin_layout Standard
+Example: if asset pays you more money when consumption is low (when you
+ are poor now or when consumption growth is high), it is a hedge for you
+ such as insurance because it smooths your consumption.
+ Thus, you are happy to pay more money to buy them (
+\begin_inset Formula $p$
+\end_inset
+
+ will be higher) and return of this asset is lower (
+\begin_inset Formula $E(R^{i})$
+\end_inset
+
+ is lower).
+\end_layout
+
+\begin_layout Paragraph*
+Idiosyncratic risk does not affect prices
+\end_layout
+
+\begin_layout Standard
+We can decompose payoff 
+\begin_inset Formula $x$
+\end_inset
+
+ into a part correlated with discount factor and an idiosyncratic part 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+ as: 
+\begin_inset Formula $x=proj(x|m)+\varepsilon$
+\end_inset
+
+.
+ where 
+\begin_inset Formula $proj(x|m)=\frac{E(mx)}{E(m^{2})}m$
+\end_inset
+
+ (fitted value of regress 
+\begin_inset Formula $x$
+\end_inset
+
+ on 
+\begin_inset Formula $m$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+Proof: that price of 
+\begin_inset Formula $proj(x|m)$
+\end_inset
+
+ equals price of 
+\begin_inset Formula $x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $p(proj(x|m))=p\left(\frac{E(mx)}{E(m^{2})}m\right)=E\left(m^{2}\frac{E(mx)}{E(m^{2})}\right)=E(mx)=p(x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph*
+Expected return-beta
+\end_layout
+
+\begin_layout Standard
+We can write 
+\begin_inset Formula $p=E(mx)$
+\end_inset
+
+ as: 
+\begin_inset Formula $E(R^{i})=R^{f}+\beta_{i,m}\lambda_{i,m}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $\beta_{i,m}$
+\end_inset
+
+is coefficient of regress return 
+\begin_inset Formula $R^{i}$
+\end_inset
+
+ on 
+\begin_inset Formula $m$
+\end_inset
+
+, so beta varies for each asset; the 
+\begin_inset Formula $\lambda_{i,m}$
+\end_inset
+
+ is risk factor (i.e., 
+\emph on
+price of risk
+\emph default
+) so it is the same for all asset.
+\end_layout
+
+\begin_layout Standard
+In consumption-based model, 
+\begin_inset Formula $m=\beta(c_{t+1}/c_{t})^{-\gamma}$
+\end_inset
+
+ so we can rewrite:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $E(R^{i})=R^{f}+\beta_{i,\triangle c}\lambda_{i,\triangle c}$
+\end_inset
+
+ with 
+\begin_inset Formula $\lambda_{i,\triangle c}=\gamma var(\triangle c)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Easily to see, the price of risk depends on the volatility of the discount
+ factor (is consumption growth here) and risk aversion.
+ The more risk averse investors and a riskier environment, the higher expected
+ return premium one must pay to persuade investors to hold risky (high beta)
+ assets.
+\end_layout
+
+\begin_layout Paragraph*
+Mean-Variance frontier
+\end_layout
+
+\begin_layout Standard
+Some intuitions are:
+\end_layout
+
+\begin_layout Enumerate
+All asset returns must lie in the mean-variance region, where the boundary
+ lines are 
+\emph on
+mean-variance frontier
+\emph default
+.
+\end_layout
+
+\begin_layout Enumerate
+In the frontiers, returns are perfectly correlated with the discount factor
+ or 
+\begin_inset Formula $|\rho_{m,R^{i}}|=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+In the upper frontier, returns are perfectly negatively correlated with
+ discount factor (
+\begin_inset Formula $\triangle c$
+\end_inset
+
+) or positively correlated with consumption (
+\begin_inset Formula $C_{t}$
+\end_inset
+
+).
+ They are maximally risky (pay less income when consumption is lower) so
+ it has higher expected returns.
+\end_layout
+
+\begin_layout Enumerate
+In the lower frontier, returns are perfectly positively correlated with
+ discount factor (
+\begin_inset Formula $\triangle c$
+\end_inset
+
+) or negatively correlated with consumption (
+\begin_inset Formula $C_{t}$
+\end_inset
+
+).
+ It provides best insurance againts consumption fluctuation so it has lower
+ returns.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Any two frontier returns are perfectly correlated, so we can 
+\emph on
+span 
+\emph default
+or 
+\emph on
+synthesize
+\emph default
+ any frontier return from two such returns.
+ For example, if we have a frontier return is 
+\begin_inset Formula $R^{m}$
+\end_inset
+
+ then for any frontier return 
+\begin_inset Formula $R^{mv}$
+\end_inset
+
+, we can write: 
+\begin_inset Formula $R^{mv}=R^{f}+a(R^{m}-R^{f})$
+\end_inset
+
+ for some number 
+\begin_inset Formula $a$
+\end_inset
+
+ (yeah, it looks like a CAPM model).
+\end_layout
+
+\begin_layout Enumerate
+Any mean-variance frontier return carries all pricing information.
+ Given a mean-variance frontier return and risk-free rate, we can find a
+ discount factor 
+\begin_inset Formula $m$
+\end_inset
+
+ to price all assets and vice versa.
+\end_layout
+
+\begin_layout Enumerate
+Given a discount factor, we can construct a single-beta representation,
+ so expected returns can be describled in a single-beta representation using
+ any mean-variance efficient return (except for risk free rate):
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E(R^{i})=R^{f}+\beta_{i,mv}[E(R^{mv})-R^{f}]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The beta model can be applied to any asset, including the 
+\begin_inset Formula $R^{mv}$
+\end_inset
+
+ with beta equals to one.
+ We can identify the risk premium factor as 
+\begin_inset Formula $\lambda=E[R^{mv}-R^{f}]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph*
+Equity premium
+\end_layout
+
+\begin_layout Standard
+Equity premium is represented by the Sharpe ratio limited by the volatility
+ of the discount factor:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left|\frac{E(R^{i})-R^{f}}{\sigma(R^{i})}\right|\leq\frac{\sigma(m)}{E(m)}\thickapprox\gamma\sigma(\triangle c)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The maximal risk-return trade-off is steeper if (i) investors are more risk-aver
+se or (ii) more risk (consumption is more volatile).
+ Both situations make investors reluctant to invest in risky assets.
+\end_layout
+
+\begin_layout Standard
+In 50 years of post-war in the US, the returns of equity is 9% on average
+ and standard deviation is 16%, while the real return of risk-free (T-bill
+ rate) is 1% so Sharpe ratio is around 0.5.
+ Aggregate non-durable and service consumption growth has mean and standard
+ deviation of 1%.
+ We can only reconcile this fact if investors have risk-aversion coefficient
+ of 50! But the Sharpe ratio equals 0.5 is in frontier, but in real data,
+ the correlation between aggregate consumption and market return is only
+ 0.2 rather than perfect correlation as in the frontier.
+ If we add this fact, we need a risk aversion coefficient of 250.
+\end_layout
+
+\begin_layout Chapter
+Discount factor
+\end_layout
+
+\begin_layout Section
+First theorem: Law of one price and Existence of Discount factor
+\end_layout
+
+\begin_layout Standard
+Law of one price indicates that if two portfolios have the same payoffs
+ in every states of nature, then they must have the same price.
+ But this section does not assume the complete market but just consider
+ a set of payoffs x or a 
+\emph on
+payoff space 
+\begin_inset Formula $\underline{X}$
+\end_inset
+
+
+\emph default
+.
+ Thus, we can think of 
+\begin_inset Formula $\underline{X}$
+\end_inset
+
+ as a proper subset of complete markets 
+\begin_inset Formula $R^{s}$
+\end_inset
+
+, meaning that the market is 
+\emph on
+incomplete
+\emph default
+.
+\end_layout
+
+\begin_layout Itemize
+The payoff space includes primitive assets and its combination or portfolios
+ of primitive assets.
+\end_layout
+
+\begin_layout Itemize
+The return space is a subset of the payoff space.
+\end_layout
+
+\begin_layout Paragraph*
+Law of one price (linearity)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+p(ax_{1}+bx_{2})=ap(x_{1})+bp(x_{2})\label{eq:one-price}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Investors cannot make instantaneous profits by repacking portfolios.
+ If there is a violation of law of one price, then traders will quickly
+ eliminate them so they cannot survive in equilibrium.
+\end_layout
+
+\begin_layout Paragraph*
+Theorem 1
+\end_layout
+
+\begin_layout Standard
+Given free portfolio formation and the law of one price, there exists a
+ 
+\bar under
+unique payoff
+\bar default
+ 
+\begin_inset Formula $x^{*}\in\underline{X}$
+\end_inset
+
+ such that 
+\begin_inset Formula $p(x)=E(x^{*}x)$
+\end_inset
+
+ for all 
+\begin_inset Formula $x\in\underline{X}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Remember that here the discount factor is also a payoff in the payoff space.
+ See appendix of this chapter for the proof.
+\end_layout
+
+\begin_layout Paragraph*
+Intuitions
+\end_layout
+
+\begin_layout Enumerate
+If the market is incomplete, there are an infinite number of discount factor
+ to price asset.
+ Any discount factor 
+\begin_inset Formula $m$
+\end_inset
+
+ (that satisfies 
+\begin_inset Formula $p=E(mx)$
+\end_inset
+
+) can be represented as 
+\begin_inset Formula $m=x^{*}+\varepsilon$
+\end_inset
+
+ with 
+\begin_inset Formula $E(\varepsilon x)=0$
+\end_inset
+
+.
+ In contrast, if the market is complete, then 
+\begin_inset Formula $x^{*}$
+\end_inset
+
+ is the only possible discount factor.
+\end_layout
+
+\begin_layout Enumerate
+Algebraically, 
+\begin_inset Formula $p=E(mx)=E\left[\left(proj(m|\underline{X})+\varepsilon\right)x\right]=E\left[proj(m|\underline{X})x\right]=E(x^{*}x)$
+\end_inset
+
+.
+ Thus, 
+\begin_inset Formula $x^{*}$
+\end_inset
+
+ is the projection of any SDF 
+\begin_inset Formula $m$
+\end_inset
+
+ into the payoff space.
+ 
+\end_layout
+
+\begin_layout Section
+Second theorem: No arbitrage and Positive Discount Factor
+\end_layout
+
+\begin_layout Standard
+Definition of arbitrage: positive payoff 
+\begin_inset Formula $(x>0)$
+\end_inset
+
+ implies positive price 
+\begin_inset Formula $(p(x)>0)$
+\end_inset
+
+.
+ Implication of this definition is you cannot get a free portfolio with
+ positive payoff but never cost you anything.
+\end_layout
+
+\begin_layout Paragraph*
+Theorem 2
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $p=E(mx)$
+\end_inset
+
+ and 
+\begin_inset Formula $m(s)>0$
+\end_inset
+
+ imply no arbitrage.
+\end_layout
+
+\begin_layout Standard
+Prove it easily: we have 
+\begin_inset Formula $m>0$
+\end_inset
+
+, 
+\begin_inset Formula $x\geq0$
+\end_inset
+
+ and some states that 
+\begin_inset Formula $x>0$
+\end_inset
+
+.
+ In some states with positive probability 
+\begin_inset Formula $mx>0$
+\end_inset
+
+ and in other states 
+\begin_inset Formula $mx=0$
+\end_inset
+
+.
+ Therefore, 
+\begin_inset Formula $E(mx)>0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph*
+Theorem 3
+\end_layout
+
+\begin_layout Standard
+In complete markets, no arbitrage implies that there exists a unique 
+\begin_inset Formula $m>0$
+\end_inset
+
+ such that 
+\begin_inset Formula $p=E(mx)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+See proof in textbook.
+\end_layout
+
+\begin_layout Paragraph*
+Theorem 4
+\end_layout
+
+\begin_layout Standard
+No arbitrage implies the existence of a strictly positive discount factor,
+ 
+\begin_inset Formula $m>0$
+\end_inset
+
+, 
+\begin_inset Formula $p=E(mx)\forall x\in\underline{X}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Chapter
+Mean-Variance Frontier and Beta Representations
+\end_layout
+
+\begin_layout Section
+Expected return-Beta Representations
+\end_layout
+
+\begin_layout Standard
+The expected return-Beta expression of a factor pricing model is (time-series
+ coefficient):
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+E(R^{i})=\gamma+\beta_{i,a}\lambda_{a}+\beta_{i,b}\lambda_{b}+...
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $i=1,2,...,N$
+\end_inset
+
+ asset, 
+\begin_inset Formula $\lambda_{a}$
+\end_inset
+
+ could be understood as the price of risk factor 
+\begin_inset Formula $a$
+\end_inset
+
+ (it is the slope in the figure of 
+\begin_inset Formula $E(R^{i})$
+\end_inset
+
+ and 
+\begin_inset Formula $\beta_{i,a}$
+\end_inset
+
+ space.
+\end_layout
+
+\begin_layout Standard
+When the factors are excess returns then 
+\begin_inset Formula $\lambda_{a}=E(f^{a})$
+\end_inset
+
+ (because each factor has beta of one on itself: 
+\begin_inset Formula $E(f^{a})=\beta_{i,a}\lambda_{a}=1\times\lambda_{a}=\lambda_{a}$
+\end_inset
+
+).
+ If the test assets are also excess returns 
+\begin_inset Formula $(R^{ei}=R^{i}-R^{j},$
+\end_inset
+
+ where 
+\begin_inset Formula $R^{j}$
+\end_inset
+
+ is often risk-free), then the intercept should be zero.
+ Some famous factors are: market return (in CAPM) or consumption growth
+ (CCAPM).
+ Assets with high beta are more risky (i.e., higher exposure to risk factors),
+ so have higher expected returns.
+\end_layout
+
+\begin_layout Standard
+The main idea of this model is if assets' payoff is high in good times and
+ low in bad times (as measured by the factors), the price is low (higher
+ returns).
+ For example, beta in market model (or CAPM) means that if a stock pays
+ more payoff in times of high market returns and pays low in poor market
+ returns (such as crisis), this stock is risky so its price should be low
+ and its expected return should be high enough for investors to hold.
+\end_layout
+
+\begin_layout Section
+Mean-Variance Frontier
+\end_layout
+
+\begin_layout Standard
+Mean-variance frontier is the boundary that minimize return variance for
+ a given mean return.
+ In the figure, the mean-variance of all risky assets is the hyperbola,
+ while that of risky assets and a risk-free asset is the larger wedge-shaped
+ region.
+ The risk-free rate is below the minimum variance of the risky frontier,
+ to ensure that investors do not short the risky assets (if risk-free rate
+ is higher).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fig/mean-variance-frontier.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Mean-Variance frontier
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+When does the mean-variance frontier exists?
+\end_layout
+
+\begin_layout Paragraph*
+Theorem:
+\end_layout
+
+\begin_layout Standard
+So long as the variance-covariance matrix of return 
+\begin_inset Formula $\left(\Sigma=E\left[(R-E)(R-E)'\right]\right)$
+\end_inset
+
+ is nonsingular (i.e., could inverse), there is a mean-variance frontier.
+\end_layout
+
+\begin_layout Paragraph*
+Problem: 
+\end_layout
+
+\begin_layout Standard
+A vector of asset return 
+\begin_inset Formula $R$
+\end_inset
+
+, mean return vector 
+\begin_inset Formula $E=E(R)$
+\end_inset
+
+, and variance-covariance matrix 
+\begin_inset Formula $\Sigma=E\left[(R-E)(R-E)'\right]$
+\end_inset
+
+.
+ The weights of portfolio are 
+\begin_inset Formula $w$
+\end_inset
+
+, so portfolio return is 
+\begin_inset Formula $w'R$
+\end_inset
+
+ and weights sum is 
+\begin_inset Formula $w'1=1$
+\end_inset
+
+.
+ The problem is to choose a portfolio to minimize variance for a given mean.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\underset{\{w\}}{min\,}w'\Sigma w\, s.t.\, w'E=\mu;\, w'1=1\label{eq:frontier-problem}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph*
+Solution
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $A=E'\Sigma^{-1}E$
+\end_inset
+
+; 
+\begin_inset Formula $B=E'\Sigma^{-1}1$
+\end_inset
+
+; and 
+\begin_inset Formula $C=1'\Sigma^{-1}1$
+\end_inset
+
+, then
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $var(R^{mvp})=\frac{C\mu^{2}-2B\mu+A}{AC-B^{2}}$
+\end_inset
+
+ and 
+\begin_inset Formula $w=\Sigma^{-1}\frac{E(C\mu-B)+1(A-B\mu)}{(AC-B^{2})}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The proofs of this solution could be found in text book and in another appendix
+ that we prepared in Capital Market class.
+\end_layout
+
+\begin_layout Paragraph*
+Minimum variance portfolio (
+\emph on
+mvp
+\emph default
+)
+\end_layout
+
+\begin_layout Standard
+This portfolio is interesting.
+ Its mean portfolio return is 
+\begin_inset Formula $\mu^{mvp}=B/C$
+\end_inset
+
+.
+ The weight is 
+\begin_inset Formula $w^{mvp}=\Sigma^{-1}1/(1'\Sigma^{-1}1)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fig/min-variance-port.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Minimum variance portfolio
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The whole frontier is spanned by any two frontier returns.
+ For example, if we have two distinct frontier returns 
+\begin_inset Formula $\mu_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $\mu_{2}$
+\end_inset
+
+ then the weight on a third portfolio with mean 
+\begin_inset Formula $\mu_{3}=\lambda\mu_{1}+(1-\lambda)\mu_{2}$
+\end_inset
+
+ are given by 
+\begin_inset Formula $w_{3}=\lambda w_{1}+(1-\lambda)w_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+An orthogonal characterization of Mean-Variance frontier
+\end_layout
+
+\begin_layout Standard
+The above approach is classic and cumbersome.
+ This section follows Hansen and Richard (1987) to derive a more attractive
+ frontier.
+ The idea is we first describle any return by a 3D orthogonal decomposition.
+ Then we derive the mean-variance frontier without any algebra.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Definitions of 
+\begin_inset Formula $R^{*}$
+\end_inset
+
+ and 
+\begin_inset Formula $R^{e*}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+First, 
+\begin_inset Formula $R^{*}$
+\end_inset
+
+ is return of any asset with payoff 
+\begin_inset Formula $x^{*}$
+\end_inset
+
+ that can act as a discount factor (e.g., consumption growth or market return).
+ Price of 
+\begin_inset Formula $x^{*}$
+\end_inset
+
+ is 
+\begin_inset Formula $p(x^{*})=E(x^{*}x^{*})$
+\end_inset
+
+.
+ Then, 
+\begin_inset Formula $R^{*}=\frac{x^{*}}{p(x^{*})}=\frac{x^{*}}{E(x^{*2})}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+And 
+\begin_inset Formula $R^{e*}=proj(1|\underline{R}^{e})$
+\end_inset
+
+ where 
+\begin_inset Formula $\underline{R}^{e}$
+\end_inset
+
+ is space of excess returns.
+\end_layout
+
+\begin_layout Standard
+The decomposition of 
+\begin_inset Formula $R^{i}$
+\end_inset
+
+ is illustrated as follows:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fig/orthogonal-decomposition-frontier.png
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Orthogonal decomposition and mean-variance frontier
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph*
+Theorem:
+\end_layout
+
+\begin_layout Standard
+Every return 
+\begin_inset Formula $R^{i}$
+\end_inset
+
+ could be expressed as 
+\begin_inset Formula $R^{i}=R^{*}+w^{i}R^{e*}+n^{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph*
+Theorem:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $R^{mv}$
+\end_inset
+
+ is on the mean-variance frontier if and only if 
+\begin_inset Formula $R^{mv}=R^{*}+w^{i}R^{e*}$
+\end_inset
+
+ (or 
+\begin_inset Formula $n^{i}=0$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+In a 2D figure, we can re-draw the orthogonal decomposition into the mean-standa
+rd deviation space as Figure 3.4.
+ 
+\begin_inset Formula $R^{*}$
+\end_inset
+
+ is the return closest to the origin.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fig/orthogonal-decomposition-mean-SD.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Orthogonal decomposition in mean-SD space
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We find that:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+E(R^{i}) & = & E(R^{*})+w^{i}E(R^{e*}),\\
+\sigma^{2}(R^{i}) & = & \sigma^{2}(R^{*}+w^{i}R^{e*})+\sigma^{2}(n^{i})
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Return with 
+\begin_inset Formula $n^{i}=0$
+\end_inset
+
+ minimize variance for each mean.
+ We can understand the part 
+\begin_inset Formula $n$
+\end_inset
+
+ as the idiosyncratic return that just moves and asset off the frontier
+ (but does not priced as higher return, although more risky).
+\end_layout
+
+\begin_layout Section
+Hansen-Jagannathan bounds
+\end_layout
+
+\begin_layout Standard
+The Hansen-Jagannathan bound:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\sigma(m)}{E(m)}\geq\frac{\left|E(R^{e})\right|}{\sigma(R^{e})}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The righ-hand side is the slope of tangency line to the frontier.
+ When 
+\begin_inset Formula $E(m)$
+\end_inset
+
+ increases, the slope is lower and the bound decreases (which attains its
+ lowest at 
+\emph on
+mvp
+\emph default
+).
+\end_layout
+
+\begin_layout Standard
+This gives a duality problem:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\underset{\{m\}}{min}\frac{\sigma(m)}{E(m)}=\underset{\{R^{e}\}}{max}\frac{E(R^{e})}{\sigma(R^{e})}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For discount factors, analogously as mean-variance frontier of assets, we
+ can derive:
+\end_layout
+
+\begin_layout Standard
+\align block
+\begin_inset Formula 
+\begin{eqnarray*}
+m & = & x^{*}+we^{*}\\
+e^{*} & = & 1-proj(1|\underline{X})=proj(1|\underline{E})=1-E(x)'E(xx')^{-1}x\\
+\underline{E} & = & \{m-x^{*})
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fig/orthogonal-decomposition-SDF.png
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Decomposition of discount factor 
+\emph on
+m
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Discount factors, Betas, and Mean-Variance Frontiers
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "qualify_exam"
+options "plainnat"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

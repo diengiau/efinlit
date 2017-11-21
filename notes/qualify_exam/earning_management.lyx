@@ -1,0 +1,1449 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\options round
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family sfdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing onehalf
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Earning management
+\end_layout
+
+\begin_layout Author
+Richard
+\end_layout
+
+\begin_layout Date
+2017 June, Taipei
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Earning management
+\end_layout
+
+\begin_layout Standard
+The first equation to reflect the relation between Earning and Cash Flows
+ is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Earning=Cash\, flows+Accruals
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+so if the 
+\begin_inset Formula $Accruals$
+\end_inset
+
+ is higher, there is more likely that firms manage their earning.
+ In these two measure of components of 
+\begin_inset Formula $Earning$
+\end_inset
+
+, the 
+\begin_inset Formula $Cash\, flows$
+\end_inset
+
+ is more important and a higher ratio of this component in the total 
+\begin_inset Formula $Earning$
+\end_inset
+
+, the higher the quality of the income.
+\end_layout
+
+\begin_layout Paragraph*
+Why there exists the Accruals? Is it legal?
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand cite
+key "gong2008earnings"
+
+\end_inset
+
+note that as long as managers use their discretion within the limits of
+ generally accepted accounting principles (GAAP), earning management is
+ not illegal.
+ Actually, it is not need illegal because of the accrual accounting system
+ by GAAP.
+ This system allows for accounting ajustment so that it can reflect the
+ underlying business condition more accurately (as the deals happen rather
+ than the cash payment happens).
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+For example
+\end_layout
+
+\begin_layout Itemize
+Timing of events: You can sell the good today (2017 June 13), but wait until
+ next month to pay the money.
+ In this case, the revenue is recorded because the deal happened but the
+ cash inflows will be in next month.
+\end_layout
+
+\begin_layout Itemize
+Amount: You could decide how long the machine is depreciated so the amount
+ of depreciation expense will be different.
+\end_layout
+
+\begin_layout Standard
+Managers could exploit this system to 
+\begin_inset Quotes eld
+\end_inset
+
+cook the book
+\begin_inset Quotes erd
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Itemize
+Current accrual adjustments: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+advancing recognition of revenues with credit sales (before cash is received),
+ 
+\end_layout
+
+\begin_layout Itemize
+delaying recognition of expenses through assumption of a low provision for
+ bad debts, 
+\end_layout
+
+\begin_layout Itemize
+deferring recognition of expenses when cash is advanced to suppliers.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Long-term accrual adjustments: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+decelerating depreciation, 
+\end_layout
+
+\begin_layout Itemize
+decreasing deferred taxes (the difference between tax expense recognized
+ for financial reporting and actual taxes paid), 
+\end_layout
+
+\begin_layout Itemize
+or realizing unusual gains.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Paragraph*
+How to measure the Accruals?
+\end_layout
+
+\begin_layout Subparagraph*
+From acounting reports 
+\end_layout
+
+\begin_layout Standard
+Using only some elements in balance sheet and inome statement, 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "sloan1996dostock"
+
+\end_inset
+
+ propose a simple measure of 
+\begin_inset Formula $Accruals$
+\end_inset
+
+ as follows:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Accruals=(\triangle CA-\triangle Cash)-(\triangle CL-\triangle STD-\triangle TP)-Dep
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+where 
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\triangle CA$
+\end_inset
+
+ is change in current assets,
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\triangle Cash$
+\end_inset
+
+ is change in cash and equivalent,
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\triangle CL$
+\end_inset
+
+ is change in current liabilities,
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\triangle STD$
+\end_inset
+
+ is change in debt included in current liabilities,
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\triangle TP$
+\end_inset
+
+ is change in income taxes payable,
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $Dep$
+\end_inset
+
+ is depreciation.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+According to this definition, 
+\begin_inset Formula $Accruals$
+\end_inset
+
+ has three components: current assets, current liabilities, and depreciations.
+\end_layout
+
+\begin_layout Subparagraph*
+From regression and residuals
+\end_layout
+
+\begin_layout Standard
+The idea is run cross-sectional regression (of two-digit SIC code peers)
+ of 
+\begin_inset Formula $Accruals$
+\end_inset
+
+ to estimate the fitted value as 
+\emph on
+normal 
+\emph default
+or 
+\emph on
+nondiscretionary accruals
+\emph default
+ then take residual as 
+\emph on
+discretionary accruals
+\emph default
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "jones1991earnings"
+
+\end_inset
+
+.
+ For example, here I present the method of 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "teoh1998earnings"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+First
+\series default
+, they calculate 
+\begin_inset Formula $TotalAccruals$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+AC=Net\, Income-Cash\, flows\, from\, operations
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If CF is not available, they replace it with 
+\begin_inset Formula Current\, Accruals
+
+\end_inset
+
+ which is the change in noncash current assets minus the change in operating
+ current liabilities:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+CA=\triangle\left[current\, assets-cash\right]-\triangle\left[current\, liabilities-current\, maturity\, of\, longterm\, debt\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To reduce the influences of nonstandard classifications of certain items,
+ they calculate the current accruals in details: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $CA=\triangle\left[account\, receivables+inventory+other\, current\, assets\right]-\triangle[account\, payable+tax\, payable+other\, current\, liabilities]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Second
+\series default
+, they run the regression for firm 
+\begin_inset Formula $i$
+\end_inset
+
+ in year 
+\begin_inset Formula $t$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{CA_{j,t}}{TA_{j,t-1}}=\alpha_{0}\left(\frac{1}{TA_{j,t-1}}\right)+\alpha_{1}\left(\frac{\triangle Sales_{j,t}}{TA_{j,t-1}}\right)+\epsilon_{j,t},\,\,\,\, j\in2\, digits\, SIC\, code\, peers
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $\triangle Sales$
+\end_inset
+
+ is change in sales, 
+\begin_inset Formula $TA$
+\end_inset
+
+ is total assets.
+\end_layout
+
+\begin_layout Standard
+The 
+\emph on
+normal
+\emph default
+ or 
+\emph on
+nondiscretionary current accruals
+\emph default
+ is: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+NDCA_{i,t}=\hat{\alpha}_{0}\left(\frac{1}{TA_{i,t-1}}\right)+\hat{\alpha}_{1}\left(\frac{\triangle Sales_{i,t}-\triangle TR_{i,t}}{TA_{i,t-1}}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $\triangle TR$
+\end_inset
+
+ is change in trade receivables.
+\end_layout
+
+\begin_layout Standard
+The 
+\emph on
+abnormal 
+\emph default
+or the 
+\emph on
+discretionary current accruals 
+\emph default
+is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+DCA_{i,t}=\frac{CA_{i,t}}{TA_{i,t-1}}-NDCA_{i,t}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Third
+\series default
+, repeat the process for total accruals, run the following regression:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{AC_{j,t}}{TA_{j,t-1}}=\beta_{0}\left(\frac{1}{TA_{j,t-1}}\right)+\beta_{1}\left(\frac{\triangle Sales_{j,t}}{TA_{j,t-1}}\right)+\beta_{2}\left(\frac{PPE_{j,t}}{TA_{j,t-1}}\right)+\epsilon_{j,t}\,\,\,\, j\in2\, digits\, SIC\, code\, peers
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The 
+\emph on
+nondiscretionary total accruals
+\emph default
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+NDTAC_{i,t}=\hat{\beta}_{0}\left(\frac{1}{TA_{i,t-1}}\right)+\hat{\beta}_{1}\left(\frac{\triangle Sales_{i,t}-\triangle TR_{i,t}}{TA_{i,t-1}}\right)+\hat{\beta}_{2}\left(\frac{PPE_{i,t}}{TA_{i,t-1}}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $PPE$
+\end_inset
+
+ is gross property, plant, and equipment.
+\end_layout
+
+\begin_layout Standard
+The discretionary total accruals: 
+\begin_inset Formula $DTAC_{i,t}=\frac{AC_{i,t}}{TA_{i,t-1}}-NDTAC_{i,t}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Fourth
+\series default
+, define the long-term accruals as follows:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+NDLA_{i,t}=NDTAC_{i,t}-NDCA_{i,t}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+DLA_{i,t}=DTAC_{i,t}-DCA_{i,t}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Among all measures, the 
+\begin_inset Formula $DCA$
+\end_inset
+
+ is considered the key variable to represent the earning management 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "teoh1998earnings"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Fifth, 
+\series default
+in
+\series bold
+ 
+\series default
+
+\begin_inset CommandInset citation
+LatexCommand citet
+key "gong2008earnings"
+
+\end_inset
+
+ and in robustness of 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "cohen2010accrualbased"
+
+\end_inset
+
+, they introduce a performance-matched abnormal accruals equals abnormal
+ accruals minus the median of abnormal accruals of the industry performance-base
+d portfolio.
+\end_layout
+
+\begin_layout Standard
+How to get this performance-matched industry? For each quarter anf each
+ industry (2-digit SIC), create 5 portfolios with at least 4 firms/each
+ portfolio based on ROA from the same quarter in the previous year.
+ Remind that 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "gong2008earnings"
+
+\end_inset
+
+ use a very special ROA definition: return on net assets (i.e., assets - cash).
+\end_layout
+
+\begin_layout Standard
+This performance-matched abnormal accruals solves two problems: (i) adjust
+ abnormal accruals to eliminate any random effects arising from other events
+ that may affect the accruals or managerial incentives to manage earnings
+ and (ii) control for performance.
+\end_layout
+
+\begin_layout Paragraph*
+When firms choose to manage earning?
+\end_layout
+
+\begin_layout Itemize
+IPO 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "teoh1998earnings"
+
+\end_inset
+
+: upward earning
+\end_layout
+
+\begin_layout Itemize
+SEO 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "cohen2010accrualbased,kothari2016managing"
+
+\end_inset
+
+: upward earning
+\end_layout
+
+\begin_layout Itemize
+Repurchase 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "gong2008earnings"
+
+\end_inset
+
+: downward earning
+\end_layout
+
+\begin_layout Section
+Do investors recognize the importance of earning management?
+\end_layout
+
+\begin_layout Paragraph*
+Two components of earning: accruals and cash flows
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand cite
+key "sloan1996dostock"
+
+\end_inset
+
+ decomposes the earnings into cash flows component and the accrual component.
+ He proposes 4 hypotheses:
+\end_layout
+
+\begin_layout Enumerate
+H1: The persistence of earning (earning momentum) performance is decreasing
+ in the magnitude of the accrual component and is increasing in the magnitude
+ of the cash flows component.
+\end_layout
+
+\begin_layout Enumerate
+H2:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Stock price fails to recognize the relative importance of two components
+ in attributable to earning persistence
+\end_layout
+
+\begin_layout Enumerate
+A trading portfolio that long in low accruals firms and short high acrruals
+ firms could generate positive abnormal returns
+\end_layout
+
+\begin_layout Enumerate
+The abnormal returns in H3 are clustered around future earning announcement
+ dates.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Investors tend to fixate to earnings so they cannot regconize that cash
+ flows component is more attribute to the earning persistence.
+ If the market is efficient, it should incorporate the relative importance
+ of two components into stock price.
+ However, the findings show that it is not the case.
+ The stock price could incorporate the earning in total perfectly, but it
+ reflects the two components similarly.
+ Thus, if investors take an investment portfolio that 
+\emph on
+long 
+\emph default
+in low accruals and 
+\emph on
+short 
+\emph default
+in high accruals, they can earn positive abnormal returns.
+ The abnormal returns could earn in most of the years in sample period,
+ thus this evidence challenges the market efficiency hypothesis.
+ 
+\end_layout
+
+\begin_layout Standard
+The most important finding from 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "sloan1996dostock"
+
+\end_inset
+
+ is that a higher accruals could predict the negative long-term performance
+ (H2b).
+ From this results, it raises question among scholars that whether some
+ puzzles in literature could be explained by the earning management.
+ 
+\end_layout
+
+\begin_layout Itemize
+First, firms tend to manipulate earning more when they need to IPO and SEO
+ from external investors.
+ That's why these issuers tend to have poor long-term performance.
+\end_layout
+
+\begin_layout Itemize
+Second, firms tend to downward manipulate earning before the share repurchase
+ to buy back at lower price.
+ Thus, these repurchase outperform in the long-run.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand cite
+key "teoh1998earnings"
+
+\end_inset
+
+ apply this finding to IPO, while 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "gong2008earnings"
+
+\end_inset
+
+ apply this idea to repurchase.
+ Both papers end up in JF.
+\end_layout
+
+\begin_layout Paragraph*
+Repurchase and earning management
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand cite
+key "gong2008earnings"
+
+\end_inset
+
+ solve the repurchase puzzle that repurchaser outperform in long-run.
+ It is not the case because pre-repurchase earning management is negatively
+ associated with positive operating performance and stock returns in post-repurc
+hase periods.
+ It means that managers use their discretion to deflate the earning downward
+ prior to the repurchase announcement.
+ Because investors fail to recognize the prior repurchase earning management
+ so the faster earning growth rate in future than expected lead to a positive
+ abnormal stock returns.
+\end_layout
+
+\begin_layout Section
+Real activities management or Real earning management
+\end_layout
+
+\begin_layout Standard
+While classical literature focuses on accrual-based earning management,
+ recent papers often add the real earning management to analysis and compare
+ between two types.
+\end_layout
+
+\begin_layout Paragraph*
+So what is real earning management? 
+\end_layout
+
+\begin_layout Standard
+While accrual earning management considers how managers choose the accounting
+ choices to manipulate the earning, the real earning management entails
+ departures from normal operations with the intent to mislead at least some
+ stakeholders into believing that the reported financial performance has
+ been achieved in the normal course of operations 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "roychowdhury2006earnings"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The difference between them:
+\end_layout
+
+\begin_layout Itemize
+Auditors attempt to detect the departures from GAAP so accrual earning managemen
+t is riskier, while the real earning management relates to managers' investment
+ and operation decisions so it is more challengable for investors to detect.
+ Thus, after SOX Act in 2002, there are more evidence of real earning management.
+\end_layout
+
+\begin_layout Itemize
+Real activities management will sacrifice the long-term performance such
+ as reduce firms' R&D expense to meet the short-term objective (i.e., myopia
+ problem)
+\end_layout
+
+\begin_layout Paragraph*
+Real earning management vs.
+ accrual management
+\end_layout
+
+\begin_layout Subparagraph*
+Cohen and Zarowin (2010)
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand cite
+key "cohen2010accrualbased"
+
+\end_inset
+
+ find that the real earning management is more important and popularly used
+ than the accrual-based in SEO.
+ They examine three types:
+\end_layout
+
+\begin_layout Itemize
+Sale manipulations: temporarily offer price discount and more easier credit
+ terms
+\end_layout
+
+\begin_layout Itemize
+Reduction of discretionary expenditures: reduce R&D, SG&A
+\end_layout
+
+\begin_layout Itemize
+Overproduction: by reduce cost of good solds but put them in production
+ cost, so production is abnormal high
+\end_layout
+
+\begin_layout Standard
+They find that SEO firms conduct both accrual-based and real earning management,
+ but the latter type is stronger and more popular.
+ However, they argue that the real earning management conducting to obtain
+ short-term objective of myopic managers tend to reduce long-term performance.
+ Thus, a higher earning management around the SEO leads to a more negative
+ ROA in long-term operating performance.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Their measurements of real earning management
+\end_layout
+
+\begin_layout Standard
+There are three types of real earning managements, and they create three
+ corresponding measures:
+\end_layout
+
+\begin_layout Itemize
+Sale manipulation is residuals from this regression: CFO is cash flow from
+ operation
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{CFO_{it}}{AT_{it-1}}=k_{1}\frac{1}{AT_{it-1}}+k_{2}\frac{SALE_{it}}{AT_{it-1}}+k_{3}\frac{\triangle SALE_{it}}{AT_{it-1}}+\varepsilon_{it}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Overproduction: production cost is sum of COGS and change in inventory during
+ the year
+\begin_inset Formula 
+\[
+\frac{COGS_{it}}{AT_{it-1}}=k_{1}\frac{1}{AT_{it-1}}+k_{2}\frac{SALE_{it}}{AT_{it-1}}+\varepsilon_{it}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{\triangle INV_{it}}{AT_{it-1}}=k_{1}\frac{1}{AT_{it-1}}+k_{2}\frac{\triangle SALE_{it}}{AT_{it-1}}+k_{3}\frac{\triangle SALE_{it-1}}{AT_{it-1}}+\varepsilon_{it}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{PROD_{it}}{AT_{it-1}}=k_{1}\frac{1}{AT_{it-1}}+k_{2}\frac{SALE_{it}}{AT_{it-1}}+k_{3}\frac{\triangle SALE_{it}}{AT_{it-1}}+k_{4}\frac{\triangle SALE_{it-1}}{AT_{it-1}}+\varepsilon_{it}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Discretionary expense: is sum of advertising cost, R&D cost, and SG&A cost
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{DISX{}_{it}}{AT_{it-1}}=k_{1}\frac{1}{AT_{it-1}}+k_{2}\frac{SALE_{it-1}}{AT_{it-1}}+\varepsilon_{it}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If firms manipulate the earning upward, we should see a abnormal low cash
+ flow from operation, abnormal high production cost, and abnormal low discretion
+ary expense.
+\end_layout
+
+\begin_layout Standard
+They also create two total/aggregate metrics of real earning management:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $RM1=Abnormal\, production\, cost+(-1)\times Abnormal\, discretionary\, cost$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $RM2=(-1)\times Abnormal\, CF+Abnormal\, production\, cost+(-1)\times Abnormal\, discretionary\, cost$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A higher of these two measures, the more likely that firms is engaging in
+ manipulation.
+\end_layout
+
+\begin_layout Subparagraph*
+Koothari et al.
+ (2016)
+\end_layout
+
+\begin_layout Standard
+In a recent paper, 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "kothari2016managing"
+
+\end_inset
+
+ compare between accrual management (AM) and real activities management
+ (RAM) in a SEO too.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "kothari2016managing"
+
+\end_inset
+
+ focus on discretionary expense (i.e., R&D expense) because this strategy
+ could inflate earnings, profit margin, and cash flow from operation; while
+ the sale manipulation (e.g., price discount) and overproduction could reduce
+ profit margin and cash flow from operation 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "roychowdhury2006earnings"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\emph on
+Their
+\series default
+ 
+\series bold
+measurement
+\end_layout
+
+\begin_layout Standard
+For 
+\emph on
+real earning management
+\emph default
+, they run 
+\emph on
+fixed-effect
+\emph default
+ first-order autoregressive model that includes lagged sales:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $RD_{it}=\alpha_{i}+\triangle_{t}+\phi\times RD_{i,t-1}+\gamma\times Sales_{i,t-1}+\varepsilon_{it}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If just only use the residuals, the measurement of RAM will be similar to
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "cohen2010accrualbased"
+
+\end_inset
+
+.
+ However, they subtract from the residuals of firm the mean value of residuals
+ across all years for the corresponding firm to obtain abnormal R&D.
+\end_layout
+
+\begin_layout Standard
+In particular, they get the residuals then: 
+\begin_inset Formula $AbnormalRD=\hat{\varepsilon}_{it}-Mean(\hat{\varepsilon}_{it})\, over\, time=\hat{\varepsilon}_{it}-\sum_{j=1}^{T}\frac{\hat{\varepsilon}_{ij}}{T}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Similarly, in 
+\emph on
+accrual management
+\emph default
+, they also add the 
+\emph on
+fixed-effect
+\emph default
+ to a modified version of 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "jones1991earnings"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+In addition, they calculate 
+\emph on
+abnormal earnings
+\emph default
+ by running: 
+\begin_inset Formula $ROA_{it}=\alpha_{i}+\triangle_{t}+\phi\times ROA_{i,t-1}+\varepsilon_{it}$
+\end_inset
+
+ and take residuals as abnormal ROA.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\emph on
+Barber and Lyon (1997) matching method
+\end_layout
+
+\begin_layout Itemize
+Matching firms based on size and BM ratio using 
+\bar under
+post-issuance
+\bar default
+ characteristics
+\end_layout
+
+\begin_layout Itemize
+Select from firms in same 2-digit SIC not issuing SEO, ME between 70%-130%
+ of sample firm, and has BM ratio closest to the sample firm
+\end_layout
+
+\begin_layout Itemize
+Abnormal return = sample firm return - matched benchmark return 
+\end_layout
+
+\begin_layout Standard
+How to know that SEO firms engage in earning management? In SEO year, they
+ form this matrix:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="4">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="0pt">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Abnormal Accruals > 0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Abnormal Accruals < 0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Abnormal ROA > 0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Abnormal R&D > 0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+Group 1: AM only
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+Group 2: non AM & RAM
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Abnormal R&D < 0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+Group 3: both AM & RAM
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+Group 4: RAM only
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Abnormal ROA < 0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Abnormal R&D > 0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+Group 5: AM
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+Group 6:
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Abnormal R&D < 0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+Group 7: both
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+Group 8: RAM
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In cases abnormal ROA < 0 (Group 5 to 8), firms may be unsuccessful to manipulat
+e the earnings.
+ But the most interesting cases will be Group 1 (use AM only), Group 4 (use
+ RAM only), and Group 3 (both types).
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\emph on
+Some of their findings are:
+\end_layout
+
+\begin_layout Itemize
+Propensity that firms engage solely in AM is similar between SEO years and
+ non-SEO years; while the propensity that they engage in RAM is higher in
+ SEO years.
+\end_layout
+
+\begin_layout Itemize
+Consistent with 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "cohen2010accrualbased"
+
+\end_inset
+
+, they find that firms with more RAM and AM before SEO tend to experience
+ negative operating performance and stock returns in the following three
+ years, but the RAM firms are more severe.
+\end_layout
+
+\begin_layout Itemize
+It is more negative returns for young firms, where information opacity is
+ more severe and is more difficult for investors to unravel it
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "qualify_exam"
+options "bibtotoc,plainnat"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,1340 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\options round
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family sfdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing onehalf
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Capital structure notes
+\end_layout
+
+\begin_layout Author
+Dien Giau Bui
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Email: buidiengiau@gmail.com
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Date
+
+\size footnotesize
+First version: June, 2017
+\begin_inset Newline newline
+\end_inset
+
+This version: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+today
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Classical theories
+\end_layout
+
+\begin_layout Standard
+Capital structure is an old topic and I feel really boring whenever I have
+ to visit this old friend.
+ There are several pillars in this 
+\emph on
+financing decision
+\emph default
+: tradeoff theory, pecking order theory, and market timing.
+\end_layout
+
+\begin_layout Paragraph
+Pecking order theory
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand cite
+key "shyam-sunder1999testing"
+
+\end_inset
+
+ propose two models to test pecking order theory and static tradeoff theory.
+ For pecking order theory, they use the deficit and change in debt relation:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Delta D_{it}=a+b_{PO}DEF_{it}+e_{it}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $DEF=DIV+X+\Delta W+R-C$
+\end_inset
+
+, where DIV is dividend payment, X is capital expenditure, 
+\begin_inset Formula $\Delta W$
+\end_inset
+
+ is change in working capital, R is current portion of long-term debt at
+ start of period, and C is operating cash flow.
+ Deficit is the financial deficit of firms that inflow cash is not sufficient
+ to pay for outflow cash.
+ The pecking order theory predicts that 
+\begin_inset Formula $b_{PO}=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+For static tradeoff theory, the regression is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Delta D_{it}=a+b_{TA}\left(D_{it}^{*}-D_{it-1}\right)+e_{it}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $D^{*}$
+\end_inset
+
+is target debt ratio which is historical average of debt ratio.
+ Firms should adjust to the target debt ratio, so tradeoff theory predicts
+ that 
+\begin_inset Formula $b_{TA}=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The results support the pecking order theory.
+ The pecking order theory also has higher power test, because it can reject
+ the simulated data from the tradeoff theory, but tradeoff theory fails
+ to reject the simulated data from pecking order theory.
+\end_layout
+
+\begin_layout Paragraph*
+Market timing
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand cite
+key "baker2002markettiming"
+
+\end_inset
+
+ write one of the most influential paper about capital structure.
+ They find that market timing affects firm leverage and the effect is persistent
+ and lasts up to 10 years (market overvaluation in previous 10 years affect
+ leverage now!!!).
+ Thus, current capital structure is a cumulative result of past attempts
+ to time the market.
+\end_layout
+
+\begin_layout Standard
+The smartest thing in this paper is 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "baker2002markettiming"
+
+\end_inset
+
+ find a new measure to distinguish between M/B (that could proxy for growth
+ opportunity) and external-financing weighted average M/B ratio (to proxy
+ for market timing attempt).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(\frac{M}{B}\right)_{efwa,t-1}=\sum_{s=0}^{t-1}\frac{e_{s}+d_{s}}{\sum_{r=0}^{t-1}e_{r}+d_{r}}.\left(\frac{M}{B}\right)_{s}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Notes that they drop 
+\begin_inset Formula $M/B>10$
+\end_inset
+
+ and if 
+\begin_inset Formula $weight<0$
+\end_inset
+
+ (when net issue <0), they set 
+\begin_inset Formula $weight=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+This variable takes high values for firms that raised external finance when
+ the M/B ratio was high and vice-versa.
+ It captures two things in history: (1) overvaluation in history in M/B
+ ratio and (2) debt and equity issue (in term of 
+\begin_inset Formula $e$
+\end_inset
+
+ and 
+\begin_inset Formula $d$
+\end_inset
+
+, which are net equity and net debt issued).
+\end_layout
+
+\begin_layout Standard
+Their main model includes both current investment opportunities and past
+ attempts of market timing:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(\frac{D}{A}\right)_{t}=a+b\left(\frac{M}{B}\right)_{efwa,t-1}+c\left(\frac{M}{B}\right)_{t-1}+d\left(\frac{PPE}{A}\right)_{t-1}+e\left(\frac{EBITDA}{A}\right)_{t-1}+f\, log(S)_{t-1}+u_{t}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+They always find a strong negative relation between leverage and their overvalua
+tion timing attempts.
+ In addition, the coefficient of 
+\begin_inset Formula $\left(\frac{M}{B}\right)_{t-1}$
+\end_inset
+
+ is less significant or even positive (high growth firms need more external
+ finance) , which proves that their new measure perform better to capture
+ the market timing.
+\end_layout
+
+\begin_layout Standard
+And the most interesting is the coeffcient of 
+\begin_inset Formula $\left(\frac{M}{B}\right)_{efwa,t-1}$
+\end_inset
+
+ is at its place for up to 10 years after IPO, a very persistent effect.
+\end_layout
+
+\begin_layout Paragraph
+Persistence in Capital Structure
+\end_layout
+
+\begin_layout Standard
+The paper I want to discuss now is 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "lemmon2008backto"
+
+\end_inset
+
+.
+ The most important finding is their Figure 1.
+ This figure shows the future 20-year evolution of leverage for 4 portfolios
+ constructed by 
+\emph on
+sorting firms based on their current leverage
+\emph default
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+Each year, they sort firms into quartiles according to leverage ratios:
+ Very High, High, Medium, and Low.
+ The formation year is year 0.
+ Then we hold the portfolio composition constant for subsequent 20 years.
+ 
+\end_layout
+
+\begin_layout Itemize
+Repeat these 2 steps for every year in the sample period (39 year so 39
+ sets of event-time average).
+\end_layout
+
+\begin_layout Itemize
+Compute average leverage of each portfolio across 39 sets within each event
+ year: year 0 to year +20.
+\end_layout
+
+\begin_layout Standard
+What do we see? 
+\end_layout
+
+\begin_layout Itemize
+There is a 
+\emph on
+convergence tendency
+\emph default
+ in leverage to a moderate level (at middle).
+\end_layout
+
+\begin_layout Itemize
+Despite the convergence, the leverage ratios are 
+\emph on
+remarkably stable
+\emph default
+ because the difference between groups still statistically and economically
+ significant.
+\end_layout
+
+\begin_layout Itemize
+Explain: the presence of a 
+\emph on
+transitory (i.e., short-run component)
+\emph default
+ that leads to a gradual convergence in leverage ratios, as well as a 
+\emph on
+permanent (i.e., long-run component)
+\emph default
+ that leads to highly persistent cross-sectional differences in leverage.
+\end_layout
+
+\begin_layout Itemize
+Another property is adjusted R2 from traditional leverage regressions ranges
+ from 18% to 29%, while the adjusted R2 of firm fixed effect is 60%, meaning
+ that majority of variation in leverage is unexplained by previously identified
+ determinants.
+ 
+\end_layout
+
+\begin_layout Itemize
+In addition, the coefficients of previously identified determinants of leverage
+ decrease in magnitude of 65%-85% on average after controlling for firm
+ fixed effects and serially correlated errors.
+ From this finding, later studies in corporate structure tend to use firm
+ fixed effect and serial correlated errors in the model.
+\end_layout
+
+\begin_layout Itemize
+Thus, they suggest that existing determinants of capital strucutre appear
+ to explain a relatively small fraction of the variation in leverage.
+\end_layout
+
+\begin_layout Standard
+Another important implication of their finding is firms tend to rebalance
+ capital structure toward a largely 
+\emph on
+time-invariant target
+\emph default
+ (i.e., unobserved permanent component of leverage) rather than a time-varying
+ target specification as in some other studies.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+The role of initial leverage
+\series default
+: 
+\begin_inset Formula $Leverage_{it}=(+)Leverage_{i0}$
+\end_inset
+
+ where 
+\begin_inset Formula $Leverage_{i0}$
+\end_inset
+
+ is first nonmissing value for leverage in data.
+ The coefficient is positive and t-stat is large (>28).
+ 
+\emph on
+Initial leverage
+\emph default
+ is the single most important determinant of future capital structure in
+ the model.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Variance decomposition
+\series default
+: the idea of variance decomposition is to see how much the sum of squares
+ of the model could be explained by the factors in the model (such as firm
+ FE, year FE, firm characteristics).
+ The results show that most of the effect is from the firm fixed effect,
+ not year fixed effect and firm characteristics.
+\end_layout
+
+\begin_layout Itemize
+First, the results show that leverage contains an important 
+\emph on
+unobserved firm-specific component
+\emph default
+ that is not fully captured by existing determinants.
+ In other words, controlling for previously identified determinants does
+ not alleviate the concern over heterogeneous intercepts, a result with
+ potentially important implications for empirical studies that we elaborate
+ below.
+ 
+\end_layout
+
+\begin_layout Itemize
+Second, the variance decomposition reinforces the finding that the 
+\emph on
+majority of the total variation in leverage is due to cross-sectional difference
+s
+\emph default
+, as opposed to time-series variation.
+\end_layout
+
+\begin_layout Section
+New-trending theories
+\end_layout
+
+\begin_layout Subsection
+A time-series trending of capital structure over 20th century
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand cite
+key "graham2015acentury"
+
+\end_inset
+
+ propose an increasing trend in aggregate leverage over the 20th century
+ among unregulated firms (from 11% to a 
+\emph on
+peak of 47%
+\emph default
+ by early 1990s).
+ The increase is quite popular in all sectors, all size, and all Fama French
+ 12 industries.
+ For regulated firms (i.e., utilities, railroad, telecommunications), the
+ debt ratio seems to be stable.
+ In addition, the fraction of assets held by regulated firms are decreasing.
+ Thus, they find that the economy-wide leverage ratio is quite stable in
+ general during 20th century.
+ To some extent, this finding is also consistent with the persistence in
+ capital structure in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "lemmon2008backto"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+A theoretical framework of aggregate leverage
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fig/Graham_2015_aggregate_leverage.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Aggregate leverage model
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This model is inspired by Merton Miller (1977).
+ The aggregate debt is determined by interaction of the 
+\emph on
+supply of securities by firms
+\emph default
+ (issue debt or equity) and 
+\emph on
+demands for these securites from investors
+\emph default
+.
+ Investment is assumed to be fixed so movements along the horizontal axis
+ correspond to substitutions between debt and equity.
+\end_layout
+
+\begin_layout Itemize
+The supply shows how firms issue debt relative to yield: it first increases
+ because of tax shield and agency benefits, then slope down because of distress
+ cost.
+\end_layout
+
+\begin_layout Itemize
+The demand shows the investors' willingness to hold debt at different yields:
+ different risk aversion, transaction cost, cash flow expectation, and personal
+ tax leads to a upward-sloping demand.
+ Investors demand higher yields to compensate for disavantage of holding
+ debt.
+\end_layout
+
+\begin_layout Itemize
+Some predictions:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+When risk aversion is higher, persimistic cash flow expectation, and low
+ personal tax rate grows, demand curve will flatten and aggregate debt increase.
+\end_layout
+
+\begin_layout Itemize
+Increase in supply of competing securities (e.g., government debt) shift the
+ demand to left and up, leading to lower aggregate debt.
+\end_layout
+
+\begin_layout Itemize
+Development of financial market decrease the cost of transforming return
+ streams from one security to another.
+ The demand curve will be more elastic (flatter curve) and corporate debt
+ usage increase more.
+\end_layout
+
+\end_deeper
+\begin_layout Paragraph
+The channels
+\end_layout
+
+\begin_layout Standard
+Next, the authors attempts to answer the question why leverage ratio increases
+ for unregulated firms.
+ First, they use firm characteristics to explain the increase in leverage.
+ They use characteristics those found to affect leverage such as sale, profitabi
+lity, tangibility, M/B (growth opportunities), and earning volatility.
+ In general, the introduction of Amex firms (1963) and Nasdaq (1973) makes
+ size smaller, lower profits and less tangible assets, higher M/B, and more
+ volatility.
+ However, no characteristic could fully explain the increase in debt ratio
+ among unregulated firms.
+ In detail, the difference (i.e., they call this is 
+\emph on
+average residual
+\emph default
+) between actual leverage and predicted leverage (from regression on firm
+ characteristics) is large and significantly over time.
+\end_layout
+
+\begin_layout Standard
+Finally, they consider the trend in 
+\emph on
+macroeconomic factors
+\emph default
+.
+ They find that government debt (Fed debt/GDP) and financial development
+ (i.e., business credit and equity component of financial sector's output)
+ are significantly correlated with the increase in aggregate leverage ratio.
+ Higher financial development and lower government debt are positively related
+ to corporate leverage.
+ While the positive relation between financial development and corporate
+ leverage is quite plausible, the negative relation between government debt
+ and corporate debt could be explained by two reasons:
+\end_layout
+
+\begin_layout Enumerate
+Government debt increases debt supply in the market (a substitute good)
+ and shift the demand of corporate debt (to the left-up).
+\end_layout
+
+\begin_layout Enumerate
+Government debt proxy for a lantent investment opportunity.
+ A higher government debt is often found in downside economy, which seems
+ to have lower growth opportunities for firms.
+ Firms have less demand for external fundings so they have less leverage.
+\end_layout
+
+\begin_layout Standard
+They test this macroeconomic explanation using an OLS regression:
+\begin_inset Formula 
+\[
+Debt/Capital=MacroAggregateFactor+Control
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where the 
+\emph on
+MacroAggregateFactor
+\emph default
+ is some important measures such as Output Finance (+) and Goverment Debt
+ (-).
+ The findings support the above arguments.
+ The results are consistent when the authors use other dependent: first
+ difference in Debt Ratio, Debt Issuance/Asset, Debt Issuance/Investment.
+\end_layout
+
+\begin_layout Subsection
+Peer effect
+\end_layout
+
+\begin_layout Standard
+In literature, average industry leverage could affect the firms' capital
+ structure.
+ This is the very first evidence that firms could be affect by their peers
+ when they decide the firms' capital structure.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "leary2014dopeer"
+
+\end_inset
+
+ propose several interesting reasons why the firms often mimic their peers
+ in financing decisions.
+ Why firms imitate their peers? 
+\end_layout
+
+\begin_layout Itemize
+Managers are unsure of how to set optimal capital structure.
+ The inputs are hard to measure and the true model is unknown.
+ As such, managers consider the financing decisions and characteristics
+ of peer firms as informative for their own financing decisions.
+\end_layout
+
+\begin_layout Itemize
+Interactions between financial structure and product market competition
+ can lead to financial policy mimicking.
+ Chevalier and Scharfstein (1996) present a model in which firms with high
+ leverage underinvest during an industry downturn and lose market share
+ to more conservatively financed competitors.
+ Thus, the fear of loss market share push firms to mimic their peers.
+\end_layout
+
+\begin_layout Itemize
+Rational herding model (Devenow and Welch, 1996).
+\end_layout
+
+\begin_layout Subparagraph*
+Method and results
+\end_layout
+
+\begin_layout Itemize
+First, they criticize the use of industry leverage because of 
+\emph on
+reflection problem
+\emph default
+ (Manski, 1993).
+ First, this reflection problem argue that firms in the same group tend
+ to face similar institutions and have similar characteristics so they may
+ end up with similar leverage.
+ The second explanation is that firms’ financial policies are partly driven
+ by a response to their peers.
+\end_layout
+
+\begin_layout Itemize
+They propose that using idiosyncratic return shocks (
+\emph on
+raw return - expected return from market model
+\emph default
+) are more appropriate to measure the peer effect.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset CommandInset citation
+LatexCommand cite
+key "leary2014dopeer"
+
+\end_inset
+
+estimate the marginal effect of a change in peer firm leverage on firm i’s
+ own leverage, using peer firms’ 
+\emph on
+idiosyncratic equity return shocks
+\emph default
+ as an instrument for their capital structures.
+ Using 2SLS, they find that a one standard deviation increase in peer firms’
+ leverage ratios is associated with a 10% increase in firm i’s leverage
+ ratio, larger than any other determinants.
+\end_layout
+
+\begin_layout Itemize
+Small, young, less profitable, financial constrained firms often follow
+ their more successful counterparts, but the industry leaders are insensitive
+ to their less successful peers.
+\end_layout
+
+\begin_layout Subsection
+Overconfidence and Early-life experience
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand cite
+key "malmendier2011overconfidence"
+
+\end_inset
+
+ find that early-life experience of the CEOs during the Great Depression,
+ which is the largest financial crisis in 20th century.
+ Experienced this crisis, CEOs tend to be more risk averse because they
+ find that using leverage is too risky.
+ Thus, when they grew up, they tend to use leverage in a more conservative
+ way rather than maximum benefits (from tax shield) could be obtained from
+ debt.
+\end_layout
+
+\begin_layout Standard
+In particular, 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "malmendier2011overconfidence"
+
+\end_inset
+
+ expand the idea in their paper in 2008 that OC seem to believe that their
+ firms are undervalued; thus, being reluctant to issue external finance
+ because they think that external finance is too costly.
+ As a result, they prefer internal finance to external finance (Y = Public
+ Issues, OC's coefficient <0).
+ If they have to raise external fund to cover financing deficit, they will
+ choose debt than equity (Y=Debt, X = Financing Deficit * OC).
+ In addition, if they have to use debt, they use it conservatively relative
+ to available tax benefits.
+\end_layout
+
+\begin_layout Itemize
+A confusing part of this paper is they further expand the paper to Great
+ Depression CEOs and military-background CEOs.
+\end_layout
+
+\begin_layout Itemize
+Great Depression CEOs are more conservative and appear to access risky capital
+ markets more conservatively.
+\end_layout
+
+\begin_layout Itemize
+In contrast, military-background CEOs tend to take more risky, using more
+ leverage.
+\end_layout
+
+\begin_layout Itemize
+To proxy for conservativeness of using debt, they use a variable namely
+ 
+\begin_inset Formula $kink$
+\end_inset
+
+ (hypothetical level of interest / actual interest paid).
+ This variable captures the additional debt could be issued before expected
+ marginal tax-shield benefits begin to fall.
+ Thus, a higher 
+\begin_inset Formula $kink$
+\end_inset
+
+ means that firms use debt more conservatively.
+ In model, they use 
+\begin_inset Formula $kink$
+\end_inset
+
+ as Y, coefficients of OC and Great Depression are positive.
+\end_layout
+
+\begin_layout Subsection
+Early-life fatal disasters
+\end_layout
+
+\begin_layout Standard
+Some related puzzles in daily life: 
+\end_layout
+
+\begin_layout Itemize
+Not-yet-seen ghost people prefer to talk about ghost and after-life mysteries,
+ while experienced people try to avoid talking about such stories.
+\end_layout
+
+\begin_layout Itemize
+Accident-experienced (e.g., car) tend to drive safe, while newbie drivers
+ tend to drive fast to enjoy the speed.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand cite
+key "bernile2017whatdoesnt"
+
+\end_inset
+
+ apply the idea for early-life fatal disaster experience of the CEOs.
+\end_layout
+
+\begin_layout Paragraph*
+A non-monotonic relation: strength of experience
+\end_layout
+
+\begin_layout Standard
+An interesting story is when CEOs grow up during a fatal disasters.
+ There are two types: 
+\end_layout
+
+\begin_layout Itemize
+CEOs who experienced the 
+\emph on
+disasters without extremely negative consequences
+\emph default
+: behave more aggressively later
+\end_layout
+
+\begin_layout Itemize
+and CEOs who just witnessed the 
+\emph on
+extreme downside of the disasters
+\emph default
+: behave more conservatively later
+\end_layout
+
+\begin_layout Standard
+These disasters affect how they decide important policies in firms such
+ as leverage, cash holding, acquisition activity, and return volatility.
+ As a result, CEOs' disaster experience and corporate policies have impacts
+ on firm riskiness and cost of capital.
+\end_layout
+
+\begin_layout Standard
+Compared to literature, this paper contributes by consider the strength
+ of the experience rather than just yes/no question.
+ It means that 
+\emph on
+\bar under
+how
+\emph default
+\bar default
+ he experienced the disasters in his early-life is also important.
+ If the disaster is 
+\emph on
+a insignificant fatalities
+\emph default
+, then CEOs may develop a higher risk tolerance.
+ In contrast, those with exposure to 
+\emph on
+major fatal disasters
+\emph default
+ may behave more conservatively.
+ Thus, this paper introduces 
+\emph on
+\bar under
+the non-linear relation between risk exposure and investor behavior
+\emph default
+\bar default
+, compared to a linear relation in existing literature.
+\end_layout
+
+\begin_layout Subparagraph*
+Method and results
+\end_layout
+
+\begin_layout Itemize
+Disasters: i.e., including earthquakes, volcanic eruptions, tsunamis, hurricanes,
+ tornadoes, severe storms, floods, landslides, and wildfires.
+ Data is from Uni of South Carolina.
+ Some states with most disasters are New York, Pennsylvania, Illinois.
+\end_layout
+
+\begin_layout Itemize
+Early-life formative age: 5-15
+\end_layout
+
+\begin_layout Itemize
+At CEO birth county: number of disaster fatalities/population
+\end_layout
+
+\begin_layout Itemize
+The first method is panel regression with financing, investment (M&A) as
+ dependent, the 
+\begin_inset Formula $Medium$
+\end_inset
+
+ and 
+\begin_inset Formula $Extreme\, Fatality\, Experience$
+\end_inset
+
+ as independent.
+ They control for firm and CEO variables and fixed effects: state of birth,
+ year of birth, year and firm fixed effects.
+ They also control for the 
+\emph on
+historical incidence of disaster-related fatalities
+\emph default
+ in the CEO’s county of birth over the period 1900 to 2010 to help us separate
+ the effect of a CEO growing up in a “high-risk” county from actually having
+ lived through a fatal disaster during his formative years.
+ For example, a CEO may live in Kansas during his childhood but does not
+ experience any disaster, although Kansas is called the 
+\begin_inset Quotes eld
+\end_inset
+
+tornado belt
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+DiD: to eliminate the endogeneity
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+CEOs that experienced major fatal disasters (treat) in their formative years
+ relative to CEOs in unaffected neighboring counties (within 100 miles from
+ the disaster) who did not experience any major disaster (control) between
+ the ages of 5 to 15.
+\end_layout
+
+\begin_layout Enumerate
+Another test is exogenous event (CEO turnover) where the risk tolerances
+ of the incoming and outgoing CEOs are different.
+ In turn, the risk tolerance change will affect the corporate policies after
+ the turnover events.
+\end_layout
+
+\begin_layout Enumerate
+This method suggests that CEO risk preferences may have causal impacts on
+ corporate policies.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+To verify concern that he does not live in his birth county during 5-15:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Use 5-10 age
+\end_layout
+
+\begin_layout Itemize
+Verify whether they also received their Social Security number (SSN) in
+ the same county
+\end_layout
+
+\begin_layout Itemize
+Placebo test: assign a random birth county to each CEO and find no statistically
+ significant effects
+\end_layout
+
+\end_deeper
+\begin_layout Subparagraph*
+Main findings
+\end_layout
+
+\begin_layout Itemize
+A sample of 1,508 US-born CEOs from 1992 to 2012.
+\end_layout
+
+\begin_layout Itemize
+Inverse U-shaped relation of early-life exposure to fatal disaster and corporate
+ risk-taking.
+ For example, 
+\emph on
+moderate exposure 
+\emph default
+CEOs have a 3.4% higher leverage ratio than firms whose CEOs experienced
+ no fatal disasters.
+ But 
+\emph on
+extreme exposure 
+\emph default
+CEOs have a 3.7% (7.1%) lower leverage than firms with no-fatal CEOs (
+\emph on
+moderate exposure 
+\emph default
+CEOs).
+\end_layout
+
+\begin_layout Itemize
+CEOs with 
+\emph on
+moderate disaster exposure 
+\emph default
+are more likely to meet net financing deficits with debts rather than equity,
+ have lower credit rating, and pay higher interest expenses and bank-loan
+ (and bond) spreads than 
+\emph on
+no-fatal
+\emph default
+ CEOs.
+ 
+\emph on
+Moderate exposure 
+\emph default
+CEOs are also significantly more likely to go through bankruptcy.
+ 
+\emph on
+Extreme 
+\emph default
+CEOs have opposite patterns, they tend use less debt and more retained earning
+ to meet financing deficit.
+ The model follows Shyam-Sunder and Myers (1999) and Frank and Goyal (2003):
+ 
+\begin_inset Formula $\Delta Debt=FD+MediumFatal*FD+ExtremeFatal*FD$
+\end_inset
+
+ (then replace Y by 
+\begin_inset Formula $\Delta Equity$
+\end_inset
+
+ and RE).
+ Here, net financial deficit (
+\begin_inset Formula $FD$
+\end_inset
+
+) is dividend and investment minus cash flows, show the deficit amount that
+ CF is not enough to pay for dividend and investment.
+\end_layout
+
+\begin_layout Itemize
+Similarly, CEOs with 
+\emph on
+moderate (extreme)
+\emph default
+ exposure hold significantly less (more) cash, announce more (fewer) acquisition
+s, are less (more) likely to pay for acquisitions with stock,
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Moderate CEOs prefer to pay by cash, which is contrast to Malmendier and
+ Tate (2008) who find that CEOs with 
+\emph on
+high risk tolerance
+\emph default
+ tend to pay by stocks instead of cash.
+ Thus, Malmendier and Tate (2008) conclude that the findings in their paper
+ come from overconfident CEOs.
+ Whether 
+\emph on
+moderate CEOs 
+\emph default
+are the OC in Malmendier and Tate (2008)?
+\end_layout
+
+\end_inset
+
+ and are more (less) likely to announce unrelated acquisitions than no-fatal
+ CEOs.
+ They also earn worse M&A announcement returns.
+\end_layout
+
+\begin_layout Itemize
+Moderate CEOs have higher volatility, especially idiosyncratic volatility,
+ than CEO with no disaster experience, while CEOs with extreme disaster
+ experience again display the opposite patterns.
+\end_layout
+
+\begin_layout Subsection
+How financing policies affect investment policies
+\end_layout
+
+\begin_layout Standard
+There are several papers try to link the financing policies and the investment
+ policies in firms.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "uysal2011deviation"
+
+\end_inset
+
+ finds that:
+\end_layout
+
+\begin_layout Itemize
+Overleverage 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+M&A: Firms with over-leverage relative to their target debt ratios seem
+ to make less acquisitions.
+ Interestingly, the effect is asymmetric: overleverage affects the M&A likelihoo
+d but underleverage does not affect the M&A likelihood.
+\end_layout
+
+\begin_layout Itemize
+In cases they have to undertake acquisitions, they are likely to use less
+ cash, acquire smaller targets, and pay lower premium.
+ It means that the overleverage tends to affect the terms of the M&A.
+\end_layout
+
+\begin_layout Itemize
+M&A 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+Leverage rebalance: Managers of overleveraged firms also actively rebalance
+ their capital structures when they anticipate a high likelihood of making
+ acquisitions.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The dependent: Issue Equities, Change in Leverage Deficit.
+\end_layout
+
+\begin_layout Itemize
+Main independent is the Interaction between Overleverage and Probability
+ of undertaking acquisitions.
+\end_layout
+
+\begin_layout Itemize
+The Probability of undertaking acquisitions:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Likelihood undertake acquisition (Harford, 1999): using fitted value from
+ the Probit model and the distribution to find the cutpoint of expected
+ bidders are firms with fitted value > cutpoints (0.11)
+\end_layout
+
+\begin_layout Enumerate
+Industry M&A Liquidity: firms in industries with high M&A volume will acquire
+ more
+\end_layout
+
+\begin_layout Enumerate
+Cluster Firm: equals one for firms locate in an industry cluster (higher
+ probability to be acquirers).
+ Not sure the meaning of Cluster Firm but it could mean a group of firms
+ in a specific geographic region.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Results show that overleveraged Expected Bidders tend to issue equity and
+ reduce Deficit.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+They also pursue the most value-enhancing acquisitions.
+ The CAR of overleverage bidders tend to be higher, while the long-run stock
+ price in following 5 years of overleveraged firms is not lower so there
+ is no price reversal.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+How to measure the target leverage?
+\emph default
+ It is a 2-step procedure.
+ First, they run a regression to 
+\emph on
+predict the target leverage
+\emph default
+ on determinants in literature.
+ Second, they take the predicted value as target leverage and calculate
+ the deviation from predicted target leverage as the main independent variable:
+ 
+\begin_inset Formula $Leverage\, Deficit$
+\end_inset
+
+.
+ They find an asymmetric effect: only 
+\begin_inset Formula $Overleverage$
+\end_inset
+
+ reduces acquisition likelihood while 
+\begin_inset Formula $Underleverage$
+\end_inset
+
+ does not affect acquisition likelihood.
+\end_layout
+
+\begin_layout Standard
+Actually, this finding could be explained by some alternative hypotheses:
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+FCF hypothesis
+\emph default
+: overleveraged firms are monitored excessively so they tend to make more
+ favorable deals.
+ However, the FCF hypothesis is not fully consistent with the fact that
+ the underleverage firms (which are prone to agency problems) do not suffer
+ negative CAR reactions.
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Financial synergy
+\emph default
+, which is generated in acquisitions of low-financial-slack by high-slack
+ firms: This hypothesis predicts that underleveraged (overleveraged) firms
+ will undertake M&A more (less), but the finding so that this is only an
+ asymmetric effect.
+ In addition, underleveraged firms do not experience higher CAR, as predicted
+ by financial synergy.
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Wealth transfer
+\emph default
+ hypothesis: managers in overleveraged firms behave in the best interest
+ of shareholders (rather than bondholders) so they will avoid M&A because
+ favorable increase in wealth will belong to bondholders.
+ The finding supports that overleveraged firms make less acquisitions but
+ they predict a positive CAR, which contradicts a negative CAR-deficit relation
+ of the wealth transfer hypothesis.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "qualify_exam"
+options "plainnat"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

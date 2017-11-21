@@ -1,0 +1,594 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\options round
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family sfdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing onehalf
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Cash management
+\end_layout
+
+\begin_layout Author
+Richard
+\end_layout
+
+\begin_layout Date
+2017 June, Taipei
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Precautionary motive and cash holdings
+\end_layout
+
+\begin_layout Paragraph*
+Increase in cash holding
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand cite
+key "bates2009whydo"
+
+\end_inset
+
+ find that the US firms hold more and more cash over time.
+ This increase in cash could be explained by two motives: 
+\emph on
+agency problem
+\emph default
+ and 
+\emph on
+precautionary motive
+\emph default
+.
+ 
+\end_layout
+
+\begin_layout Standard
+First, firms tend to increase cash because they are less likely to pay dividends
+ in an influential paper of 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "fama2001disappearing"
+
+\end_inset
+
+.
+ This evidence seems to consistent with the agency theory.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "jensen1986agencycost"
+
+\end_inset
+
+ argue that entrenched CEOs tend to hold more cash instead of paying out
+ to shareholders when they have poor investment opportunities.
+\end_layout
+
+\begin_layout Standard
+Second, this increase in cash is also consistent with some change in firm
+ characteristics such as: firms' cash flows are more volatile, firms hold
+ less inventories and account receivables, and they invest more in R&D relative
+ to capital expenditure over time.
+\end_layout
+
+\begin_layout Standard
+To distinguish between these two views, 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "bates2009whydo"
+
+\end_inset
+
+ adopt two smart tests:
+\end_layout
+
+\begin_layout Itemize
+First, they consider the increase in cash of firms in the top highest G-index
+ quintile and the lowest G-index quintile.
+ The agency predicts that firms in high G-index quintile should increase
+ cash more but the empirical result contradicts to this prediction.
+ In particular, all G-index quintile see the increase in cash holdings,
+ but the increase in more pronounced among firms in the lowest G-index quintile.
+\end_layout
+
+\begin_layout Itemize
+Second, if the agency motive is true, we should see the increase in cash
+ holding is negatively associated with firm value.
+ Again, the empirical result is contrast to the prediction.
+ Increase in cash holding indeed has positive impact on firm value.
+\end_layout
+
+\begin_layout Paragraph*
+Cash increase and refinancing risk
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand cite
+key "harford2014refinancing"
+
+\end_inset
+
+ propose another reason to explain why firms hold more cash: to prevent
+ refinancing risk for short debt maturity.
+ If lenders give a firm a short maturity loan, firms need to hold more cash
+ to mitigate the refinancing concern.
+ Applying the cash-cash flows sensitivity of 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "almeida2004thecash"
+
+\end_inset
+
+ that financial constrained firms save more cash from cash flows for future
+ investment, 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "harford2014refinancing"
+
+\end_inset
+
+ show that firms in the top quintile of long-run debt due in 3 years save
+ well over 5 cents per dollar of cash flows in comparison to only 3.4 cents
+ per dollar of cash flows for an average firm.
+ They also find a shorted debt maturity for the US firms over time, which
+ is consistent with the time series of cash holdings in 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "bates2009whydo"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+With respect to value of cash holding and refinancing risk, following 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "faulkender2006corporate"
+
+\end_inset
+
+, 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "harford2014refinancing"
+
+\end_inset
+
+ regress firm value on change in cash reserve, refinancing risk, and their
+ interaction.
+ They find that the estimated coefficient of the interaction is positive,
+ so higher cash helps to mitigate the risk of refinancing.
+ 
+\end_layout
+
+\begin_layout Standard
+This evidence could relate to our work in managerial ability and bank loans.
+ We could not find significant positive relation between loan maturity and
+ managerial ability.
+ In our working paper, we also find that firms with high-ability CEOs seem
+ to have less financial constraints.
+\end_layout
+
+\begin_layout Section
+Agency evidence
+\end_layout
+
+\begin_layout Standard
+However, we still find some supporting evidence for the long-lived agency
+ motive.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "harford2008corporate"
+
+\end_inset
+
+ use high G-index and low insider ownership as measure for weak governance.
+ They attempt to link governance and investment and payout decisions.
+ Weak governance firms tend to hold less cash because they spend most of
+ cash on M&A and expenditure.
+ The interaction between governance and cash reserve suggests that the 
+\emph on
+spending effect
+\emph default
+ is stronger with the presence of excess cash.
+\end_layout
+
+\begin_layout Standard
+With respect to payout decisions, firms with weak governance tend to repurchase
+ rather than cash dividend.
+ They also have no commitment to maintain future dividend stream.
+\end_layout
+
+\begin_layout Paragraph*
+Conflict of agency and cash holdings (or public vs.
+ private firms' cash holding)
+\end_layout
+
+\begin_layout Standard
+Weak-governed firms tend to overinvest.
+ Among public firms, weak-governed firms tend to spend excess cash in other
+ asset forms (e.g., in M&A) and well-governed firms tend to payout or reduce
+ leverage.
+ However, the speed of spending of weak-governed firms are faster than the
+ speed of payout and relax leverage of well-governed firms.
+ Thus, weak-governed firms also set a high target level of cash to have
+ more freedom from external monitoring.
+ As a results, higher agency conflicts lead to a higher cash holdings of
+ public firms compared to private firms 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "gao2013determinants"
+
+\end_inset
+
+.
+ Some important findings of this paper is:
+\end_layout
+
+\begin_layout Itemize
+Despite financing frictions (less access to external finance) and higher
+ precautionary motive, private firms hold about half as much cash as public
+ firms.
+\end_layout
+
+\begin_layout Itemize
+The driver of this finding is because public firms have higher agency problems.
+ Thus, public first set a higher targe cash level than the private firms.
+ This is because entrenched managers, who prefer more internal financial
+ slack, appear to set higher target cash level.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\emph on
+In terms of investment decisions
+\series default
+\emph default
+ due to this excess cash, compared to private firms, public firms tend to
+ spend cash via investment in a myopic way and reduce firm operating performance.
+ Thus, more severe agency cost leads public firms spend excess cash in a
+ less efficient way.
+\end_layout
+
+\begin_layout Itemize
+By increasing investment, poorly governed public firms have higher speed
+ of adjustment away from excess cash than do well-governed public firms.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+The methods in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "gao2013determinants"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Itemize
+Propensity score matching between private firms and score-matched public
+ peers
+\end_layout
+
+\begin_layout Itemize
+Transitioning sample of IPO where firms change private status but do not
+ receive proceeds from the offering: post-IPO cash holdings inrease significantl
+y for transitioning firms relative to their matched public and private firm
+ control samples.
+\end_layout
+
+\begin_layout Itemize
+Model of cash: 
+\begin_inset Formula $ln(CashRatio)=(+)Public$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+IV regression: using 
+\emph on
+Underwriter concentration
+\emph default
+ as IV for Public status.
+ Underwriter concentration is the ratio of the number of IPOs underwritten
+ by the top five investment banks in an industry to the total number of
+ IPOs in the same industry from 1995– 2011.
+\end_layout
+
+\begin_layout Itemize
+Speed of adjustment (SOA):
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Delta Cash=\alpha+\beta_{1}Public\times(Cash^{*}-LaggedCash)+\beta_{2}(Cash^{*}-LaggedCash)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $\beta_{2}$
+\end_inset
+
+ is SOA, and 
+\begin_inset Formula $\beta_{1}$
+\end_inset
+
+ is difference in SOA between public vs private firms.
+ The results show that 
+\begin_inset Formula $\beta_{1}<0$
+\end_inset
+
+ and 
+\begin_inset Formula $\beta_{2}>0$
+\end_inset
+
+.
+ It means that the public firms have lower SOA than their private peers.
+\end_layout
+
+\begin_layout Section
+Diversification and cash holdings
+\end_layout
+
+\begin_layout Standard
+Professor Duchin has a bunch of work relating to diversification.
+ Some of them relate to the cash holdings.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand cite
+key "duchin2010cashholdings"
+
+\end_inset
+
+ propose the relation between cross-divisional correlation of investment
+ opportunities and financing deficit/gap (Q-CF correlation) and cash flows
+ could affect the diversified firms' cash holdings.
+ If cross-divisional Q and CF correlation are lower, these firms are well-divers
+ified and have coinsurance effect so they have less incentive to hold cash
+ fow precautionary motive.
+ If Q-CF correlation is higher, firms have less financing gap, so the hold
+ less cash.
+\end_layout
+
+\begin_layout Standard
+This finding could be explained by the governance and cross-divisional transfer.
+ In good governance and in firms with high transfer, firms hold less cash.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand cite
+key "duchin2013divisional"
+
+\end_inset
+
+ provide evidence that CEO allocate more capital to divisional managers
+ with high social connection to him.
+ This finding could be explained by two hypotheses: (i) favoritism hypothesis
+ and (ii) information hypothesis.
+ These two hypotheses have contrasting predictions to firm value: favoritism
+ predicts negative value and information predicts a positive effect.
+ 
+\end_layout
+
+\begin_layout Standard
+In well-governed and high information asymmetric firms, divisional managers
+ tend to give more valuable information/advice to CEOs, social connection
+ between them gives more efficient investment and higher firm value.
+ In contrast, at firms with poor governance, the social connection between
+ them negatively affects investment efficiency and firm value.
+ This paper, thus, clearly show the both bright side and dark side of diversific
+ation.
+\end_layout
+
+\begin_layout Section
+Other explanations
+\end_layout
+
+\begin_layout Paragraph*
+Hold cash in risky assets
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand cite
+key "duchin2017precautionary"
+
+\end_inset
+
+ find a very interesting figure.
+ Risky assets represent 40% of firms’ financial portfolios, or 6% of total
+ book assets.
+ This effect is concentrated among financial unconstrained firms, weak governanc
+e, and are discounted by 13% to 22% compared to safe assets.
+\end_layout
+
+\begin_layout Paragraph*
+Save cash when financial constrained firms have future growth opportunities
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand cite
+key "almeida2004thecash"
+
+\end_inset
+
+ propose the cash flow sensitivity of cash as a new measure of financial
+ constraint.
+ The idea is that financial constrained firms save cash for future projects
+ so the cash flow sensitivity of cash will be positive for constrained firms,
+ while non-financial constrained firms do not necessary have the same characteri
+stics.
+\end_layout
+
+\begin_layout Subparagraph*
+Their model of cash-cash flow sensitivity
+\end_layout
+
+\begin_layout Standard
+Firm objective function: firms choose Cash holding, hedge strategy (e.g.,
+ future contracts), and Investment level to maximize dividend flows in three
+ period 0, 1, 2:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\underset{\{C,h,I\}}{max}(d_{0}+pd_{1}^{H}+(1-p)d_{1}^{L}+pd_{2}^{H}+(1-p)d_{2}^{L})\, s.t.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Non negative dividends:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $d_{0}=c_{0}+B_{0}-I_{0}-C\geq0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $d_{1}^{S}=c_{1}^{S}+h^{S}+B_{1}^{S}-I_{1}^{S}+C\geq0\, for\, S=H,L$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $d_{2}^{S}=f(I_{0})+g(I_{1}^{S})-B_{0}-B_{1}^{S}\, for\, S=H,L$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and borrow amount is smaller than liquidation asset value:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $B_{0}\leq(1-\tau)qI_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $B_{1}\leq(1-\tau)qI_{1}^{S}\, for\, S=H,L$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "qualify_exam"
+options "plainnat"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

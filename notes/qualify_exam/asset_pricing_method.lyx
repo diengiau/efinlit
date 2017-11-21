@@ -1,0 +1,1115 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\options round
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing onehalf
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1in
+\topmargin 1in
+\rightmargin 1in
+\bottommargin 1in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Some notes on empirical asset pricing method
+\end_layout
+
+\begin_layout Author
+Richard
+\end_layout
+
+\begin_layout Date
+July 2017
+\end_layout
+
+\begin_layout Section
+Fama Macbeth and Fama French
+\end_layout
+
+\begin_layout Paragraph
+The cross-section of expected stock returns
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand cite
+key "fama1992thecrosssection"
+
+\end_inset
+
+ check the validity of CAPM.
+ They reject 
+\begin_inset Formula $beta$
+\end_inset
+
+ but support 
+\begin_inset Formula $size$
+\end_inset
+
+ and 
+\begin_inset Formula $BM$
+\end_inset
+
+.
+ Their method follows a Fama-Macbeth procedure as follows:
+\end_layout
+
+\begin_layout Enumerate
+Sort 
+\begin_inset Formula $size$
+\end_inset
+
+: In June of year 
+\begin_inset Formula $t$
+\end_inset
+
+, sort stocks into 10 
+\begin_inset Formula $Size$
+\end_inset
+
+ portfolios using NYSE decile breakpoints
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Reason why use NYSE stocks to sort: to avoid dominance of small stocks from
+ Nasdaq are added into the market after 1973 (and Amex stocks since 1963).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Sort 
+\begin_inset Formula $beta$
+\end_inset
+
+: To allow 
+\begin_inset Formula $beta$
+\end_inset
+
+ unrelated to 
+\begin_inset Formula $size$
+\end_inset
+
+: independently sort stocks into another 10 pre-ranking 
+\begin_inset Formula $beta$
+\end_inset
+
+ portfolios (from time-series regression of each stock), using only NYSE
+ deciles, so we have 100 
+\begin_inset Formula $size-beta$
+\end_inset
+
+ portfolios
+\end_layout
+
+\begin_layout Enumerate
+Estimate portolio 
+\begin_inset Formula $beta$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Calculate post-ranking 
+\emph on
+equal-weighted monthly returns
+\emph default
+ 
+\begin_inset Formula $R_{i}^{p}$
+\end_inset
+
+ of portfolios for next 12 months (July year 
+\begin_inset Formula $t$
+\end_inset
+
+ to June year 
+\begin_inset Formula $t+1$
+\end_inset
+
+).
+ The sample time period is 330 months from July 1963 to December 1990 on
+ 100 portfolios.
+\end_layout
+
+\begin_layout Enumerate
+Model to estimate portfolio 
+\begin_inset Formula $beta$
+\end_inset
+
+, run time-series regression: 
+\begin_inset Formula $R_{it}^{p}=\alpha_{i}^{p}+\beta{}_{i1}^{p}R_{t}^{M}+\beta{}_{i2}^{p}R_{t-1}^{M}+e_{p}$
+\end_inset
+
+ where 
+\begin_inset Formula $i$
+\end_inset
+
+ is portfolio 
+\begin_inset Formula $i$
+\end_inset
+
+, 
+\begin_inset Formula $R^{M}$
+\end_inset
+
+ is market return from value-weighted of NYSE, AMEX, and NASDAQ (after 1972)
+ stocks.
+\end_layout
+
+\begin_layout Enumerate
+Totally, we run 100 regressions for 100 portfolios, each has 330 observation.
+ We get estimated 
+\begin_inset Formula $\hat{\beta}_{i}^{p}=\hat{\beta}_{i1}^{p}+\hat{\beta}_{i2}^{p}$
+\end_inset
+
+ for each portfolio (sum of slopes of current and prior month's market return).
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Cross-section regression: For next one year (testing period), run cross-section
+ regression for each month:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Model: 
+\begin_inset Formula $R_{pi}=\gamma_{0}+\gamma_{1}\hat{\beta}_{i}^{p}+\gamma_{2}ln(ME)_{i}^{p}+\epsilon_{i}$
+\end_inset
+
+, where 
+\begin_inset Formula $size$
+\end_inset
+
+ of portfolio is average size of a portfolio (time series average of monthly
+ averages of 
+\begin_inset Formula $ln(ME)$
+\end_inset
+
+ for 
+\emph on
+stocks in portfolio at the end of June
+\emph default
+ each year; 
+\bar under
+hints:
+\bar default
+ only take stocks at June than average all firms in one year).
+\end_layout
+
+\begin_layout Enumerate
+Other models add other characteristics such as 
+\begin_inset Formula $B/M$
+\end_inset
+
+ or 
+\begin_inset Formula $E/P$
+\end_inset
+
+: 
+\begin_inset Formula $R_{pi}=\gamma_{0}+\gamma_{1}\hat{\beta}_{i}^{p}+\gamma_{2}ln(ME)_{i}^{p}+\gamma_{3}ln(BE/ME)+\epsilon_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+From that, we get a time series of estimated 
+\begin_inset Formula $\hat{\gamma}_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $\hat{\gamma}_{2}$
+\end_inset
+
+, 
+\begin_inset Formula $\hat{\gamma}_{3}$
+\end_inset
+
+...
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+t-test: 
+\begin_inset Formula $t\left(\overline{\widehat{\gamma}}_{j}\right)=\frac{\overline{\widehat{\gamma}}_{j}}{s(\widehat{\gamma}_{j})/\sqrt{n}}$
+\end_inset
+
+ then test whether estimated of 
+\begin_inset Formula $\hat{\gamma}_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $\hat{\gamma}_{2}$
+\end_inset
+
+, 
+\begin_inset Formula $\hat{\gamma}_{3}$
+\end_inset
+
+ equals zero.
+\end_layout
+
+\begin_layout Standard
+The results of Fama-Macbeth regression show that:
+\end_layout
+
+\begin_layout Itemize
+When measured it unrelated to size, 
+\begin_inset Formula $\beta$
+\end_inset
+
+ is not related to stock returns, even when it’s the only explanatory variable.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $E/P$
+\end_inset
+
+ effect weakens after we control 
+\begin_inset Formula $size$
+\end_inset
+
+ and 
+\begin_inset Formula $B/M$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Size and B/M capture the cross-sectional variation of stock returns, and
+ they reflect the multidimensional risks in asset pricing
+\end_layout
+
+\begin_layout Itemize
+What factors they proxy for? Distress risk or investment?
+\end_layout
+
+\begin_layout Paragraph
+Multifactor explanations of asset pricing anomalies
+\end_layout
+
+\begin_layout Standard
+The main finding of 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "fama1996multifactor"
+
+\end_inset
+
+ is they propose 3-factor model (
+\begin_inset Formula $FF3$
+\end_inset
+
+) to solve most of anomalies 
+\emph on
+except for momentum
+\emph default
+.
+ The existing anomalies are: long-term reversal (DeBondt and Thaler, 1985),
+ short-term momentum (Jegadeesh and Titman, 1993), size, B/M (Lakonishok,
+ Shleifer, and Vishny, 1994), which cannot be explained by CAPM.
+\end_layout
+
+\begin_layout Subparagraph
+Form factors:
+\end_layout
+
+\begin_layout Itemize
+At the end of June in year 
+\begin_inset Formula $t$
+\end_inset
+
+, independently sort median ME of NYSE stocks and 3 groups of BE/ME (30-40-30%)
+ of NYSE stocks.
+ We got 6 portfolios.
+\end_layout
+
+\begin_layout Itemize
+Value-weighted monthly returns on portfolios are calculated from July year
+ 
+\begin_inset Formula $t$
+\end_inset
+
+ to June year 
+\begin_inset Formula $t+1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Two factors: 
+\begin_inset Formula $SMB=\frac{SL+SM+SH}{3}-\frac{BL+BM+BH}{3}$
+\end_inset
+
+; 
+\begin_inset Formula $HML=\frac{SH+BH}{2}-\frac{SL+BL}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subparagraph
+Three-factor models
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R_{i}-R_{f}=a_{i}+b_{i}(R_{m}-R_{f})+s_{i}SMB+h_{i}HML+e
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If the three factors can proxy for all risk exposure to unobservable factors,
+ we should see the intercepts are close to zero.
+\end_layout
+
+\begin_layout Standard
+Fama and French often analyze by using two methods:
+\end_layout
+
+\begin_layout Itemize
+Two-way sort
+\end_layout
+
+\begin_layout Itemize
+Run factor model regression of 10 deciles (sort based on the anomalies)
+ then test GRS that all intercepts are zero.
+ If we accept the null, meaning that FF3 could explain the anomaly because
+ all intercepts are zero.
+ For example, if they test B/M, they first sort sample to 10 deciles of
+ B/M then run factor models for 10 portfolios.
+ Then, they test all 10 intercepts are zero by GRS.
+\end_layout
+
+\begin_layout Subparagraph
+GRS test is the F-statistic of Gibbons, Ross, Ahanken (1989)
+\end_layout
+
+\begin_layout Standard
+The null hypothesis is all intercepts of regressions are all zero.
+ If the 3-factor model could explain the anomaly, all intercepts seem to
+ be zero, so if we see GRS test accepts the null hypothesis, it means that
+ the model could explain the anomaly.
+\end_layout
+
+\begin_layout Standard
+The evidence shows that GRS test could not reject null in long-term reversal
+ an B/M anomalies, but reject the momentum effect, meaning that the model
+ could not explain the momentum anomaly.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand citet
+key "fama1996multifactor"
+
+\end_inset
+
+ show that the model fails to explain momentum because the short-term losers'
+ returns load more on SMB and HML (behave more like small distressed stocks)
+ than winners.
+ Thus, the model predicts a reversal for the short-term losers (or the model
+ can explain a mean-reversal) but fails to explain the observed continuation.
+ This explanation seems to be a dumb one, I think.
+\end_layout
+
+\begin_layout Section
+Value-premium
+\end_layout
+
+\begin_layout Paragraph
+Classic explanation: extrapolation (overreaction) and risk
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand cite
+key "lakonishok1994contrarian"
+
+\end_inset
+
+ propose two contrasting hypotheses to explain why value stocks earn abnormal
+ returns:
+\end_layout
+
+\begin_layout Enumerate
+Overreaction/extrapolation: investors seem to overreact to good news and
+ believe that past successful perfromance will continue
+\end_layout
+
+\begin_layout Enumerate
+Risk: value stocks have higher fundamental risks, so they have higher returns
+\end_layout
+
+\begin_layout Standard
+The evidence supports the behavioral view.
+ Contrarian strategy (buy value, sell glamour) should earn positive returns.
+\end_layout
+
+\begin_layout Subparagraph
+Their method
+\end_layout
+
+\begin_layout Itemize
+Proxies of value stocks: BE/ME; C/P (cash/price), E/P (earning/price), and
+ GS (growth in sale).
+ For GS, remember that low GS is value stocks and high GS is glamour stocks.
+\end_layout
+
+\begin_layout Itemize
+One-way sort: sort stocks to 10 groups of value measures (e.g., B/M) then
+ take value-weighted returns for each groups.
+ Then they compare between V-G (value-glamour) between high B/M (value)
+ and low B/M (glamour).
+ The results show that value stocks outperform glamour stocks.
+\end_layout
+
+\begin_layout Itemize
+Two-way sort: sort B/M and GS.
+ A high B/M and low GS is most value stocks, while a low B/M and high GS
+ is the most glamour stocks.
+ Results show that the most value stocks earn highest returns, while the
+ most glamour stocks earn lowest returns.
+\end_layout
+
+\begin_layout Itemize
+Extrapolation test: to prove that the past success will not persist in the
+ future.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+They want to test whether the past successful performance will persist in
+ the future
+\end_layout
+
+\begin_layout Itemize
+They compare the past- and future- performance between glamour stocks (BM1,
+ CP1, or GS3) and value stocks (BM10, CP3, GS1)
+\end_layout
+
+\begin_layout Itemize
+In the past (-5;0): glamour stocks have higher fundamental ratio (E/P, C/P,
+ B/M) than value stocks
+\end_layout
+
+\begin_layout Itemize
+In the future (0;5): all tend to reverse, glamour stocks underperform than
+ value stocks
+\end_layout
+
+\begin_layout Itemize
+It means that the past succeed will not continue in the future
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Whether contrarian strategy is riskier?
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Whether the contrarian strategy perform worse during recession? No.
+ 
+\begin_inset Formula $Value-Glamour$
+\end_inset
+
+ return seem to positive in most of the time.
+ In all recession year (NBER) and declined year (equal-weighted CRSP return
+ declines), V-G always positive.
+\end_layout
+
+\begin_layout Itemize
+When the split sample based on market performance and re-apply two-way sorting
+ of B/M (or C/P, E/P) and GS, the V-G is again positive in all sub-sample
+\end_layout
+
+\begin_layout Itemize
+They also first one-way sort and two-way sort to define the value and glamour
+ stocks, then they compare risks such as 
+\begin_inset Formula $beta$
+\end_inset
+
+ and standard deviation (rather than portfolio returns as in main test).
+ The contrarian strategy is not more risks than the naive strategy (or extrapola
+tion strategy).
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Spanning test
+\end_layout
+
+\begin_layout Standard
+The idea of spanning test is we want to test whether adding a new set 
+\begin_inset Formula $K$
+\end_inset
+
+ of risky assets to an existing set 
+\begin_inset Formula $N$
+\end_inset
+
+ could enlarge the mean-variance frontier.
+ 
+\end_layout
+
+\begin_layout Standard
+Consider K basis assets with returns 
+\begin_inset Formula $R_{1t}$
+\end_inset
+
+ and N test assets with returns 
+\begin_inset Formula $R_{2t}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+R_{t} & = & \left[R_{1t}^{'},R_{2t}^{'}\right]\, and\,\mu=E[R_{t}]=\left[\begin{array}{c}
+\mu_{1}\\
+\mu_{2}
+\end{array}\right]\\
+V & = & Var[R_{t}]=\left[\begin{array}{cc}
+V_{11} & V_{12}\\
+V_{21} & V_{22}
+\end{array}\right]
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Project 
+\begin_inset Formula $R_{2t}$
+\end_inset
+
+ on 
+\begin_inset Formula $R_{1t}$
+\end_inset
+
+ we have to run regression: 
+\begin_inset Formula $R_{2t}=\alpha+\beta R_{1t}+e_{t}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+then 
+\begin_inset Formula $\alpha=\mu_{2}-\beta\mu_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $\beta=V_{21}V_{11}^{-1}\varSigma=V_{22}-V_{21}V_{11}^{-1}V_{12}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The null hypothesis:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+H_{0}:\alpha=0_{N}\, and\,\delta=1_{N}-\beta1_{K}=0_{N}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Intuitively, if the null holds, the basis assets K have same mean as every
+ test assets N, but with smaller variance.
+\end_layout
+
+\begin_layout Standard
+The mean-variance spanning test is actually the test of whether N test assets
+ have zero weight in these two portfolios that lie on the minimum-variance
+ frontier.
+ By 
+\emph on
+\bar under
+two fund separation
+\emph default
+\bar default
+, if the above holds, every portfolio on the minimum-variance frontier will
+ have zero weight on N test assets, i.e., no expansion by adding the N test
+ assets into K basis assets.
+\end_layout
+
+\begin_layout Standard
+The test statistics:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+W & = & T(\lambda_{1}+\lambda_{2})\sim\chi_{2N}^{2}\\
+LM & = & T\left(\frac{\lambda_{1}}{1+\lambda_{1}}+\frac{\lambda_{2}}{1+\lambda_{2}}\right)\sim\chi_{2N}^{2}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $\lambda_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $\lambda_{2}$
+\end_inset
+
+ are eigenvalues of 
+\begin_inset Formula $\hat{H}\hat{G}^{-1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Application 1: International Diversification from Domestic assets
+\end_layout
+
+\begin_layout Standard
+The idea in 
+\series bold
+Erruza, Hogan, Hung (1999)
+\series default
+ is that if we hold a home-made diversification from US assets (domestic
+ assets), adding a foreign asset (foreign market indices) does not add benefits
+ to the domestic assets.
+ 
+\end_layout
+
+\begin_layout Standard
+We have:
+\end_layout
+
+\begin_layout Itemize
+Basis/benchmark assets: home-made (i.e., domestic traded) Diversification
+ portfolios using US market indices, 12 US industry portfolios, 30 multinational
+ corporations (MNCs), close-end country funds (CFs), and American Depositary
+ Recepts (ADRs).
+\end_layout
+
+\begin_layout Itemize
+Test assets: 7 developed markets (DMs) and 9 emerging markets (EMs)
+\end_layout
+
+\begin_layout Standard
+To select the basis assets (
+\begin_inset Quotes eld
+\end_inset
+
+benchmark assets
+\begin_inset Quotes erd
+\end_inset
+
+ in paper), they propose some restrictions when select the assets:
+\end_layout
+
+\begin_layout Enumerate
+Limit the number of assets in each set to 4
+\end_layout
+
+\begin_layout Enumerate
+Choose 4 assets that maximize the probability of not rejecting spanning
+ (null hypothesis)
+\end_layout
+
+\begin_layout Standard
+The regression of the test: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R_{I,t}=\alpha_{i}+\beta_{1}R_{e1,t}+\beta_{2}R_{e2,t}+\beta_{3}R_{e3,t}+\beta_{4}R_{e4,t}+e_{I,t}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $R_{I}$
+\end_inset
+
+ is return on 
+\emph on
+I
+\emph default
+th foreign index, 
+\begin_inset Formula $R_{e}$
+\end_inset
+
+ is 4 benchmark assets.
+\end_layout
+
+\begin_layout Standard
+The null hypothesis is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\alpha_{i} & = & 0\\
+\sum_{i=1}^{4}\beta_{i} & = & 1
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+They call the spanning test here is Huberman-Kandel test.
+\end_layout
+
+\begin_layout Itemize
+The higher 
+\begin_inset Formula $p-value$
+\end_inset
+
+, we cannot reject null hypothesis.
+ It means that adding the foreign assets does not enhance the benefits to
+ the existing home-made diversification portfolio.
+\end_layout
+
+\begin_layout Itemize
+However, it the 
+\begin_inset Formula $p-value$
+\end_inset
+
+ is small and we could reject the null hypothesis.
+ It means that adding the foreign assets improve the benefits to the existing
+ home-made diversification portfolio.
+\end_layout
+
+\begin_layout Standard
+Moreover, while spanning test checks the statistical significance, the economic
+ significance could be tested from the shift in Sharpe ratio.
+ The idea is if the spanning test is rejected, but the Sharpe ratio increases
+ too small, it will not economic significance.
+ Bekaert and Urias use Monte Carlo simulation and find that changes in Sharpe
+ ratio of less than 0.057 are not economic significant.
+\end_layout
+
+\begin_layout Standard
+If applied this cut-points, only adding Chile and Thailand indices to domestic
+ traded diversification portfolio could bring benefits.
+ Based on this result, Erruza, Hogan, Hung (1999) conclude that the economic
+ gains from international diversification that cannot be obtained with domestica
+lly traded securities, with few exceptions, are minimal.
+\end_layout
+
+\begin_layout Subsection
+Application 2: Diversification from Small-Caps
+\end_layout
+
+\begin_layout Standard
+Eun, Huang, Lai (2008) propose that adding the small-cap funds could benefits
+ the diversification portfolios of 10 MSCI indices.
+ In other words, they want to test if small-cap funds (CBF) can be spanned
+ by MSCI country indices.
+\end_layout
+
+\begin_layout Itemize
+Basis assets: 10 MSCI indices
+\end_layout
+
+\begin_layout Itemize
+Test assets: small-cap funds from countries
+\end_layout
+
+\begin_layout Standard
+The model:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R_{i}=\alpha_{i}+\beta_{i}^{AU}MSCI^{AU}+...+\beta_{i}^{US}MSCI^{US}+e_{i}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $R_{i}$
+\end_inset
+
+ is return on the small-cap fund from 
+\emph on
+i 
+\emph default
+th country, 
+\begin_inset Formula $MSCI^{AU}$
+\end_inset
+
+ denotes the return from MSCI Australia country index, 
+\begin_inset Formula $MSCI^{US}$
+\end_inset
+
+ for US, and so on.
+\end_layout
+
+\begin_layout Standard
+The null hypothesis:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\alpha_{i} & = & 0\\
+\sum_{i=1}^{10}\beta_{i} & = & 1
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The results show that almost in all case, the spanning test is rejected
+ at conventional significance levels.
+ It means that small-ap funds are indeed unique and investors may benefit
+ from adding small-cap funds to their portfolio of country indices.
+\end_layout
+
+\begin_layout Section
+Mean-variance intersection test
+\end_layout
+
+\begin_layout Standard
+Using the same setting as in Spanning test, the intersection is when the
+ original mean-variance frontier and the new mean-variance frontier have
+ only 
+\series bold
+one point
+\series default
+ in common.
+ The null is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+H_{0}:\alpha-\eta(1-\beta1_{K})=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $\eta$
+\end_inset
+
+ is risk-free rate.
+\end_layout
+
+\begin_layout Standard
+The idea here is whether the new mean-variance frontier has
+\emph on
+ higher maximum attainable Sharpe ratio (or enhance the mean-variance efficiency
+)
+\emph default
+ than the original mean-variance frontier.
+\end_layout
+
+\begin_layout Standard
+The test statistic is: 
+\begin_inset Formula $F=T\frac{\hat{\theta}_{2}(\eta)^{2}-\hat{\theta}_{1}(\eta)^{2}}{1+\hat{\theta}_{1}(\eta)^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where T is number of observations, 
+\begin_inset Formula $\hat{\theta}_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $\hat{\theta}_{2}$
+\end_inset
+
+ are maximum Sharpe ratios attainable by benchmark assets (original frontier)
+ and benchmark plus test assets (new frontier).
+\end_layout
+
+\begin_layout Standard
+The null hypothesis is maximum Sharpe ratio attainable with new assets is
+ the same as that attainable with the benchmark assets.
+ Thus, if we could reject the null, it means that adding new assets tends
+ to enhance the maximum Sharpe ratio of the portfolio of original assets.
+\end_layout
+
+\begin_layout Subsection
+Application in Small-Caps
+\end_layout
+
+\begin_layout Standard
+In Eun, Huang, Lai (2008), they use the mean-variance intersection test
+ to check whether adding small-cap funds could help to enhance the mean-variance
+ efficiency of a benchmark diversification portfolio.
+ The benchmark portfolio includes MSCI country indices.
+ While the new portfolio (augmented diversification portoflio) add the small-cap
+ funds.
+\end_layout
+
+\begin_layout Standard
+Their intersection test statistic is a little different: 
+\begin_inset Formula $F=\frac{T-(K+N)}{N}\frac{\hat{\theta}_{2}(\eta)^{2}-\hat{\theta}_{1}(\eta)^{2}}{1+\hat{\theta}_{1}(\eta)^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where K is number of benchmark assets (number of MSCI indices equals 10)
+ and N is number of new assets.
+\end_layout
+
+\begin_layout Standard
+The asymptotic distribution of the test statistic is:
+\end_layout
+
+\begin_layout Itemize
+If short sale is allowed: 
+\begin_inset Formula $F\sim F\, dist(T-K-N,N)\, d.f$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+If short sale is 
+\emph on
+not allowed
+\emph default
+: they use simulation to approximate the distribution
+\end_layout
+
+\begin_layout Standard
+In the results, they find that the adding the small-cap funds could improve
+ the Sharpe ratio.
+ In every case, they can reject the null hypothesis (small 
+\emph on
+p-
+\emph default
+value of F test in last two rows of Table 5) in both short sale allowed
+ and not allowed.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "qualify_exam"
+options "plainnat"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

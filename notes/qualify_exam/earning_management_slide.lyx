@@ -1,0 +1,881 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass beamer
+\begin_preamble
+%1: get rid of all the junk
+\usetheme{default}
+\beamertemplatenavigationsymbolsempty
+
+%2: Make Pretty Colours
+\definecolor{fore}{RGB}{0,0,0}
+\definecolor{back}{RGB}{255,255,255}
+\definecolor{title}{RGB}{255,0,90}
+
+\setbeamercolor{titlelike}{fg=title}
+\setbeamercolor{normal text}{fg=fore,bg=back}
+
+% page number
+\setbeamertemplate{footline}{%
+    \raisebox{5pt}{\makebox[\paperwidth]{\hfill\makebox[20pt]{\color{gray}
+          \scriptsize\insertframenumber}}}\hspace*{5pt}}
+
+%code for R
+%\usepackage{listings,bera}
+%\lstloadlanguages{R}
+%\definecolor{keywords}{RGB}{255,0,90}
+%\definecolor{comments}{RGB}{60,179,113}
+%\lstset{language=R,
+%keywordstyle=color{keywords},
+%commentstyle=color{comments}emph,
+%tabsize=4}
+
+%Another way
+
+%utf8 encode
+%\usepackage{ucs}
+%\usepackage[utf8x]{inputenc}
+\end_preamble
+\options round
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding utf8
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plainnat
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Earning management
+\end_layout
+
+\begin_layout Subtitle
+A brief summary
+\end_layout
+
+\begin_layout Author
+Dien Giau Bui (Richard)
+\begin_inset Newline newline
+\end_inset
+
+d05723007
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Institute
+National Taiwan University
+\end_layout
+
+\begin_layout Date
+June, 2017
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Outline
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Earning management
+\end_layout
+
+\begin_layout Subsection
+Accruals-based earning management
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Earning's components
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+The first equation to reflect the relation between Earning and Cash Flows
+ is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Earning=Cash\, flows+Accruals
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+so if the 
+\begin_inset Formula $Accruals$
+\end_inset
+
+ is higher, there is more likely that firms manage their earning.
+ In these two measure of components of 
+\begin_inset Formula $Earning$
+\end_inset
+
+, the 
+\begin_inset Formula $Cash\, flows$
+\end_inset
+
+ is more important and a higher ratio of this component in the total 
+\begin_inset Formula $Earning$
+\end_inset
+
+, the higher the quality of the income.
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Why there exists the accruals? Is it legal?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset CommandInset citation
+LatexCommand cite
+key "gong2008earnings"
+
+\end_inset
+
+note that as long as managers use their discretion within the limits of
+ generally accepted accounting principles (GAAP), earning management is
+ not illegal.
+\end_layout
+
+\begin_layout Itemize
+This GAAP system allows for accounting ajustment so that it can reflect
+ the underlying business condition more accurately (as the deals happen
+ rather than the cash payment happens).
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+For example
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Timing of events: You can sell the good today (2017 June 13), but wait until
+ next month to receive the money.
+ In this case, the revenue is recorded because the deal happened but the
+ cash inflows will be in next month.
+\end_layout
+
+\begin_layout Itemize
+Amount: You could decide how long the machine is depreciated so the amount
+ of depreciation expense will be different.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Sloan (1996)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Investors tend to fixate to earnings so they cannot regconize that cash
+ flows component is more attribute to the earning persistence.
+ 
+\end_layout
+
+\begin_layout Itemize
+If the market is efficient, it should incorporate the relative importance
+ of two components into stock price.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+But it reflects the two components similarly.
+ 
+\end_layout
+
+\begin_layout Itemize
+Thus, if investors take an investment portfolio that 
+\emph on
+long 
+\emph default
+in low accruals and 
+\emph on
+short 
+\emph default
+in high accruals, they can earn positive abnormal returns.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+When firms choose to manage earning?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+IPO 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "teoh1998earnings"
+
+\end_inset
+
+: upward earning
+\end_layout
+
+\begin_layout Itemize
+SEO 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "cohen2010accrualbased,kothari2016managing"
+
+\end_inset
+
+: upward earning
+\end_layout
+
+\begin_layout Itemize
+Repurchase 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "gong2008earnings"
+
+\end_inset
+
+: downward earning
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Subsection
+Real earning management/Real activities management
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Real earning management
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+While 
+\series bold
+accrual earning management
+\series default
+ considers how managers choose the 
+\series bold
+accounting choices
+\series default
+ to manipulate the earning, the 
+\series bold
+real earning management
+\series default
+ entails 
+\series bold
+departures from normal operations
+\series default
+ with the intent to mislead at least some stakeholders into believing that
+ the reported financial performance has been achieved in the normal course
+ of operations 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "roychowdhury2006earnings"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+The difference between them:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Auditors attempt to detect the departures from GAAP so accrual earning managemen
+t is riskier, while the real earning management relates to managers' investment
+ and operation decisions so it is more challengable for investors to detect.
+ Thus, 
+\color red
+after SOX Act in 2002
+\color inherit
+, there are more evidence of real earning management.
+\end_layout
+
+\begin_layout Itemize
+Real activities management will 
+\color red
+sacrifice the long-term performance
+\color inherit
+ such as reduce firms' R&D expense to meet the short-term objective (i.e.,
+ myopia problem)
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Three types of real earning management
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand cite
+key "cohen2010accrualbased"
+
+\end_inset
+
+ examine three types:
+\end_layout
+
+\begin_layout Itemize
+Sale manipulations: temporarily offer price discount and more easier credit
+ terms
+\end_layout
+
+\begin_layout Itemize
+Reduction of discretionary expenditures: reduce R&D, SG&A, advertising expense
+\end_layout
+
+\begin_layout Itemize
+Overproduction: by reduce cost of good solds but put them in production
+ cost, so production is abnormal high
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Section
+Measurements
+\end_layout
+
+\begin_layout Subsection
+Discretionary accruals
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Discretionary accruals
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Calculate total accruals: 
+\begin_inset Formula $AC=Net\, Income-Cash\, flows\, from\, operations$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Run cross-sectional regressions
+\begin_inset Formula $\frac{AC_{j,t}}{TA_{j,t-1}}=\beta_{0}\left(\frac{1}{TA_{j,t-1}}\right)+\beta_{1}\left(\frac{\triangle Sales_{j,t}}{TA_{j,t-1}}\right)+\beta_{2}\left(\frac{PPE_{j,t}}{TA_{j,t-1}}\right)+\epsilon_{j,t}$
+\end_inset
+
+
+
+\end_layout
+
+\begin_layout Enumerate
+Non-discretionary accrual (or normal accrual):
+\begin_inset Formula $NDTAC_{i,t}=\hat{\beta}_{0}\left(\frac{1}{TA_{i,t-1}}\right)+\hat{\beta}_{1}\left(\frac{\triangle Sales_{i,t}-\triangle TR_{i,t}}{TA_{i,t-1}}\right)+\hat{\beta}_{2}\left(\frac{PPE_{i,t}}{TA_{i,t-1}}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+The discretionary total accruals: 
+\begin_inset Formula $DTAC_{i,t}=\frac{AC_{i,t}}{TA_{i,t-1}}-NDTAC_{i,t}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+In
+\series bold
+ 
+\series default
+
+\begin_inset CommandInset citation
+LatexCommand citet
+key "gong2008earnings"
+
+\end_inset
+
+: they introduce a performance-matched abnormal accruals equals abnormal
+ accruals minus the median of abnormal accruals of the industry performance-base
+d portfolio.
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Subsection
+Real earning management
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Real earning management
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The main idea is estimate the normal level from fitted value of a regression,
+ then the residuals is the abnormal level of cash flows, discretionary expense,
+ and production cost
+\end_layout
+
+\begin_layout Itemize
+In Cohen and Zarowin (2010): Sale manipulation is residuals from this regression
+: CFO is cash flow from operation
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{CFO_{it}}{AT_{it-1}}=k_{1}\frac{1}{AT_{it-1}}+k_{2}\frac{SALE_{it}}{AT_{it-1}}+k_{3}\frac{\triangle SALE_{it}}{AT_{it-1}}+\varepsilon_{it}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Two types of earning management
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+When firms choose to use real earning management:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+From Cohen and Zarowin (2010): firms with Big 8 and long-tenure auditors,
+ in litigation industries, high net operating assets, and after SOX Act
+ tend to choose real earning management
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+How to know firms choose which method? In 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "kothari2016managing"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="3">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="0pt">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+\color black
+Abnormal Accruals > 0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+\color black
+Abnormal Accruals < 0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+\color black
+Abnormal R&D > 0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+\color black
+Group 1: AM only
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+\color black
+Group 2: non AM & RAM
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+\color black
+Abnormal R&D < 0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+\color black
+Group 3: both AM & RAM
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+\color black
+Group 4: RAM only
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Section
+Conclusion
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Conclusion
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+In the past, a study about earning management focuses mainly on accrual-based
+ earning management
+\end_layout
+
+\begin_layout Itemize
+Now, a study needs to consist of two types of management
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+A real earning management is more important and effective now
+\end_layout
+
+\begin_layout Itemize
+So, more challenge now!
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Thank you
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Thank you for your listening and welcome for your comments and questions.
+\begin_inset Newline newline
+\end_inset
+
+Contact: buidiengiau@gmail.com / d05723007@ntu.edu.tw
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "qualify_exam"
+options "plainnat"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
