@@ -5,5 +5,7 @@ output:
     toc: false
 ---
 
+Hello, my name is Richard (Dien Giau Bui). Here is my [website](https://diengiau.netlify.com/)
+
 This projects to backup some of my notes that I wrote during my study at NTU.
 
