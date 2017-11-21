@@ -5,4 +5,5 @@ output:
     toc: false
 ---
 
-Describe your project.
+This projects to backup some of my notes that I wrote during my study at NTU.
+
