@@ -1,0 +1,43 @@
+---
+title: "Untitled"
+author: "Richard"
+date: "2017年11月21日"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## `efinlit`
+```{r}
+setwd("D:/Richard/MyGithub")
+library(workflowr)
+# Replace the example text with your information
+wflow_git_config(user.name = "diengiau", user.email = "buidiengiau@gmail.com")
+
+workflowr::wflow_start("efinlit")
+
+# to push
+wflow_remotes("origin", "diengiau", "efinlit") # check whether has github page?
+wflow_git_push(dry_run = TRUE)
+wflow_git_push()
+
+# to build but not yet publish
+wflow_build()
+wflow_status()
+
+# to publish
+wflow_publish(c("analysis/index.Rmd", "analysis/about.Rmd", "analysis/license.Rmd"),
+              "Publish efinlit")
+wflow_publish(files = "docs/pdf/capital_structure.pdf", message = "publish capital structure", all = TRUE)
+wflow_publish(files = list.files("docs/pdf/", full.names = T), message = "publish all pdf", all = TRUE)
+
+# push again
+wflow_git_push(username = "diengiau", password = "mnthuy14")
+
+# Pull from remote repository
+wflow_git_pull(username = "diengiau", password = "mnthuy14")
+
+```
+
